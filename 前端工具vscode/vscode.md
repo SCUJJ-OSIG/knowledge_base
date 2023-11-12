@@ -2,7 +2,8 @@
 
 author: 创新实验室
 date: 2023-11-12
-Description: 介绍vscode
+github仓库: https://github.com/SCUJJ-OSIG/knowledge_base
+Description: vscode
 ---
 
 
