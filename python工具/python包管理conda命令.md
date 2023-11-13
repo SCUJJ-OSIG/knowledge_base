@@ -310,9 +310,9 @@ pip install xxx：分两种情况，一种情况就是当前conda环境的python
 
 
 
-  
 
-       
+
+​       
 
 #### 7.1 .condarc文件在哪儿？ 
 ​        执行conda info，会有信息显示如下所示：
