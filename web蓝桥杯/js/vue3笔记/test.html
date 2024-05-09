@@ -1,0 +1,40 @@
+<!--
+ * @Author: PoRi 1960825664@qq.com
+ * @Date: 2024-03-27 10:47:30
+ * @LastEditors: PoRi 1960825664@qq.com
+ * @LastEditTime: 2024-03-27 11:12:12
+ * @FilePath: \知识库\web蓝桥杯\js\vue3笔记\test.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let str = `
+
+<ul>
+    <li>1111</li>
+    <li>222</li>
+    <li>3333</li>
+</ul>
+`;
+
+      let reg = /<li>(?<content>.*)<\/li>/g;
+
+      let iobj = str.matchAll(reg);
+
+      console.log(iobj);
+      // console.log(iobj.next())
+      // console.log(iobj.next())
+
+      for (let i of iobj) {
+        console.log(i.groups.content);
+      }
+    </script>
+  </body>
+</html>
