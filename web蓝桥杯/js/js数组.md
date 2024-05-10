@@ -34,7 +34,8 @@ Array.of()方法会创建一个包含所有传入参数的数组，而不管参�
 
 ```js
 let arr1 = Array.of(1,2);
-console.log(arr1.length);   // 2let arr2 = Array.of(3);
+console.log(arr1.length);   // 2
+let arr2 = Array.of(3);
 console.log(arr2.length);   // 1
 console.log(arr2[0]);   // 3
 
