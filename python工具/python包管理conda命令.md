@@ -1,12 +1,13 @@
 # python包管理conda命令
 
-[TOC]
+
+# 常用命令
 
 
+
+[toc]
 
 ## 1.创建一个新环境
-
-
 
 ```shell
 #创建环境
@@ -89,12 +90,6 @@ conda create --name new_env_name --clone old_env_name
 conda config --set always_yes false
 ```
 
-
-
-
-
-
-
 ## 4.环境查询
 
 ```shell
@@ -122,20 +117,15 @@ conda info
 
 ```
 
-
-
 ### 查看conda的环境配置
 
 ```
 conda config --show
 ```
 
-
-
-
 ## 5.分享/备份环境
 
-```	shell
+```shell
 
 
 #一个分享环境的快速方法就是给他一个你的环境的.yml文件。
@@ -148,12 +138,7 @@ conda env export > environment.yml
 conda env create -f environment.yml
 ```
 
-
-
-
 ## 6.镜像源
-
-
 
 ```shell
 #conda方法：
@@ -216,30 +201,19 @@ conda clean -y -all # 删除所有的安装包及cache(索引缓存、锁定文�
 conda clean -h    #清除命令的更详细的说明
 ```
 
-
-
-
-
 ## 7.清理
-
-
-
-
-
 
 ```shell
 #删除没有用的包：
 
-conda clean -p     
+conda clean -p   
 #删除tar包：
 
-conda clean -t     
+conda clean -t   
 #删除所有的安装包及cache：
 
 conda clean -y --all 
 ```
-
-
 
 ## 8.conda config换源配置
 
@@ -258,13 +232,9 @@ conda config --set show_channel_urls yes
 
 ```
 
-
-
-
-
 ## Python版本的管理
 
-​    除了上面在创建虚环境时可以指定python版本外，Anaconda基环境的python版本也可以根据需要进行更改。
+    除了上面在创建虚环境时可以指定python版本外，Anaconda基环境的python版本也可以根据需要进行更改。
 
 ### 5.1 将版本变更到指定版本
 
@@ -272,36 +242,21 @@ conda config --set show_channel_urls yes
 conda install python=3.5
 ```
 
-
-
-
 更新完后可以用以下命令查看变更是否符合预期。
 
 ```
 python --version
 ```
 
-
-
-
 ### 5.2 将python版本更新到最新版本
-​        如果你想将python版本更新到最新版本，可以使用以下命令：
+
+    如果你想将python版本更新到最新版本，可以使用以下命令：
+
 ````
 conda update python
 ````
 
-
-
-
-
-
-
-
-
-
 ### conda install vs pip install 有什么区别？
-
-
 
 conda可以管理非python包，pip只能管理python包。
 	conda自己可以用来创建环境，pip不能，需要依赖virtualenv之类的。
@@ -309,16 +264,14 @@ conda可以管理非python包，pip只能管理python包。
 	**conda安装的包会统一下载到一个目录文件中，当环境B需要下载的包，之前其他环境安装过，就只需要把之间下载的文件复制到环境B中，下载一次多次安装。pip是直接下载到对应环境中。**
 	conda只能在conda管理的环境中使用，例如比如conda所创建的虚环境中使用。pip可以在任何环境中使用，在conda创建的环境 中使用pip命令，需要先安装pip（conda install pip ），然后可以 环境A 中使用pip 。conda 安装的包，pip可以卸载，但不能卸载依赖包，pip安装的包，只能用pip卸载。
 
-
-
-
-
-
 #### 6.3 安装在哪里？
+
 conda install xxx：这种方式安装的库都会放在anaconda3/pkgs目录下，这样的好处就是，当在某个环境下已经下载好了某个库，再在另一个环境中还需要这个库时，就可以直接从pkgs目录下将该库复制至新环境而不用重复下载。
-pip install xxx：分两种情况，一种情况就是当前conda环境的python是conda安装的，和系统的不一样，那么xxx会被安装到anaconda3/envs/current_env/lib/python3.x/site-packages文件夹中，如果当前conda环境用的是系统的python，那么xxx会通常会被安装到~/.local/lib/python3.x/site-packages文件夹中 
+pip install xxx：分两种情况，一种情况就是当前conda环境的python是conda安装的，和系统的不一样，那么xxx会被安装到anaconda3/envs/current_env/lib/python3.x/site-packages文件夹中，如果当前conda环境用的是系统的python，那么xxx会通常会被安装到~/.local/lib/python3.x/site-packages文件夹中
+
 #### 6.4 如何判断conda中某个包是通过conda还是pip安装的？
-​        执行 conda list ，用pip安装的包显示的build项目为pypi
+
+    执行 conda list ，用pip安装的包显示的build项目为pypi
 
 ```
  conda configuration
@@ -327,11 +280,6 @@ pip install xxx：分两种情况，一种情况就是当前conda环境的python
  conda的配置文件为".condarc"，该文件在安装时不是缺省存在的。但是当你第一次运行conda config命令时它就被自动创建了。".condarc"配置文件遵循简单的YAML语法。
 
 
+#### 7.1 .condarc文件在哪儿？
 
-
-
-
-​       
-
-#### 7.1 .condarc文件在哪儿？ 
-​        执行conda info，会有信息显示如下所示：
+    执行conda info，会有信息显示如下所示：

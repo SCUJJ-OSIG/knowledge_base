@@ -10,17 +10,11 @@ Ubuntu和MySQL默认版本对照
 | Ubuntu 14.04 LTS | MySQL 5.5       |
 | Ubuntu 12.04 LTS | MySQL 5.5       |
 
-
-
-
-
-
 ### 一：查看系统版本：
 
 在Ubuntu系统中，查看当前系统版本的常用方法有几种：
 
 1. **使用 `lsb_release -a`命令** ： 打开终端（Terminal）并输入以下命令：
-
 
 ```code
 lsb_release -a
@@ -51,7 +45,6 @@ cat /etc/os-release
 
    输出可能会包含Ubuntu版本的基本信息。
 
-
 #### **内核信息**
 
 **使用 `uname -a`命令** ： 虽然这个命令主要用来查看内核信息，但它也会显示部分系统版本信息。
@@ -61,10 +54,6 @@ uname -a
 ```
 
    示例输出的一部分可能包含内核版本和发行版信息。
-
-
-
-
 
 在线安装MySQL
 步骤1：更新软件包列表
@@ -90,10 +79,7 @@ sudo apt install -y mysql-server
 # 安装指定版本
 
 sudo apt install -y mysql-server-8.0
-1
-2
-3
-4
+
 如果不加-y 会在安装过程中，系统将提示你设置MySQL的root密码。确保密码足够强，且记住它，因为你将在以后需要用到它。
 
 步骤3：启动MySQL服务
@@ -135,16 +121,7 @@ grant all privileges on *.* to root@"%" identified by "密码";
 # 刷新缓存
 
 flush privileges;
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
+
 注意：配置8.0版本参考：我这里通过这种方式没有实现所有IP都能访问；我是通过直接修改配置文件才实现的，MySQL8.0版本把配置文件 my.cnf 拆分成mysql.cnf 和mysqld.cnf，我们需要修改的是mysqld.cnf文件：
 
 sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
@@ -157,11 +134,6 @@ bind-address            = 0.0.0.0
 
 sudo systemctl restart mysql
 
-
-
-
-
-
 ### 1、编辑mysqld.cnf文件
 
 mysqld.cnf 文件在目录‘/etc/mysql/mysql.conf.d/’中，
@@ -170,7 +142,6 @@ mysqld.cnf 文件在目录‘/etc/mysql/mysql.conf.d/’中，
 cd /etc/mysql/mysql.conf.d/
 sudo vi mysqld.cnf
 ```
-
 
 输入i进入vi编辑模式。
 在文件中找到 [mysqld] 下面的 skip-external-locking 一行，在此行下面增加一行 skip-grant-tables
@@ -182,12 +153,106 @@ sudo vi mysqld.cnf
 skip-external-locking
 skip-grant-tables
 
-
-
-
-
 ### 重启mysql服务：
 
 ```bash
 sudo service mysql restart
+```
+
+
+
+
+
+
+# 安装 ubuntu22 mysql
+
+## 相关命令:
+
+```
+sudo systemctl status mysql  //检查MySQL状态
+
+sudo systemctl restart mysql  //重启MySQL
+
+
+
+sudo systemctl enable mysql   //MySQL设置为开机自启动：
+
+
+```
+
+## 更新软件包和安装
+
+```
+sudo apt update  // 更新软件包
+sudo apt install mysql-server  // 安装MySQL服务器
+sudo systemctl start mysql  // 启动MySQL服务
+```
+
+## 配置MySQL
+
+对于 MySQL 的全新安装，您需要运行数据库管理系统包含的安全脚本。 该脚本更改了一些不太安全的默认选项，例如不允许远程 root 登录和删除示例用户。
+
+第一步，进入MySQL
+
+```
+sudo mysql
+```
+
+运行命令添加密码并且修改验证方式为用户密码。然后退出MySQL。
+
+```
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Tzd0412.';
+exit
+```
+
+## 运行mysql_secure_installation脚本
+
+```
+sudo mysql_secure_installation
+//自动询问 设置
+```
+
+然后只需要根据引导一步一步选择即可。
+
+远程连接
+首先登录到MySQL中
+
+```
+mysql -u root -p
+```
+
+
+然后执行下面的命令就行了：
+
+```
+use mysql;
+update user set host = '%' where user = 'root';
+GRANT ALL PRIVILEGES ON . TO 'root'@'%';
+# 配置IP 5.7
+grant all privileges on *.* to root@"%" identified by "密码";
+
+flush privileges;
+```
+
+## 最后修改系统配置文件：
+
+```
+sudo systemctl stop mysql  // 首先关闭MySQL服务
+sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf   // 编辑配置文件
+
+定位到位置 bind-address = 127.0.0.1 ，然后注释掉即可.下面的修改也可以
+
+修改 bind-address，保存后重启MySQL即可。
+bind-address            = 0.0.0.0
+
+sudo systemctl start mysql // 启动MySQL服务
+```
+
+
+
+
+注意，如果你的MySQL是云服务器还需要打开防火墙限制（云厂商，在控制台），同时服务器的防火墙请添加
+
+```
+sudo ufw allow 3306/tcp
 ```
