@@ -10,17 +10,11 @@ Ubuntu和MySQL默认版本对照
 | Ubuntu 14.04 LTS | MySQL 5.5       |
 | Ubuntu 12.04 LTS | MySQL 5.5       |
 
-
-
-
-
-
 ### 一：查看系统版本：
 
 在Ubuntu系统中，查看当前系统版本的常用方法有几种：
 
 1. **使用 `lsb_release -a`命令** ： 打开终端（Terminal）并输入以下命令：
-
 
 ```code
 lsb_release -a
@@ -51,7 +45,6 @@ cat /etc/os-release
 
    输出可能会包含Ubuntu版本的基本信息。
 
-
 #### **内核信息**
 
 **使用 `uname -a`命令** ： 虽然这个命令主要用来查看内核信息，但它也会显示部分系统版本信息。
@@ -61,10 +54,6 @@ uname -a
 ```
 
    示例输出的一部分可能包含内核版本和发行版信息。
-
-
-
-
 
 在线安装MySQL
 步骤1：更新软件包列表
@@ -90,10 +79,7 @@ sudo apt install -y mysql-server
 # 安装指定版本
 
 sudo apt install -y mysql-server-8.0
-1
-2
-3
-4
+
 如果不加-y 会在安装过程中，系统将提示你设置MySQL的root密码。确保密码足够强，且记住它，因为你将在以后需要用到它。
 
 步骤3：启动MySQL服务
@@ -157,11 +143,6 @@ bind-address            = 0.0.0.0
 
 sudo systemctl restart mysql
 
-
-
-
-
-
 ### 1、编辑mysqld.cnf文件
 
 mysqld.cnf 文件在目录‘/etc/mysql/mysql.conf.d/’中，
@@ -170,7 +151,6 @@ mysqld.cnf 文件在目录‘/etc/mysql/mysql.conf.d/’中，
 cd /etc/mysql/mysql.conf.d/
 sudo vi mysqld.cnf
 ```
-
 
 输入i进入vi编辑模式。
 在文件中找到 [mysqld] 下面的 skip-external-locking 一行，在此行下面增加一行 skip-grant-tables
@@ -182,12 +162,185 @@ sudo vi mysqld.cnf
 skip-external-locking
 skip-grant-tables
 
-
-
-
-
 ### 重启mysql服务：
 
 ```bash
 sudo service mysql restart
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 修改密码
+
+### 1、首先，停止 MySQL 服务：
+
+```text
+sudo service   mysql stop
+sudo systemctl stop mysql
+```
+
+![](https://pic3.zhimg.com/80/v2-1a627cd770c1384188bca2a49916d6fe_1440w.webp)
+
+### 2、以不加载授权表的方式启动 MySQL 服务器：
+
+```text
+sudo mysqld_safe --skip-grant-tables --skip-networking &
+```
+
+![](https://pic2.zhimg.com/80/v2-5c6d129d193e9cc71356f173a7210f31_1440w.webp)
+
+如果在这一步出现了
+
+```
+
+mysqld_safe Directory ‘/var/run/mysqld’ for UNIX socket file don’t exists
+
+```
+
+则可以试试如下的命令：这个需要在第二个终端输入下面的命令，
+
+```
+sudo mkdir -p /var/run/mysqld
+sudo chown mysql:mysql /var/run/mysqld
+
+```
+
+
+### 3、用以下命令连接到 MySQL 服务器：
+
+```text
+mysql -u root
+```
+
+![](https://pic4.zhimg.com/80/v2-e96cc17b4500fa5cd08dbb9a44a3c0d7_1440w.webp)
+
+### 4、进入 MySQL 后，使用以下命令来更改密码。将 new_password 替换为你想要设置的新密码：
+
+```text
+FLUSH PRIVILEGES;
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
+
+```
+
+![](https://pic1.zhimg.com/80/v2-20cb6b754b3b62ce33d0642b85499568_1440w.webp)
+
+使用以下命令退出 MySQL：
+
+```text
+quit;
+```
+
+### 5、停止之前启动的 MySQL 服务器实例：
+
+```text
+sudo pkill mysqld
+```
+
+![](https://pic2.zhimg.com/80/v2-f2ecc9d2cb02d6b994f388e6cd701909_1440w.webp)
+
+### 6、最后，重新启动 MySQL 服务：
+
+
+```text
+sudo systemctl start mysql
+```
+
+
+7.登录报错
+
+
+```
+ERROR 1396 (HY000): Operation ALTER USER failed for 'root'@'localhost'
+```
+
+
+
+先登录mysql
+
+```
+mysql -u root -p
+```
+
+输入密码
+
+```
+mysql> use mysql;
+mysql> select user,host from user;
+```
+
++------------------+-----------+
+| user             | host      |
++------------------+-----------+
+| root             | %         |
+| admin            | localhost |
+| mysql.infoschema | localhost |
+| mysql.session    | localhost |
+| mysql.sys        | localhost |
+| zhangj           | localhost |
++------------------+-----------+
+注意我的 root，host是'%'
+
+你可能执行的是:
+
+```
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123';
+```
+
+改成:
+
+```
+ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123';
+```
+
+
+
+
+
+
+
+# 卸载MySQL
+
+1.关闭MySQL服务
+
+```
+systemctl stop mysql
+```
+
+2.卸载相关的依赖
+
+```
+sudo apt remove --purge mysql-*
+sudo apt autoremove
+```
+
+
+在删除过程中，根据提示确认即可。
+
+
+3.清理残余文件
+	查询是否还存在相关的依赖组件：
+
+```
+dpkg --list | grep mysql
+```
+
+
+	如果还存在一些依赖，则继续用“apt remove 依赖包名称”命令删除；确认删除完整后，清理残余文件：
+
+```
+dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P
+sudo rm -rf /etc/mysql
+sudo rm -rf /var/lib/mysql
 ```
