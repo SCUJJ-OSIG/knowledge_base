@@ -102,3 +102,29 @@ vim file    #打开文件wq          #保存并退出q!          #不保存退�
 ##### （6）将Windows剪贴板中内容粘贴到Linux
 
 可以通过`Shift`+`Insert`（有的笔记本电脑可能要按`Shift`+`Fn`+`Insert`）将`Windows`剪贴板中内容粘贴到`Linux`。
+
+# 添加本地ssh秘钥到远程仓库
+
+1. **生成了SSH密钥对**,运行以下命令来生成一个RSA密钥对（默认情况下会保存在`~/.ssh/`目录下，`id_rsa`是私钥文件，`id_rsa.pub`是公钥文件）：
+   
+   ```shell
+   ssh-keygen -t rsa
+   ```
+   
+   - **-t**: 指定密钥的类型。在这里，`rsa` 表示我们将生成一个RSA类型的密钥对。
+   - **rsa**: 随 `-t` 之后，指定实际的密钥类型名称。RSA是目前较为常用的一种密钥类型，尽管Ed25519因为其更强的安全性而逐渐变得流行。
+
+**将公钥内容发送到远程服务器**，你可以使用以下命令结构，其中`user`是远程服务器上的用户名，`yourserver.example.com`是服务器的地址：
+
+Bash
+
+```
+cat ~/.ssh/id_rsa.pub | ssh user@yourserver.example.com "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+```
+
+这个命令做了几件事：
+
+- `cat ~/.ssh/id_rsa.pub` 读取你本地的公钥文件内容。
+- `|` 是管道符号，它将前一个命令的输出作为后一个命令的输入。
+- `ssh user@yourserver.example.com` 通过SSH连接到远程服务器。
+- `"mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"` 是在远程服务器上执行的命令序列，它首先确保`.ssh`目录存在（如果不存在则创建），然后将接收到的公钥内容追加到`authorized_keys`文件中，或者如果文件不存在，则创建它。

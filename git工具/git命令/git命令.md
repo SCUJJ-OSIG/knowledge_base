@@ -1,6 +1,6 @@
 # 前端必备-协同开发git
 
-[toc]
+[TOC]
 
 ![git命令](./git%E5%91%BD%E4%BB%A4.assets/git%E5%91%BD%E4%BB%A4.jpeg)
 
@@ -37,7 +37,6 @@ filename.txt
 # 忽略特定目录下的所有文件和子目录（例如一个名为"temp"的目录）
 /temp/*
 # 忽略特定目录及其子目录中的特定文件（例如忽略"logs"目录下的所有.log文件）
-
 ```
 
     3. 保存并关闭 .gitignore 文件；
