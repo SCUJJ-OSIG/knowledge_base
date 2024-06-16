@@ -1,14 +1,14 @@
 Ubuntu和MySQL默认版本对照
 以下是一个以表格形式列出了不同Ubuntu版本和它们通常默认安装的MySQL版本：
 
-| Ubuntu 版本      | 默认 MySQL 版本 |
-| ---------------- | --------------- |
-| Ubuntu 22.04 LTS | MySQL 8.0       |
-| Ubuntu 20.04 LTS | MySQL 8.0       |
-| Ubuntu 18.04 LTS | MySQL 5.7       |
-| Ubuntu 16.04 LTS | MySQL 5.7       |
-| Ubuntu 14.04 LTS | MySQL 5.5       |
-| Ubuntu 12.04 LTS | MySQL 5.5       |
+| Ubuntu 版本        | 默认 MySQL 版本 |
+| ---------------- | ----------- |
+| Ubuntu 22.04 LTS | MySQL 8.0   |
+| Ubuntu 20.04 LTS | MySQL 8.0   |
+| Ubuntu 18.04 LTS | MySQL 5.7   |
+| Ubuntu 16.04 LTS | MySQL 5.7   |
+| Ubuntu 14.04 LTS | MySQL 5.5   |
+| Ubuntu 12.04 LTS | MySQL 5.5   |
 
 ### 一：查看系统版本：
 
@@ -168,18 +168,6 @@ skip-grant-tables
 sudo service mysql restart
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
 # 修改密码
 
 ### 1、首先，停止 MySQL 服务：
@@ -202,9 +190,7 @@ sudo mysqld_safe --skip-grant-tables --skip-networking &
 如果在这一步出现了
 
 ```
-
 mysqld_safe Directory ‘/var/run/mysqld’ for UNIX socket file don’t exists
-
 ```
 
 则可以试试如下的命令：这个需要在第二个终端输入下面的命令，
@@ -212,9 +198,7 @@ mysqld_safe Directory ‘/var/run/mysqld’ for UNIX socket file don’t exists
 ```
 sudo mkdir -p /var/run/mysqld
 sudo chown mysql:mysql /var/run/mysqld
-
 ```
-
 
 ### 3、用以下命令连接到 MySQL 服务器：
 
@@ -229,7 +213,6 @@ mysql -u root
 ```text
 FLUSH PRIVILEGES;
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
-
 ```
 
 ![](https://pic1.zhimg.com/80/v2-20cb6b754b3b62ce33d0642b85499568_1440w.webp)
@@ -250,23 +233,17 @@ sudo pkill mysqld
 
 ### 6、最后，重新启动 MySQL 服务：
 
-
 ```text
 sudo systemctl start mysql
 ```
 
-
 7.登录报错
-
 
 ```
 ERROR 1396 (HY000): Operation ALTER USER failed for 'root'@'localhost'
 ```
 
-
-
 先登录mysql
-
 
 # 安装 ubuntu22 mysql
 
@@ -280,8 +257,6 @@ sudo systemctl restart mysql  //重启MySQL
 
 
 sudo systemctl enable mysql   //MySQL设置为开机自启动：
-
-
 ```
 
 ## 更新软件包和安装
@@ -356,12 +331,6 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123';
 ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123';
 ```
 
-
-
-
-
-
-
 # 卸载MySQL
 
 1.关闭MySQL服务
@@ -377,19 +346,16 @@ sudo apt remove --purge mysql-*
 sudo apt autoremove
 ```
 
-
 在删除过程中，根据提示确认即可。
 
-
 3.清理残余文件
-	查询是否还存在相关的依赖组件：
+    查询是否还存在相关的依赖组件：
 
 ```
 dpkg --list | grep mysql
 ```
 
-
-	如果还存在一些依赖，则继续用“apt remove 依赖包名称”命令删除；确认删除完整后，清理残余文件：
+    如果还存在一些依赖，则继续用“apt remove 依赖包名称”命令删除；确认删除完整后，清理残余文件：
 
 ```
 dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P
@@ -397,20 +363,22 @@ sudo rm -rf /etc/mysql
 sudo rm -rf /var/lib/mysql
 
 然后执行下面的命令就行了：
-
 ```
+
 use mysql;
 update user set host = '%' where user = 'root';
 GRANT ALL PRIVILEGES ON . TO 'root'@'%';
+
 # 配置IP 5.7
+
 grant all privileges on *.* to root@"%" identified by "密码";
 
 flush privileges;
-```
 
+```
 ## 最后修改系统配置文件：
-
 ```
+
 sudo systemctl stop mysql  // 首先关闭MySQL服务
 sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf   // 编辑配置文件
 
@@ -420,13 +388,13 @@ sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf   // 编辑配置文件
 bind-address            = 0.0.0.0
 
 sudo systemctl start mysql // 启动MySQL服务
+
 ```
-
-
-
-
 注意，如果你的MySQL是云服务器还需要打开防火墙限制（云厂商，在控制台），同时服务器的防火墙请添加
+```
+
+sudo ufw allow 3306/tcp
 
 ```
-sudo ufw allow 3306/tcp
+
 ```

@@ -1,7 +1,6 @@
 ## 流程图
 
 ```mermaid
-
 flowchart LR
 A[Hard] -->|Text| B(Round)
 B --> C{Decision}
@@ -9,16 +8,9 @@ C -->|One| D[Result 1]
 C -->|Two| E[Result 2]
 ```
 
-
-
-
-
-
-
 ## 时序图
 
 ```mermaid
-
 sequenceDiagram
 Alice->>John: Hello John, how are you?
 loop Healthcheck
@@ -30,11 +22,7 @@ John->>Bob: How about you?
 Bob-->>John: Jolly good!
 ```
 
-
-
 ## 饼图
-
-
 
 ```mermaid
 pie
@@ -45,10 +33,8 @@ pie
 
 ## 用户体验旅程图
 
-
-
 ```mermaid
-  journey
+journey
     title My working day
     section Go to work
       Make tea: 5: Me
@@ -58,4 +44,3 @@ pie
       Go downstairs: 5: Me
       Sit down: 5: Me
 ```
-

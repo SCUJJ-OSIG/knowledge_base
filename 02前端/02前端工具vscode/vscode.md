@@ -1,19 +1,15 @@
-#  vscode需要了解啥
+# vscode需要了解啥
 
-[toc]
-
-
+[TOC]
 
 author: 创新实验室
 date: 2023-11-12
 github仓库: https://github.com/SCUJJ-OSIG/knowledge_base
 Description: vscode
+
 ---
->>>>>>> main
 
-
-
-
+> > > > > > > main
 
 1. vscode插件是他的核心功能
 2. 设置，
@@ -23,15 +19,11 @@ Description: vscode
 6. 命令面板和全局搜索
 7. 主题设置
 
-
-
-
-
-##  2.设置
+## 2.设置
 
 # vscode需要了解啥
 
-[toc]
+[TOC]
 
 ![快捷键](./vscode.assets/%E5%BF%AB%E6%8D%B7%E9%94%AE.png)
 
@@ -40,7 +32,8 @@ Description: vscode
 ![image-20231112154052445](./vscode.assets/image-20231112154052445.png)
 
 ## 2.设置
->>>>>>> main
+
+> > > > > > > main
 
 vscode设置有两个界面，一个图形化操作界面，一个是json格式的设置界面。它们俩是一样的，只是json格式可以copy，复制到多台电脑一键设置，不可能一千台电脑都用图像化界面点、点、点把！ 可以发现国产Hbuilder对标vscode的设置界面也有json格式 ![image-20231111163213457](./vscode.assets/image-20231111163213457.png)
 
@@ -97,8 +90,6 @@ vscode很多插件需要配置，并不是所有插件点击即用，还需要�
 ![image-20231111165828805](./vscode.assets/image-20231111165828805.png)
 
 在插件商店下载后，在这里激活就行
-
-
 
 ### 8 .用户片段
 

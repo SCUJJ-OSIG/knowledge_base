@@ -1,12 +1,6 @@
 # nginx 的用法
 
-
-
-
-
 ```shell
-
-
 #版本
 nginx -v
 
@@ -65,9 +59,4 @@ sudo nginx -t
 
 #Ubuntu 22.04 中删除 NGINX 服务器 NGINX 服务器及其依赖项：
 sudo  apt autoremove nginx --purge
-
-
-
 ```
-
-

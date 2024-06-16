@@ -17,6 +17,4 @@
 - 展示对象：xxxVO，xxx一般为网页名称。
 - POJO是DO/DTO/BO/VO的统称，禁止命名成xxxPOJO。
 
-
-
 pojo domin  entiry
