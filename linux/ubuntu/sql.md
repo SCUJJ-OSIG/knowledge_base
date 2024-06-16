@@ -1,14 +1,14 @@
 Ubuntu和MySQL默认版本对照
 以下是一个以表格形式列出了不同Ubuntu版本和它们通常默认安装的MySQL版本：
 
-| Ubuntu 版本      | 默认 MySQL 版本 |
-| ---------------- | --------------- |
-| Ubuntu 22.04 LTS | MySQL 8.0       |
-| Ubuntu 20.04 LTS | MySQL 8.0       |
-| Ubuntu 18.04 LTS | MySQL 5.7       |
-| Ubuntu 16.04 LTS | MySQL 5.7       |
-| Ubuntu 14.04 LTS | MySQL 5.5       |
-| Ubuntu 12.04 LTS | MySQL 5.5       |
+| Ubuntu 版本        | 默认 MySQL 版本 |
+| ---------------- | ----------- |
+| Ubuntu 22.04 LTS | MySQL 8.0   |
+| Ubuntu 20.04 LTS | MySQL 8.0   |
+| Ubuntu 18.04 LTS | MySQL 5.7   |
+| buntu 16.04 LTS  | MySQL 5.7   |
+| Ubuntu 14.04 LTS | MySQL 5.5   |
+| Ubuntu 12.04 LTS | MySQL 5.5   |
 
 ### 一：查看系统版本：
 
@@ -159,11 +159,6 @@ skip-grant-tables
 sudo service mysql restart
 ```
 
-
-
-
-
-
 # 安装 ubuntu22 mysql
 
 ## 相关命令:
@@ -176,8 +171,6 @@ sudo systemctl restart mysql  //重启MySQL
 
 
 sudo systemctl enable mysql   //MySQL设置为开机自启动：
-
-
 ```
 
 ## 更新软件包和安装
@@ -221,7 +214,6 @@ sudo mysql_secure_installation
 mysql -u root -p
 ```
 
-
 然后执行下面的命令就行了：
 
 ```
@@ -247,9 +239,6 @@ bind-address            = 0.0.0.0
 
 sudo systemctl start mysql // 启动MySQL服务
 ```
-
-
-
 
 注意，如果你的MySQL是云服务器还需要打开防火墙限制（云厂商，在控制台），同时服务器的防火墙请添加
 
