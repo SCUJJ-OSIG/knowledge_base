@@ -1,6 +1,6 @@
 # andriod开发，下载gradle级，极慢处理办法
 
-[toc]
+[TOC]
 
 ## 下载到本地
 
@@ -10,12 +10,9 @@
 
 ## 项目文件配置源
 
-
 然后项目文件的setting.gradle设置一些阿里源也是没用。
 
 ![image-20231127202652620](./andriod.assets/image-20231127202652620.png)
-
-
 
 ## 实践最好的方法
 
@@ -25,18 +22,13 @@
 
 、
 
-
-
 就是按照目录，新建一个文件夹和文件
 
 ![image-20231127203122740](./andriod.assets/image-20231127203122740.png)
 
 在写入文件内容
 
-
-
-````bash
-
+```bash
 buildscript {
     repositories {
         maven{ url 'https://maven.aliyun.com/repository/public'}
@@ -45,7 +37,7 @@ buildscript {
         maven { url 'https://maven.aliyun.com/repository/central' }
     }
 }
-    
+
 allprojects {
     repositories {
         maven{ url 'https://maven.aliyun.com/repository/public'}
@@ -55,10 +47,4 @@ allprojects {
         maven { url "https://jitpack.io" }
     }
 }
-
-
-
-````
-
-
-
+```
