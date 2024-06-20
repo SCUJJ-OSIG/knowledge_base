@@ -172,13 +172,6 @@ tar -zxvf ./1.tar              #将当前目录下的1.tar文件解压缩
 - 如果后缀名为`.tar.gz`的压缩包用`-zxvf`
 
 - 如果后缀名为`.tar`的压缩包用`-xvf`
-
-
-
-
-
-
-
 9. ## 文档编辑命令：vi或vim命令
 
 `vim`是一款功能强大的文本编辑器，它是`Linux`下常用的编辑器之一，对于熟练掌握了 `vim`的人来说，用它编辑文件，方便又快捷，能极大的提高工作效率。
@@ -209,8 +202,6 @@ q!          #不保存退出,会丢失数据
 
 ## 10.更改文件或目录的所有者和所属组 chown 和 chgrp
 
-
-
 ```shell
 su root           #切换到root用户
 chown (change owner) #更改文件或目录的所有者
@@ -223,14 +214,7 @@ chown pori:root web  将目录web的所有者改为pori用户，所属组改为r
 chgrp(change  group) #更改文件或目录的所属组
 chgrp pori test.txt
 chgrp pori  web
-
 ```
-
-
-
-
-
-
 
  /usr 目录主要用来存储系统级别的二进制文件、库和文档
 
