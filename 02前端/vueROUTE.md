@@ -4,8 +4,6 @@
 
 首先，你需要在`setup()`函数中导入并使用`useRouter`来获取路由实例。
 
-
-
 ```js
 <script setup> 
 
@@ -14,7 +12,6 @@ import { useRouter } from 'vue-router;
 const router = useRouter(); 
 
 </script>
-
 ```
 
 ### 2. 基本跳转
@@ -23,62 +20,45 @@ const router = useRouter();
 
 #### 推入新记录到历史堆栈
 
-
-
 `router.push('/home');`
 
 #### 替换当前历史记录
-
-
 
 `router.replace('/home');`
 
 #### 命名路由跳转
 
-
-
 `router.push({ name: 'home' });`
 
 #### 带参数的跳转
-
-
 
 ```js
 router.push({ name: 'user', params: { userId: 1 } }); 
 
 router.push({ path: `/user/${userId}` });
-
 ```
 
 #### 带查询参数或哈希的跳转
-
-
 
 ```js
 router.push({ path: '/search', query: { q: 'Vue 3' } });
 
  router.push({ path: '/home', hash: '#sectionB' });
-
 ```
 
 ### 3. 使用`useRoute`获取当前路由信息
 
 有时在跳转前可能需要根据当前路由信息做判断，可以使用`useRoute`。
 
-
-
 ```js
 import { useRoute } from 'vue-router'; 
 
 const route = useRoute();
-
 ```
 
 ### 4. 组合式函数封装跳转逻辑
 
 你还可以将跳转逻辑封装成可复用的组合式函数。
-
-
 
 ```js
 <script setup> 
@@ -90,7 +70,6 @@ import { useRouter } from 'vue-router';
 function goToHome() {   router.push('/home'); }
 
 </script> 
-
 ```
 
 <template>   <button @click="goToHome">去首页</button> </template>`
@@ -98,8 +77,6 @@ function goToHome() {   router.push('/home'); }
 ### 5. 在模板中使用事件处理进行跳转
 
 尽管不直接涉及`setup()`，但在模板中触发跳转也是常见做法。
-
-
 
 ```js
 <template>   
@@ -111,7 +88,4 @@ function goToHome() {   router.push('/home'); }
 import { useRouter } from 'vue-router'; 
 
 const router = useRouter(); </script>
-
 ```
-
-

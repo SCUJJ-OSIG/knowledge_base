@@ -1315,7 +1315,7 @@ defineExpose({ name, age });
       },
       {
         path: "/about",
-        component: About,
+        component: About,                
       },
     ],
   });
