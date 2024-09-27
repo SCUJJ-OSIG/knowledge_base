@@ -23,13 +23,13 @@
    
    `redis-cli`可直接进入redis客户端交互视图。
 
-1. 检查Redis服务运行状态。
+4. 检查Redis服务运行状态。
    
    ```bash
    sudo systemctl status redis-server
    ```
 
-2. 启动
+5. 启动
 
 ```bash
 sudo systemctl start redis-server

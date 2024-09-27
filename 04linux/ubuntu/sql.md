@@ -391,7 +391,6 @@ bind-address            = 0.0.0.0
 sudo systemctl start mysql // 启动MySQL服务
 
 ```
-
 注意，如果你的MySQL是云服务器还需要打开防火墙限制（云厂商，在控制台），同时服务器的防火墙请添加
 ```
 

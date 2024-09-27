@@ -1261,11 +1261,14 @@ f(1, 2, 3); // [1, 2, 3]
  **注意点** ：
 
 * 1.箭头函数内的 `this`**总是**指向 **定义时所在的对象** ，而不是调用时。
-* 2.箭头函数不能当做 **构造函数** ，即不能用 `new`命令，否则报错。
-* 3.箭头函数不存在 `arguments`对象，即不能使用，可以使用 `rest`参数代替。
-* 4.箭头函数不能使用 `yield`命令，即不能用作**Generator**函数。
 
- **不适用场景** ：
+* 2.箭头函数不能当做 **构造函数** ，即不能用 `new`命令，否则报错。
+
+* 3.箭头函数不存在 `arguments`对象，即不能使用，可以使用 `rest`参数代替。
+
+* 4.箭头函数不能使用 `yield`命令，即不能用作**Generator**函数。
+  
+  **不适用场景** ：
 
 * 1.在定义函数方法，且该方法内部包含 `this`。
 
@@ -4282,7 +4285,7 @@ class RouctCounter extends React.Component {
             count : 0
         }
     }
-  
+
 }
 ```
 
@@ -5378,3 +5381,134 @@ o3.a;  // undefined
 * 6.拓展运算符后面如果是个空对象，则没有任何效果。
 * 7.若参数是 `null`或 `undefined`则忽略且不报错。
 * 8.若有取值函数 `get`则会执行。
+
+
+
+
+
+这篇文章主要介绍了es6 filter() 数组过滤方法总结，
+
+
+
+Array.every(x=>x) 每一个哦都要满足
+
+arrary.some(x=>x) 是 哟一个满足
+
+array.find(findIndex),返回符合条件的第一个值。
+
+arrary.filter( 过滤为新数组)
+
+
+
+
+数组的方法分两类
+
+1.改变原数组
+
+
+
+push,pop ,shift ,unshift ,sort ,reverse,splice
+
+2.不改变原数组 concat，join
+
+split,tostringPush 从数组最后一位开始假数据
+
+pop
+
+
+
+2）不改变原数组concat,join-->
+
+split，toStringpush：从数组最后一位开始加数据
+
+pop:把数组最后一位剪切
+
+shift:在数组最前一位剪切
+
+unshift:在数组最前一位加数
+
+reverse:把原数组逆转
+
+splice:arr.splice(从第几位开始，截取多少长度，在切口处添加新数据)
+
+concat ：连接join:返回字符串
+
+slice:截取arr.slice(从该为开始截取，截取到该为)
+
+**示例**
+
+1.创建一个数组，判断数组中是否存在某个值
+
+```
+
+var newarr =[
+
+    {num:1,val:'qq',flag：'aa'},
+    {num:2,val:'ww',flag：'bb'}
+    {num:3,val:'ee',flag：'cc'}
+]
+
+newarr.filter(item=>item.num===2)
+
+
+
+
+```
+
+
+
+
+
+
+
+
+
+3.去掉空数组空字符串、undefined、null
+
+```js
+var arr =[ undefined ,null, '']
+arr.filter(item=>item)
+```
+
+
+
+
+
+4.去掉数组中不符合项
+
+```js
+
+arr.fillter(item=>item>2);
+```
+
+5.过滤不符合项
+
+```js
+arr.filter(item =>item.indexOf('2')<0
+```
+
+
+
+6.数组去重
+
+```js
+arr.filter((x,index,self)=>self.indexOf(x)==index)
+```
+
+
+
+7
+
+
+
+8
+
+
+
+9
+
+
+
+登录后复制
+
+以上
