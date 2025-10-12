@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "03d3290c96bbbb2b",
+        "id": "1c3ae7e1fee4d220",
         "type": "tabs",
         "children": [
           {
-            "id": "fb07fb4361c2679c",
+            "id": "5c4ca6da6cef964a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/02-ES6+现代特性/01-ES6新特性概览.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "01-ES6新特性概览"
             }
           }
         ]
@@ -138,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/02-ES6+现代特性/01-ES6新特性概览.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "01-ES6新特性概览 的大纲"
             }
           },
           {
@@ -175,52 +180,53 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fb07fb4361c2679c",
+  "active": "5c4ca6da6cef964a",
   "lastOpenFiles": [
-    "未命名.base",
-    "04-移动与跨平台开发/鸿蒙开发/arkui语言.md",
     "04-移动与跨平台开发/鸿蒙开发/老师笔记.md",
     "04-移动与跨平台开发/鸿蒙开发/技巧问题.md",
-    "04-移动与跨平台开发/Android原生开发/andriod.md",
-    "04-移动与跨平台开发/Android原生开发/andriod 1.md",
-    "01-编程基础/计算机基础/计算机必会的技能/电脑相关权限问题.md",
-    "01-编程基础/计算机基础/计算机必会的技能/重装系统必须安装的软件.md",
-    "01-编程基础/win系统命令/win命令.md",
-    "01-编程基础/网络协议基础/Websocket.md",
-    "02-TypeScript全栈开发/工程化与部署/包管理/npm安装.md",
-    "02-TypeScript全栈开发/README.md",
-    "rust学习/rust.md",
     "03-Java企业级开发/Java基础与进阶/idea的maven配置/maven.md",
-    "04-移动与跨平台开发/Android原生开发/assets/image-ide.png",
-    "03-Java企业级开发/Java基础与进阶/java术语.md",
     "03-Java企业级开发/Java基础与进阶/错误码.md",
-    "03-Java企业级开发/Java基础与进阶/配置文件.md",
-    "03-Java企业级开发/Java基础与进阶/日志.md",
-    "05-DevOps与基础设施/Linux系统管理/虚拟机/虚拟机.md",
-    "05-DevOps与基础设施/Linux系统管理/ubuntu/ubuntu安装radis.md",
-    "05-DevOps与基础设施/Linux系统管理/ubuntu/README.md",
-    "05-DevOps与基础设施/Linux系统管理/s.md",
-    "05-DevOps与基础设施/Linux系统管理/linux命令.md",
-    "05-DevOps与基础设施/Linux系统管理/nginx/nginx的配置.md",
-    "05-DevOps与基础设施/Linux系统管理/nginx",
-    "05-DevOps与基础设施/Linux系统管理/虚拟机/linux相关的命令/linux.md",
-    "05-DevOps与基础设施/Linux系统管理/重启ssh.md",
+    "03-Java企业级开发/Java基础与进阶/java术语.md",
+    "02-TypeScript全栈开发/README.md",
+    "图形技巧/ps.md",
+    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/02-ES6+现代特性/04-ES6+代码示例集.md",
+    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/02-ES6+现代特性/04-ES6+代码示例集.md.tmp.133032.1760256670104",
+    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/06-Web存储与浏览器API/01-Web存储与浏览器API.md",
+    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/06-Web存储与浏览器API/01-Web存储与浏览器API.md.tmp.133032.1760256549273",
+    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/06-Web存储与浏览器API",
+    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/03-异步编程进阶/05-设计模式.md",
+    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/03-异步编程进阶/05-设计模式.md.tmp.133032.1760256386089",
+    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/02-ES6+现代特性/03-Symbol类型与SetMap.md",
+    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/02-ES6+现代特性/03-Symbol类型与SetMap.md.tmp.133032.1760256123628",
+    "07-开发工具与效率/Python工具集/yolov5/text.md",
+    "07-开发工具与效率/Python工具集/python包管理conda命令.md",
+    "07-开发工具与效率/Git版本控制/git命令/git命令.md",
+    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/02-ES6+现代特性/02-解构赋值与扩展运算符.md",
+    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/02-ES6+现代特性/01-ES6新特性概览.md",
+    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/01-JavaScript基础核心/06-正则表达式详解.md",
+    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/01-JavaScript基础核心/05-字符串处理方法.md",
+    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/02-ES6+现代特性/02-解构赋值与扩展运算符.md.tmp.133032.1760256047514",
+    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/01-JavaScript基础核心/04-数组操作全解.md",
+    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/js相关/localStorage/localstrorage.md",
+    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/03-异步编程进阶/03-闭包与作用域链.md",
+    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/03-异步编程进阶/03-闭包与作用域链.md.tmp.133032.1760255947281",
+    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/01-JavaScript基础核心/03-对象与原型链.md",
+    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/01-JavaScript基础核心/03-对象与原型链.md.tmp.133032.1760255869172",
+    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/js/jss设计模式.md",
+    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/01-JavaScript基础核心/02-函数与作用域.md",
+    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/01-JavaScript基础核心/02-函数与作用域.md.tmp.133032.1760255621511",
+    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/js相关/js中的类.md",
+    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/README.md",
+    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/02-ES6+现代特性/01-ES6新特性概览.md.tmp.133032.1760255285994",
+    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/image/css/1709631798685.png",
+    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/image/css/1709631774822.png",
+    "02-TypeScript全栈开发/工程化与部署/打包工具/assets/2024-06-26-18-27-28-image.png",
+    "assets/Pasted image 20251012142146.png",
+    "04-移动与跨平台开发/Android原生开发/assets/image-ide.png",
     "05-DevOps与基础设施/Linux系统管理/nginx的配置/2024-06-14-20-05-46-Clip_2024-06-14_20-05-44.png",
     "01-编程基础/计算机基础/计算机必会的技能/utools/assets/image-20230515222946924.png",
     "01-编程基础/计算机基础/计算机必会的技能/utools/assets/image-20230515223658400.png",
     "01-编程基础/计算机基础/计算机必会的技能/assets/image-20231111200427031.png",
-    "01-编程基础/计算机基础/计算机必会的技能/幕布.png",
-    "01-编程基础/计算机基础/计算机必会的技能/微信图片_20230502112732.jpg",
-    "01-编程基础/计算机基础/计算机必会的技能/西园公子.png",
-    "01-编程基础/计算机基础/计算机必会的技能/flowus.png",
-    "01-编程基础/计算机基础/计算机必会的技能/Flow us.jpg",
-    "assets",
-    "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/images",
-    "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷",
-    "04-移动与跨平台开发/鸿蒙开发/hm-images",
-    "04-移动与跨平台开发/鸿蒙开发",
-    "CLAUDE.md.tmp.56840.1760201111172",
-    "02-TypeScript全栈开发/README.md.tmp.56840.1760200995747",
-    "README.md.tmp.56840.1760200923283"
+    "01-编程基础/计算机基础/计算机必会的技能/幕布.png"
   ]
 }
