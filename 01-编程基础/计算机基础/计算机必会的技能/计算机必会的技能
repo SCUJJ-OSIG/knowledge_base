@@ -1,0 +1,122 @@
+[toc]
+
+
+
+
+
+# 计算机必会的技能
+
+ 	作为一名大学生，明白对知识的处理很重要，不是随随便拿到证就行了，有必要学会知识的高效处理。好记性不如烂笔头！当然也不是为了写的很漂亮，做表面形式。我认为以下的技能都要学
+
+
+ 	
+
+- 思维导图
+
+- markdown语法写笔记
+
+- draw流程图
+
+- 本地知识库Endnote（科研读文献用）
+
+
+
+
+`小`
+
+## 一、思维导图
+
+>烂大街的词汇，但是没多少人实际用起来。
+
+1. 我推荐幕布软件[^地址]
+
+   <kbd>简单</kbd>
+![在这里插入图片描述](https://img-blog.csdnimg.cn/200b7a38abc34008884854a56374eff6.png#pic_center)
+
+
+		有位教授来我们学校做讲座，思维导图要在讲课结束后根据自己
+		能记得多少写多少，再一边看书一边语音输入，切记思维导图是自己的！
+	
+	**无论如何我们挑选软件一定要选可以多端同步的软件，方便随时查看，而空间大小并不是很重要，			打破什么都要完美的感觉**
+
+
+## 二、markdown语法笔记软件
+>选择自己合适的笔记软件，很重要！其实也不分什么专业不专业，学习markdown都很有好处。
+
+
+
+		笔记软件因为：存储大，很多都要钱，有以下方案：
+
+1. Vs Code +很多插件+Git hub+Git，组合一套可远程看的笔记[^很厉害的up主]，up的知乎[^橘子的知乎]
+2. Typora +图床软件+千牛云
+3. 平时可以用像Flow us这样的软件，就非常nice
+
+		由于markdown语法是*.md文件，里面不能保存图片，所以一般将图片上传到服务器，
+		这样就只用分享.md文件，不用分享一个带图片的文件
+
+| 软件    | 优点                         | 缺点             |
+| ------- | ---------------------------- | ---------------- |
+| Vs Code | 很高级，扩展发挥空间很大     | 上手更难，安插件 |
+| Typora  | 简单方便                     | 不能远程看       |
+| Flow us | 付费软件，功能多，自己发挥少 | 要钱             |
+|         |                              |                  |
+
+> 可以将笔记发在微信的公众号上面，这样就可以一直看了
+
+Flow us[^邀请码]
+随便下载
+```
+邀请码：TL4W7N
+```
+![在这里插入图片描述](https://img-blog.csdnimg.cn/25a373ced65a4621bf631b658bef1ee8.png#pic_center)
+
+
+
+
+
+
+### 1.markdown 语法学习
+
+[Typora 的 Markdown 语法 ](https://support.typoraio.cn/zh/Markdown-Reference/)
+
+[流程图](https://www.5axxw.com/wiki/content/7n55e9)
+
+[markdown学习](https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/)
+
+\*****[语法学习](http://t.csdn.cn/FSvqV)
+
+\*****[Markdown语法图文全面详解(10分钟学会)](http://t.csdn.cn/jVf6d)
+
+
+
+## 三、draw 流程图
+
+> 官网搜，这个是免费的，Git hub开源的
+>
+> ![](https://img-blog.csdnimg.cn/38a4eb14c57e48c49a87c37fcd5944b2.png#pic_center)
+
+
+
+
+
+
+
+## 四、知识管理库Endnote
+
+> 这里有个不错的Up主[^西园公子]，详细讲解下载安装说明
+
+
+![](https://img-blog.csdnimg.cn/47f30bc9c809478c837f50867bed4a55.png#pic_center)
+
+
+
+
+
+
+
+
+[^地址]: [幕布 - 极简大纲笔记 ｜ 一键生成思维导图 (mubu.com)](https://mubu.com/home)
+[^邀请码]: [‘‘Flow us’](https://flowus.cn/auth/school?code=TL4W7N’)
+[^西园公子]: [“西园公子”](https://study.zwjjiaozhu.top/posts/EndNote.html)
+[^很厉害的up主]: [计算机学生的第零课 | OrangeX4's Blog](https://orangex4.cool/post/lesson-zero-for-cs-students/)
+[^橘子的知乎]: [计算机学生的第零课 - 知乎 (zhihu.com)](https://www.zhihu.com/column/c_1479506700219150337)
