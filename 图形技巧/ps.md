@@ -8,10 +8,6 @@ ps快捷键
 
 alt+delete填充前景色
 
-
-
-
-
  ctrl +shif +i  反选
 
 

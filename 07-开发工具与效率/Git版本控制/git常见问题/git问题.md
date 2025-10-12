@@ -54,7 +54,7 @@ $git push origin master:master
 
 ```
 
-![GitPushRemote](./git问题.assets/GitPushRemote.jpg)
+![GitPushRemote](GitPushRemote.jpg)
 
 ### pull
 
