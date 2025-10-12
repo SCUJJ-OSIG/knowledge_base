@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-编程基础/win系统命令/win.md",
+                "file": "05-DevOps与基础设施/Linux系统管理/ubuntu/03-开发环境/Node.js开发环境搭建.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "win"
+              "title": "Node.js开发环境搭建"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-编程基础/win系统命令/win.md",
+                "file": "05-DevOps与基础设施/Linux系统管理/ubuntu/03-开发环境/Node.js开发环境搭建.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "win 的大纲"
+              "title": "Node.js开发环境搭建 的大纲"
             }
           }
         ],
@@ -171,21 +171,34 @@
   },
   "active": "51907b3d9567ba4f",
   "lastOpenFiles": [
+    "05-DevOps与基础设施/Linux系统管理/ubuntu/01-服务器运维/1.第一台服务器.md",
+    "05-DevOps与基础设施/Linux系统管理/ubuntu/01-服务器运维/安装docker.md",
+    "05-DevOps与基础设施/Linux系统管理/ubuntu/01-服务器运维/docker使用.md",
+    "05-DevOps与基础设施/Linux系统管理/s.md",
+    "05-DevOps与基础设施/Linux系统管理/nginx的配置.md",
+    "05-DevOps与基础设施/Linux系统管理/nginx 的用法.md",
+    "05-DevOps与基础设施/Linux系统管理/linux命令.md",
+    "05-DevOps与基础设施/Linux系统管理/重启ssh.md",
+    "05-DevOps与基础设施/Linux系统管理/通用设置.md",
+    "05-DevOps与基础设施/Linux系统管理/游宏悅.md",
+    "05-DevOps与基础设施/Linux系统管理/防火墙.md",
+    "05-DevOps与基础设施/Linux系统管理/安装ubuntu22 Server.md",
+    "05-DevOps与基础设施/Linux系统管理/ubuntu/ubuntu安装radis.md",
+    "README.md",
+    "assets/Pasted image 20251012142146.png",
+    "assets",
+    "01-编程基础/win系统命令/win.md",
     "01-编程基础/win系统命令/基础知识.md",
     "01-编程基础/win系统命令/# LAN口和WAN口的区别.md",
     "rust学习/rust.md",
     "07软件测试-web/软件测试.md",
     "CLAUDE.md",
-    "README.md",
     "arkui模板/markdown.md",
     "arkui模板/文档.md",
     "图形技巧/ps.md",
     "04-移动与跨平台开发/Android原生开发/andriod 1.md",
     "02-TypeScript全栈开发/工程化与部署/包管理/npm安装.md",
     "02-TypeScript全栈开发/工程化与部署/打包工具/vite.md",
-    "02-TypeScript全栈开发/工程化与部署/打包工具/cli.md",
-    "02-TypeScript全栈开发/README.md",
-    "01后端/配置文件.md",
     "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/images/自动补充value.png",
     "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/images/volar.png",
     "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/images/pinia_example.gif",
@@ -195,27 +208,14 @@
     "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/images/count.png",
     "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/images/computed.gif",
     "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/images/1696662256560-7239b9f9-a770-43c1-9386-6cc12ef1e9c0.gif",
-    "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/images/1696662249851-db6403a1-acb5-481a-88e0-e1e34d2ef53a.gif",
-    "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/Vue3快速上手.md",
     "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/images",
     "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷",
-    "04-移动与跨平台开发/鸿蒙开发/老师笔记.md",
-    "04-移动与跨平台开发/鸿蒙开发/技巧问题.md",
-    "04-移动与跨平台开发/鸿蒙开发/高级认证的答案.md",
-    "04-移动与跨平台开发/鸿蒙开发/uniapp对面星火模型对接.md",
     "04-移动与跨平台开发/鸿蒙开发/hm-images",
-    "04-移动与跨平台开发/鸿蒙开发/arkui语言.md",
     "04-移动与跨平台开发/鸿蒙开发",
-    "01后端/错误码.md",
-    "01后端/java术语.md",
-    "01后端/日志.md",
-    "04linux/虚拟机/linux相关的命令/linux.md",
-    "06git工具/git常见问题/git问题.md",
     "CLAUDE.md.tmp.56840.1760201111172",
     "02-TypeScript全栈开发/README.md.tmp.56840.1760200995747",
     "README.md.tmp.56840.1760200923283",
     "04-移动与跨平台开发/Android原生开发/assets",
-    "04-移动与跨平台开发/Android原生开发/android的开始",
-    "04-移动与跨平台开发/Android原生开发"
+    "04-移动与跨平台开发/Android原生开发/android的开始"
   ]
 }
