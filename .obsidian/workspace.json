@@ -11,10 +11,14 @@
             "id": "e11d699da2dad6e9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "未命名.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "未命名"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "未命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "未命名 的反向链接列表"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "未命名.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "未命名 的出链列表"
             }
           },
           {
@@ -136,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "未命名.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "未命名 的大纲"
             }
           }
         ]
@@ -162,9 +169,10 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "517bfa849a7d6ccd",
+  "active": "e11d699da2dad6e9",
   "lastOpenFiles": [
     "未命名.base",
+    "未命名.md",
     "assets/Pasted image 20251012142146.png",
     "assets",
     "CLAUDE.md",
@@ -197,7 +205,6 @@
     "05-DevOps与基础设施/Linux系统管理/ubuntu/01-服务器运维/docker使用.md",
     "05-DevOps与基础设施/Linux系统管理/ubuntu/01-服务器运维/1.第一台服务器.md",
     "05-DevOps与基础设施/Linux系统管理/虚拟机/虚拟机.md",
-    "05-DevOps与基础设施/Linux系统管理/虚拟机/虚拟机.assets",
     "05-DevOps与基础设施/Linux系统管理/ubuntu/ubuntu安装radis.md",
     "05-DevOps与基础设施/Linux系统管理/ubuntu/README.md",
     "05-DevOps与基础设施/Linux系统管理/nginx/nginx的配置.md",
@@ -208,7 +215,6 @@
     "05-DevOps与基础设施/Linux系统管理/安装ubuntu22 Server.md",
     "05-DevOps与基础设施/Linux系统管理/s.md",
     "05-DevOps与基础设施/Linux系统管理/linux命令.md",
-    "04-移动与跨平台开发/Android原生开发/android的开始/android.md",
-    "04-移动与跨平台开发/鸿蒙开发/高级认证的答案.md"
+    "04-移动与跨平台开发/Android原生开发/android的开始/android.md"
   ]
 }
