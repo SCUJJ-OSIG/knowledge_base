@@ -1,0 +1,221 @@
+{
+  "main": {
+    "id": "df1e9a0620cb981c",
+    "type": "split",
+    "children": [
+      {
+        "id": "9866ae60c3e795ab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "51907b3d9567ba4f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-编程基础/win系统命令/win.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "win"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1803c9646b1ddc60",
+    "type": "split",
+    "children": [
+      {
+        "id": "e9e4ece8b842f40d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "57b17b5e1ce4b799",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "d6731bcbe81c0dab",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "d5b744a203fef8f5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "90c2d8c8e32d2e50",
+    "type": "split",
+    "children": [
+      {
+        "id": "bf8aab115b3d677b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e1e85bdecb8d7c8f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "07软件测试-web/软件测试.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "软件测试 的反向链接列表"
+            }
+          },
+          {
+            "id": "5e94349071d580c1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "07软件测试-web/软件测试.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "软件测试 的出链列表"
+            }
+          },
+          {
+            "id": "9c264711ebf601ff",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "f9e6844fb8f28718",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "01-编程基础/win系统命令/win.md",
+                "followCursor": true,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "win 的大纲"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false
+    }
+  },
+  "active": "51907b3d9567ba4f",
+  "lastOpenFiles": [
+    "01-编程基础/win系统命令/基础知识.md",
+    "01-编程基础/win系统命令/# LAN口和WAN口的区别.md",
+    "rust学习/rust.md",
+    "07软件测试-web/软件测试.md",
+    "CLAUDE.md",
+    "README.md",
+    "arkui模板/markdown.md",
+    "arkui模板/文档.md",
+    "图形技巧/ps.md",
+    "04-移动与跨平台开发/Android原生开发/andriod 1.md",
+    "02-TypeScript全栈开发/工程化与部署/包管理/npm安装.md",
+    "02-TypeScript全栈开发/工程化与部署/打包工具/vite.md",
+    "02-TypeScript全栈开发/工程化与部署/打包工具/cli.md",
+    "02-TypeScript全栈开发/README.md",
+    "01后端/配置文件.md",
+    "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/images/自动补充value.png",
+    "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/images/volar.png",
+    "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/images/pinia_example.gif",
+    "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/images/image-20231218085906380.png",
+    "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/images/image-20231119185900990.png",
+    "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/images/image-20231018144351536.png",
+    "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/images/count.png",
+    "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/images/computed.gif",
+    "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/images/1696662256560-7239b9f9-a770-43c1-9386-6cc12ef1e9c0.gif",
+    "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/images/1696662249851-db6403a1-acb5-481a-88e0-e1e34d2ef53a.gif",
+    "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/Vue3快速上手.md",
+    "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/images",
+    "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷",
+    "04-移动与跨平台开发/鸿蒙开发/老师笔记.md",
+    "04-移动与跨平台开发/鸿蒙开发/技巧问题.md",
+    "04-移动与跨平台开发/鸿蒙开发/高级认证的答案.md",
+    "04-移动与跨平台开发/鸿蒙开发/uniapp对面星火模型对接.md",
+    "04-移动与跨平台开发/鸿蒙开发/hm-images",
+    "04-移动与跨平台开发/鸿蒙开发/arkui语言.md",
+    "04-移动与跨平台开发/鸿蒙开发",
+    "01后端/错误码.md",
+    "01后端/java术语.md",
+    "01后端/日志.md",
+    "04linux/虚拟机/linux相关的命令/linux.md",
+    "06git工具/git常见问题/git问题.md",
+    "CLAUDE.md.tmp.56840.1760201111172",
+    "02-TypeScript全栈开发/README.md.tmp.56840.1760200995747",
+    "README.md.tmp.56840.1760200923283",
+    "04-移动与跨平台开发/Android原生开发/assets",
+    "04-移动与跨平台开发/Android原生开发/android的开始",
+    "04-移动与跨平台开发/Android原生开发"
+  ]
+}
