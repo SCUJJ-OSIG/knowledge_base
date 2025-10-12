@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/02-ES6+现代特性/01-ES6新特性概览.md",
+                "file": "02-TypeScript全栈开发/前端框架/Vue生态/vue3ts尚硅谷/Vue3快速上手.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01-ES6新特性概览"
+              "title": "Vue3快速上手"
             }
           }
         ]
@@ -180,8 +180,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5c4ca6da6cef964a",
+  "active": "57b17b5e1ce4b799",
   "lastOpenFiles": [
+    "02-TypeScript全栈开发/前端框架/鸿蒙开发/01鸿蒙/高级认证的答案.md",
+    "02-TypeScript全栈开发/前端框架/Vue生态/vue3ts尚硅谷/Vue3快速上手.md",
+    "02-TypeScript全栈开发/前端框架/鸿蒙开发/01鸿蒙/技巧问题.md",
+    "02-TypeScript全栈开发/前端框架/鸿蒙开发/01鸿蒙/老师笔记.md",
+    "02-TypeScript全栈开发/前端框架/鸿蒙开发/01鸿蒙/arkui语言.md",
+    "02-TypeScript全栈开发/前端框架/鸿蒙开发/01鸿蒙/uniapp对面星火模型对接.md",
+    "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/Vue3快速上手.md",
+    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/02-ES6+现代特性/01-ES6新特性概览.md",
     "04-移动与跨平台开发/鸿蒙开发/老师笔记.md",
     "04-移动与跨平台开发/鸿蒙开发/技巧问题.md",
     "03-Java企业级开发/Java基础与进阶/idea的maven配置/maven.md",
@@ -202,21 +210,13 @@
     "07-开发工具与效率/Python工具集/python包管理conda命令.md",
     "07-开发工具与效率/Git版本控制/git命令/git命令.md",
     "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/02-ES6+现代特性/02-解构赋值与扩展运算符.md",
-    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/02-ES6+现代特性/01-ES6新特性概览.md",
     "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/01-JavaScript基础核心/06-正则表达式详解.md",
     "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/01-JavaScript基础核心/05-字符串处理方法.md",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/02-ES6+现代特性/02-解构赋值与扩展运算符.md.tmp.133032.1760256047514",
     "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/01-JavaScript基础核心/04-数组操作全解.md",
-    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/js相关/localStorage/localstrorage.md",
-    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/03-异步编程进阶/03-闭包与作用域链.md",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/03-异步编程进阶/03-闭包与作用域链.md.tmp.133032.1760255947281",
-    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/01-JavaScript基础核心/03-对象与原型链.md",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/01-JavaScript基础核心/03-对象与原型链.md.tmp.133032.1760255869172",
-    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/js/jss设计模式.md",
-    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/01-JavaScript基础核心/02-函数与作用域.md",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/01-JavaScript基础核心/02-函数与作用域.md.tmp.133032.1760255621511",
-    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/js相关/js中的类.md",
-    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/README.md",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/02-ES6+现代特性/01-ES6新特性概览.md.tmp.133032.1760255285994",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/image/css/1709631798685.png",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/image/css/1709631774822.png",
