@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "5e25c96fa4f68f4a",
+        "id": "03d3290c96bbbb2b",
         "type": "tabs",
         "children": [
           {
-            "id": "80adec7ee1ed6bbb",
+            "id": "fb07fb4361c2679c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-编程基础/网络协议基础/Websocket.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Websocket"
+              "title": "新标签页"
             }
           }
         ]
@@ -142,17 +138,26 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-编程基础/网络协议基础/Websocket.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Websocket 的大纲"
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "8ee37002394a8133",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -166,16 +171,26 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:创建新数据库": false
+      "bases:创建新数据库": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "57b17b5e1ce4b799",
+  "active": "fb07fb4361c2679c",
   "lastOpenFiles": [
+    "未命名.base",
+    "04-移动与跨平台开发/鸿蒙开发/arkui语言.md",
+    "04-移动与跨平台开发/鸿蒙开发/老师笔记.md",
+    "04-移动与跨平台开发/鸿蒙开发/技巧问题.md",
+    "04-移动与跨平台开发/Android原生开发/andriod.md",
+    "04-移动与跨平台开发/Android原生开发/andriod 1.md",
+    "01-编程基础/计算机基础/计算机必会的技能/电脑相关权限问题.md",
+    "01-编程基础/计算机基础/计算机必会的技能/重装系统必须安装的软件.md",
+    "01-编程基础/win系统命令/win命令.md",
+    "01-编程基础/网络协议基础/Websocket.md",
     "02-TypeScript全栈开发/工程化与部署/包管理/npm安装.md",
     "02-TypeScript全栈开发/README.md",
     "rust学习/rust.md",
     "03-Java企业级开发/Java基础与进阶/idea的maven配置/maven.md",
-    "04-移动与跨平台开发/Android原生开发/andriod.md",
     "04-移动与跨平台开发/Android原生开发/assets/image-ide.png",
     "03-Java企业级开发/Java基础与进阶/java术语.md",
     "03-Java企业级开发/Java基础与进阶/错误码.md",
@@ -191,15 +206,6 @@
     "05-DevOps与基础设施/Linux系统管理/虚拟机/linux相关的命令/linux.md",
     "05-DevOps与基础设施/Linux系统管理/重启ssh.md",
     "05-DevOps与基础设施/Linux系统管理/nginx的配置/2024-06-14-20-05-46-Clip_2024-06-14_20-05-44.png",
-    "05-DevOps与基础设施/Linux系统管理/s树莓派/berry.md",
-    "05-DevOps与基础设施/Linux系统管理/安装ubuntu22 Server.md",
-    "07-开发工具与效率/Python工具集/python包管理conda命令.md",
-    "07-开发工具与效率/Python工具集/web自动化.md",
-    "07-开发工具与效率/Python工具集/yolov5/text.md",
-    "07-开发工具与效率/Python工具集/mongo.md",
-    "07-开发工具与效率/Git版本控制/git常见问题/git问题.md",
-    "07-开发工具与效率/Python工具集/gradio/new.md",
-    "02-TypeScript全栈开发/工程化与部署/打包工具/vite.md",
     "01-编程基础/计算机基础/计算机必会的技能/utools/assets/image-20230515222946924.png",
     "01-编程基础/计算机基础/计算机必会的技能/utools/assets/image-20230515223658400.png",
     "01-编程基础/计算机基础/计算机必会的技能/assets/image-20231111200427031.png",
@@ -215,7 +221,6 @@
     "04-移动与跨平台开发/鸿蒙开发",
     "CLAUDE.md.tmp.56840.1760201111172",
     "02-TypeScript全栈开发/README.md.tmp.56840.1760200995747",
-    "README.md.tmp.56840.1760200923283",
-    "04-移动与跨平台开发/Android原生开发/assets"
+    "README.md.tmp.56840.1760200923283"
   ]
 }
