@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-TypeScript全栈开发/全栈框架/全栈学习路线.md",
+                "file": "05-DevOps与基础设施/Linux系统管理/ubuntu/03-开发环境/Node.js开发环境搭建.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "全栈学习路线"
+              "title": "Node.js开发环境搭建"
             }
           }
         ]
@@ -182,8 +182,9 @@
   },
   "active": "5c4ca6da6cef964a",
   "lastOpenFiles": [
-    "02-TypeScript全栈开发/工程化与部署/包管理/node 加速下载.md",
+    "05-DevOps与基础设施/Linux系统管理/ubuntu/01-服务器运维/1.第一台服务器.md",
     "02-TypeScript全栈开发/全栈框架/全栈学习路线.md",
+    "02-TypeScript全栈开发/工程化与部署/包管理/node 加速下载.md",
     "02-TypeScript全栈开发/前端框架/Vue生态/vue3ts尚硅谷/Vue3快速上手.md",
     "02-TypeScript全栈开发/前端框架/鸿蒙开发/01鸿蒙/高级认证的答案.md",
     "02-TypeScript全栈开发/前端框架/鸿蒙开发/01鸿蒙/技巧问题.md",
@@ -212,7 +213,6 @@
     "07-开发工具与效率/Python工具集/python包管理conda命令.md",
     "07-开发工具与效率/Git版本控制/git命令/git命令.md",
     "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/02-ES6+现代特性/02-解构赋值与扩展运算符.md",
-    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/01-JavaScript基础核心/06-正则表达式详解.md",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/02-ES6+现代特性/02-解构赋值与扩展运算符.md.tmp.133032.1760256047514",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/03-异步编程进阶/03-闭包与作用域链.md.tmp.133032.1760255947281",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/01-JavaScript基础核心/03-对象与原型链.md.tmp.133032.1760255869172",
