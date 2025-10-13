@@ -8,7 +8,10 @@
 
 ---
 
-## 什么是SSH免密登录
+
+## 基础知识
+
+### 1. 什么是SSH免密登录
 SSH 密钥对由**私钥（private key）**和**公钥（public key）**组成：
 
 - **私钥**必须**严格保密**，保存在你的本地电脑（如 `~/.ssh/id_rsa`  win用户，在c盘/用户名/.ssh/id_rsa），它是你身份的唯一凭证。
@@ -23,23 +26,7 @@ SSH 密钥对由**私钥（private key）**和**公钥（public key）**组成�
 因此，只要你的私钥安全，且公钥已部署到服务器，就可以实现**免密码登录**。
 
 
-
-
-
-2. **上传公钥到服务器的正确命令**：
-   ```bash
-   ssh-copy-id -i ~/.ssh/id_ed25519.pub user@server
-   ```
-   它会自动把公钥追加到服务器的 `~/.ssh/authorized_keys`。
-
-3. **确保权限正确**（否则 SSH 会拒绝使用）：
-   ```bash
-   chmod 700 ~/.ssh
-   chmod 600 ~/.ssh/authorized_keys
-   ```
-
-
-## 生成ssh密钥
+### 2. 生成ssh密钥
 
    ```bash
  
@@ -57,26 +44,19 @@ ssh-keygen -t ed25519 -C "your-email@example.com"
    > `ed25519` 比 `rsa` 更安全、更短、更快。
 
 
-## 如何把我们生成的公钥传到服务器呢？
+
+### 3. 如何把我们生成的公钥传到服务器呢？
 
 
-### 方法一：Linux/Mac 下使用 ssh-copy-id
-
-
-介绍
-
+1. 方法一：Linux/Mac 下使用 ssh-copy-id
 ```bash
 ssh-copy-id -i ~/.ssh/id_rsa.pub user@123.45.67.89
 
 # -i：指定公钥文件
-
 #`ssh-copy-id`命令 可以把本地主机的公钥复制到远程主机的`authorized_keys`文件上
-
-
 ```
 
-
-### 方法二：Windows 
+2. 方法二：Windows 
 
 ```bash
 # 如果服务器已有.ssh目录
@@ -87,7 +67,133 @@ cat ~/.ssh/id_rsa.pub | ssh user@123.45.56.78 "mkdir -p ~/.ssh; cat >> ~/.ssh/au
 ```
 
 
-## vscode 特殊
+### 4. 讲解 `/etc/ssh/sshd_config`配置
+
+#### 1. **登录控制**
+> prohibit-password  **允许 root 登录，但仅限使用 SSH 密钥认证** ,禁止使用密码
+
+| 配置项                      | 默认值                        | 推荐值                        | 说明             |
+| ------------------------ | -------------------------- | -------------------------- | -------------- |
+| `PermitRootLogin`        | `prohibit-password` 或 `no` | `no` 或 `prohibit-password` | 是否允许 root 登录。  |
+| `PasswordAuthentication` | `yes`                      | `no`（配合密钥）                 | 是否允许密码登录       |
+| `PubkeyAuthentication`   | `yes`                      | `yes`                      | 是否允许公钥认证（密钥登录） |
+| `AuthorizedKeysFile`     | `.ssh/authorized_keys`     | 默认即可                       | 公钥存放路径         |
+
+✅ **安全组合**：
+```conf
+PermitRootLogin no
+PasswordAuthentication no
+PubkeyAuthentication yes
+```
+
+---
+
+#### 2. **用户与组限制**
+| 配置项           | 示例                            | 说明            |     |
+| ------------- | ----------------------------- | ------------- | --- |
+| `AllowUsers`  | `AllowUsers alice bob deploy` | **只允许**这些用户登录 |     |
+| `DenyUsers`   | `DenyUsers root guest`        | **禁止**这些用户登录  |     |
+| `AllowGroups` | `AllowGroups ssh-users`       | 只允许指定用户组登录    |     |
+
+> 💡 用 `AllowUsers` 比 `DenyUsers` 更安全（白名单机制）
+
+---
+
+#### 3. **端口与网络**
+| 配置项             | 默认值       | 推荐值             | 说明                   |
+| --------------- | --------- | --------------- | -------------------- |
+| `Port`          | `22`      | `22222` 等非标准端口  | 修改默认端口可减少自动化扫描攻击     |
+| `ListenAddress` | `0.0.0.0` | `192.168.1.100` | 只监听特定 IP（如内网）        |
+| `Protocol`      | `2`       | `2`             | 必须为 2（SSHv1 已废弃且不安全） |
+
+> ⚠️ 改端口后连接命令：`ssh -p 22222 user@host`
+
+---
+
+#### 4. **认证与会话**
+| 配置项 | 默认值 | 推荐值 | 说明 |
+|--------|--------|--------|------|
+| `LoginGraceTime` | `120` | `30` | 登录超时时间（秒），防止僵尸连接 |
+| `MaxAuthTries` | `6` | `3` | 最大认证尝试次数，防暴力破解 |
+| `ClientAliveInterval` | `0` | `300` | 服务端每隔 N 秒发心跳包 |
+| `ClientAliveCountMax` | `3` | `2` | 心跳无响应几次后断开 |
+
+---
+
+#### 5. **日志与调试**
+| 配置项 | 示例 | 说明 |
+|--------|------|------|
+| `LogLevel` | `INFO` / `VERBOSE` | 日志详细程度（`VERBOSE` 可记录登录 IP） |
+
+查看日志：
+```bash
+sudo tail -f /var/log/auth.log      # Ubuntu/Debian
+sudo tail -f /var/log/secure        # CentOS/RHEL
+```
+
+---
+
+#### 6. **高级安全（可选）**
+| 配置项 | 说明 |
+|--------|------|
+| `PermitEmptyPasswords` | `no`（默认）→ 禁止空密码账户登录 |
+| `X11Forwarding` | `no`（除非需要图形界面） |
+| `AllowTcpForwarding` | `no`（如不需要端口转发） |
+| `Banner` | `/etc/issue.net` → 登录前显示警告信息 |
+#### 🔍 修改后必做三件事
+
+1. **检查语法**  
+   ```bash
+   sudo sshd -t
+   ```
+   → 无输出 = 配置正确
+
+2. **重启服务**  
+```bash
+   sudo systemctl restart ssh
+   ```
+
+> 🔐 **权限要求**：
+> ```bash
+> chmod 700 ~/.ssh
+> chmod 600 ~/.ssh/authorized_keys
+> chown $USER:$USER ~/.ssh -R
+> ```
+
+---
+
+
+
+
+
+
+
+## ubantu实践
+
+
+```
+1. 生成密钥
+ssh-keygen -t ed25519 -C "your-email@example.com"
+2.使用git 自带的bash 终端 上传公钥
+ssh-copy-id -i ~\.ssh\id_ed25519.pub root@47.110.73.65
+输入密码
+3.打开服务器设置允许ssh登录
+
+vim  /etc/ssh/sshd_config
+
+
+PubkeyAuthentication yes
+AuthorizedKeysFile  .ssh/authorized_keys .ssh/authorized_keys2
+PermitRootLogin yes
+PasswordAuthentication yes
+
+即可免密登录
+
+```
+
+
+
+## vscode ssh 连接服务器
 
 配置本地SSH Config（给vscode 用的）
 
@@ -102,6 +208,9 @@ Host server-name
 ```
 
 保存后即可使用 `ssh server-name` 直接连接，无需输入密码。
+
+
+
 
 ---
 
@@ -191,105 +300,6 @@ sudo systemctl restart ssh
 
 
 
-## 讲解 `/etc/ssh/sshd_config`配置
-
-## 🔑 核心配置项详解（按安全重要性排序）
-
-### 1. **登录控制**
-> prohibit-password  **允许 root 登录，但仅限使用 SSH 密钥认证** ,禁止使用密码
-
-| 配置项                      | 默认值                        | 推荐值                        | 说明             |
-| ------------------------ | -------------------------- | -------------------------- | -------------- |
-| `PermitRootLogin`        | `prohibit-password` 或 `no` | `no` 或 `prohibit-password` | 是否允许 root 登录。  |
-| `PasswordAuthentication` | `yes`                      | `no`（配合密钥）                 | 是否允许密码登录       |
-| `PubkeyAuthentication`   | `yes`                      | `yes`                      | 是否允许公钥认证（密钥登录） |
-| `AuthorizedKeysFile`     | `.ssh/authorized_keys`     | 默认即可                       | 公钥存放路径         |
-
-✅ **安全组合**：
-```conf
-PermitRootLogin no
-PasswordAuthentication no
-PubkeyAuthentication yes
-```
-
----
-
-### 2. **用户与组限制**
-| 配置项           | 示例                            | 说明            |     |
-| ------------- | ----------------------------- | ------------- | --- |
-| `AllowUsers`  | `AllowUsers alice bob deploy` | **只允许**这些用户登录 |     |
-| `DenyUsers`   | `DenyUsers root guest`        | **禁止**这些用户登录  |     |
-| `AllowGroups` | `AllowGroups ssh-users`       | 只允许指定用户组登录    |     |
-
-> 💡 用 `AllowUsers` 比 `DenyUsers` 更安全（白名单机制）
-
----
-
-### 3. **端口与网络**
-| 配置项             | 默认值       | 推荐值             | 说明                   |
-| --------------- | --------- | --------------- | -------------------- |
-| `Port`          | `22`      | `22222` 等非标准端口  | 修改默认端口可减少自动化扫描攻击     |
-| `ListenAddress` | `0.0.0.0` | `192.168.1.100` | 只监听特定 IP（如内网）        |
-| `Protocol`      | `2`       | `2`             | 必须为 2（SSHv1 已废弃且不安全） |
-
-> ⚠️ 改端口后连接命令：`ssh -p 22222 user@host`
-
----
-
-### 4. **认证与会话**
-| 配置项 | 默认值 | 推荐值 | 说明 |
-|--------|--------|--------|------|
-| `LoginGraceTime` | `120` | `30` | 登录超时时间（秒），防止僵尸连接 |
-| `MaxAuthTries` | `6` | `3` | 最大认证尝试次数，防暴力破解 |
-| `ClientAliveInterval` | `0` | `300` | 服务端每隔 N 秒发心跳包 |
-| `ClientAliveCountMax` | `3` | `2` | 心跳无响应几次后断开 |
-
----
-
-### 5. **日志与调试**
-| 配置项 | 示例 | 说明 |
-|--------|------|------|
-| `LogLevel` | `INFO` / `VERBOSE` | 日志详细程度（`VERBOSE` 可记录登录 IP） |
-
-查看日志：
-```bash
-sudo tail -f /var/log/auth.log      # Ubuntu/Debian
-sudo tail -f /var/log/secure        # CentOS/RHEL
-```
-
----
-
-### 6. **高级安全（可选）**
-| 配置项 | 说明 |
-|--------|------|
-| `PermitEmptyPasswords` | `no`（默认）→ 禁止空密码账户登录 |
-| `X11Forwarding` | `no`（除非需要图形界面） |
-| `AllowTcpForwarding` | `no`（如不需要端口转发） |
-| `Banner` | `/etc/issue.net` → 登录前显示警告信息 |
-
-
----
-
-## 🔍 修改后必做三件事
-
-1. **检查语法**  
-   ```bash
-   sudo sshd -t
-   ```
-   → 无输出 = 配置正确
-
-2. **重启服务**  
-```bash
-   sudo systemctl restart ssh
-   ```
-
-
-> 🔐 **权限要求**：
-> ```bash
-> chmod 700 ~/.ssh
-> chmod 600 ~/.ssh/authorized_keys
-> chown $USER:$USER ~/.ssh -R
-> ```
 
 ---
 
