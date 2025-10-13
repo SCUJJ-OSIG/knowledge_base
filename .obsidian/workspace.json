@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05-DevOps与基础设施/Linux系统管理/ubuntu/03-开发环境/Node.js开发环境搭建.md",
+                "file": "05-DevOps与基础设施/Linux系统管理/ubuntu/02-SSH配置/SSH完整配置指南.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Node.js开发环境搭建"
+              "title": "SSH完整配置指南"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/02-ES6+现代特性/01-ES6新特性概览.md",
+                "file": "05-DevOps与基础设施/Linux系统管理/ubuntu/02-SSH配置/SSH完整配置指南.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "01-ES6新特性概览 的大纲"
+              "title": "SSH完整配置指南 的大纲"
             }
           },
           {
@@ -180,8 +180,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5c4ca6da6cef964a",
+  "active": "8ee37002394a8133",
   "lastOpenFiles": [
+    "05-DevOps与基础设施/Linux系统管理/ubuntu/03-开发环境/Node.js开发环境搭建.md",
+    "05-DevOps与基础设施/Linux系统管理/安装ubuntu22 Server.md",
+    "05-DevOps与基础设施/Linux系统管理/ubuntu/02-SSH配置/SSH完整配置指南.md",
+    "05-DevOps与基础设施/Linux系统管理/ubuntu/ubuntu安装radis.md",
+    "05-DevOps与基础设施/Linux系统管理/ubuntu/ubuntu root用户登录/2024-06-14-16-54-58-Clip_2024-06-14_16-54-55.png",
+    "05-DevOps与基础设施/Linux系统管理/ubuntu/01-服务器运维/docker使用.md",
+    "05-DevOps与基础设施/Linux系统管理/ubuntu/01-服务器运维/安装docker.md",
     "05-DevOps与基础设施/Linux系统管理/ubuntu/01-服务器运维/1.第一台服务器.md",
     "02-TypeScript全栈开发/全栈框架/全栈学习路线.md",
     "02-TypeScript全栈开发/工程化与部署/包管理/node 加速下载.md",
@@ -205,14 +212,8 @@
     "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/06-Web存储与浏览器API/01-Web存储与浏览器API.md",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/06-Web存储与浏览器API/01-Web存储与浏览器API.md.tmp.133032.1760256549273",
     "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/06-Web存储与浏览器API",
-    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/03-异步编程进阶/05-设计模式.md",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/03-异步编程进阶/05-设计模式.md.tmp.133032.1760256386089",
-    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/02-ES6+现代特性/03-Symbol类型与SetMap.md",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/02-ES6+现代特性/03-Symbol类型与SetMap.md.tmp.133032.1760256123628",
-    "07-开发工具与效率/Python工具集/yolov5/text.md",
-    "07-开发工具与效率/Python工具集/python包管理conda命令.md",
-    "07-开发工具与效率/Git版本控制/git命令/git命令.md",
-    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/02-ES6+现代特性/02-解构赋值与扩展运算符.md",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/02-ES6+现代特性/02-解构赋值与扩展运算符.md.tmp.133032.1760256047514",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/03-异步编程进阶/03-闭包与作用域链.md.tmp.133032.1760255947281",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/01-JavaScript基础核心/03-对象与原型链.md.tmp.133032.1760255869172",
@@ -226,7 +227,6 @@
     "05-DevOps与基础设施/Linux系统管理/nginx的配置/2024-06-14-20-05-46-Clip_2024-06-14_20-05-44.png",
     "01-编程基础/计算机基础/计算机必会的技能/utools/assets/image-20230515222946924.png",
     "01-编程基础/计算机基础/计算机必会的技能/utools/assets/image-20230515223658400.png",
-    "01-编程基础/计算机基础/计算机必会的技能/assets/image-20231111200427031.png",
-    "01-编程基础/计算机基础/计算机必会的技能/幕布.png"
+    "01-编程基础/计算机基础/计算机必会的技能/assets/image-20231111200427031.png"
   ]
 }
