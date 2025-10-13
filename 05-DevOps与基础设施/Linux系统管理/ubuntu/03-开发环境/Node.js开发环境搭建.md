@@ -15,11 +15,13 @@
 使用 chsrc 换源工具可以加速各种包管理器的下载：
 
 ```bash
-# x64 架构
+# x64 架构  ubantu linux 系统
 curl -LO https://gitee.com/RubyMetric/chsrc/releases/download/pre/chsrc_latest-1_amd64.deb
 sudo apt install ./chsrc_latest-1_amd64.deb
 
-# 或者使用 wget
+
+
+# 或者使用 wget  
 wget https://gitee.com/RubyMetric/chsrc/releases/download/pre/chsrc_latest-1_amd64.deb
 sudo dpkg -i chsrc_latest-1_amd64.deb
 ```
