@@ -48,7 +48,7 @@ Volta 是一个优秀的 JavaScript 工具管理器，可以轻松管理 Node.js
 curl https://get.volta.sh | bash
 ```
 
-环境变量会自动添加到 `~/.bashrc`。
+环境变量会自动添加到 `~/.bashrc`。 一般不需要下面的配置环境变量
 
 ### 手动配置环境变量（如果需要）
 
