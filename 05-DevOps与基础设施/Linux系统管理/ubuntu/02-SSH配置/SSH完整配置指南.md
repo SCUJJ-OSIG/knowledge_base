@@ -44,11 +44,15 @@ SSH 密钥对由**私钥（private key）**和**公钥（public key）**组成�
    ```bash
  
 #rsa 
- ssh-keygen -t rsa -C "your-email@example.com"
+ssh-keygen -t rsa -C "your-email@example.com"
   
   
- #推荐使用更安全的算法（而不是 RSA）：
- ssh-keygen -t ed25519 -C "your-email@example.com"
+#推荐使用更安全的算法（而不是 RSA）：
+ssh-keygen -t ed25519 -C "your-email@example.com"
+ 
+# -t: 指定密钥的类型。在这里，`rsa` 表示我们将生成一个RSA类型的密钥对。
+# -rsa: 随 `-t` 之后，指定实际的密钥类型名称。RSA是目前较为常用的一种密钥类型，尽管Ed25519因为其更强的安全性而逐渐变得流行。
+ 
    ```
    > `ed25519` 比 `rsa` 更安全、更短、更快。
 
@@ -63,7 +67,14 @@ SSH 密钥对由**私钥（private key）**和**公钥（public key）**组成�
 
 ```bash
 ssh-copy-id -i ~/.ssh/id_rsa.pub user@123.45.67.89
+
+# -i：指定公钥文件
+
+#`ssh-copy-id`命令 可以把本地主机的公钥复制到远程主机的`authorized_keys`文件上
+
+
 ```
+
 
 ### 方法二：Windows 
 

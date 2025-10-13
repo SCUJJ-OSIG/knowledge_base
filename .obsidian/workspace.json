@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05-DevOps与基础设施/Linux系统管理/ubuntu/02-SSH配置/SSH完整配置指南.md",
+                "file": "05-DevOps与基础设施/Linux系统管理/ubuntu/ubuntu安装radis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SSH完整配置指南"
+              "title": "ubuntu安装radis"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "05-DevOps与基础设施/Linux系统管理/ubuntu/02-SSH配置/SSH完整配置指南.md",
+                "file": "05-DevOps与基础设施/Linux系统管理/ubuntu/ubuntu安装radis.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "SSH完整配置指南 的大纲"
+              "title": "ubuntu安装radis 的大纲"
             }
           },
           {
@@ -180,12 +180,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8ee37002394a8133",
+  "active": "5c4ca6da6cef964a",
   "lastOpenFiles": [
-    "05-DevOps与基础设施/Linux系统管理/ubuntu/03-开发环境/Node.js开发环境搭建.md",
     "05-DevOps与基础设施/Linux系统管理/安装ubuntu22 Server.md",
+    "05-DevOps与基础设施/Linux系统管理/linux命令.md",
+    "05-DevOps与基础设施/Linux系统管理/防火墙.md",
+    "05-DevOps与基础设施/Linux系统管理/s.md",
     "05-DevOps与基础设施/Linux系统管理/ubuntu/02-SSH配置/SSH完整配置指南.md",
+    "05-DevOps与基础设施/Linux系统管理/重启ssh.md",
+    "05-DevOps与基础设施/Linux系统管理/通用设置.md",
+    "05-DevOps与基础设施/Linux系统管理/ubuntu/03-开发环境/Node.js开发环境搭建.md",
     "05-DevOps与基础设施/Linux系统管理/ubuntu/ubuntu安装radis.md",
+    "05-DevOps与基础设施/Linux系统管理/ubuntu/04-数据库配置/sql.md",
+    "05-DevOps与基础设施/Linux系统管理/ubuntu/README.md",
     "05-DevOps与基础设施/Linux系统管理/ubuntu/ubuntu root用户登录/2024-06-14-16-54-58-Clip_2024-06-14_16-54-55.png",
     "05-DevOps与基础设施/Linux系统管理/ubuntu/01-服务器运维/docker使用.md",
     "05-DevOps与基础设施/Linux系统管理/ubuntu/01-服务器运维/安装docker.md",
@@ -202,14 +209,7 @@
     "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/02-ES6+现代特性/01-ES6新特性概览.md",
     "04-移动与跨平台开发/鸿蒙开发/老师笔记.md",
     "04-移动与跨平台开发/鸿蒙开发/技巧问题.md",
-    "03-Java企业级开发/Java基础与进阶/idea的maven配置/maven.md",
-    "03-Java企业级开发/Java基础与进阶/错误码.md",
-    "03-Java企业级开发/Java基础与进阶/java术语.md",
-    "02-TypeScript全栈开发/README.md",
-    "图形技巧/ps.md",
-    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/02-ES6+现代特性/04-ES6+代码示例集.md",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/02-ES6+现代特性/04-ES6+代码示例集.md.tmp.133032.1760256670104",
-    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/06-Web存储与浏览器API/01-Web存储与浏览器API.md",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/06-Web存储与浏览器API/01-Web存储与浏览器API.md.tmp.133032.1760256549273",
     "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/06-Web存储与浏览器API",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/03-异步编程进阶/05-设计模式.md.tmp.133032.1760256386089",
