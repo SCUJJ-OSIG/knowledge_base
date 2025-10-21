@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "1c3ae7e1fee4d220",
+        "id": "041a95cfb0aa5b3a",
         "type": "tabs",
         "children": [
           {
-            "id": "5c4ca6da6cef964a",
+            "id": "a1e3956914796fd1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05-DevOps与基础设施/Linux系统管理/ubuntu/02-SSH配置/SSH完整配置指南.md",
+                "file": "elysia/未命名.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SSH完整配置指南"
+              "title": "未命名"
+            }
+          },
+          {
+            "id": "5d540f22034a3fde",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0000000000全栈学习/编程必备.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "编程必备"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -113,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "07软件测试-web/软件测试.md",
+                "file": "未命名 1.base",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "软件测试 的出链列表"
+              "title": "未命名 1 的出链列表"
             }
           },
           {
@@ -142,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "05-DevOps与基础设施/Linux系统管理/ubuntu/02-SSH配置/SSH完整配置指南.md",
+                "file": "未命名 1.base",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "SSH完整配置指南 的大纲"
+              "title": "未命名 1 的大纲"
             }
           },
           {
@@ -170,6 +185,9 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-livesync:P2P Replicator": false,
+      "obsidian-livesync:Show Log": false,
+      "obsidian-livesync:Replicate": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -177,55 +195,55 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "bases:创建新数据库": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-livesync:Show Customization sync": false
     }
   },
-  "active": "8ee37002394a8133",
+  "active": "5d540f22034a3fde",
   "lastOpenFiles": [
-    "05-DevOps与基础设施/Linux系统管理/ubuntu/01-服务器运维/安装docker.md",
-    "05-DevOps与基础设施/Linux系统管理/ubuntu/01-服务器运维/docker使用.md",
-    "05-DevOps与基础设施/Linux系统管理/ubuntu/02-SSH配置/SSH完整配置指南.md",
+    "0000000000全栈学习/第一阶段，理解monorepo.md",
+    "0000000000全栈学习/编程必备.md",
+    "elysia/未命名.md",
+    "elysia/重构规范总结.md",
+    "0000000000全栈学习",
+    "elysia/数据库模型重构总结.md",
+    "elysia/接口命名规范.md",
+    "elysia/代码规范.md",
+    "欢迎.md",
+    "README.md",
+    "CLAUDE.md",
+    "未命名 1.base",
     "未命名.base",
-    "05-DevOps与基础设施/Linux系统管理/ubuntu/ubuntu安装radis.md",
-    "05-DevOps与基础设施/Linux系统管理/安装ubuntu22 Server.md",
-    "05-DevOps与基础设施/Linux系统管理/linux命令.md",
-    "05-DevOps与基础设施/Linux系统管理/防火墙.md",
-    "05-DevOps与基础设施/Linux系统管理/s.md",
-    "05-DevOps与基础设施/Linux系统管理/重启ssh.md",
-    "05-DevOps与基础设施/Linux系统管理/通用设置.md",
-    "05-DevOps与基础设施/Linux系统管理/ubuntu/03-开发环境/Node.js开发环境搭建.md",
-    "05-DevOps与基础设施/Linux系统管理/ubuntu/04-数据库配置/sql.md",
-    "05-DevOps与基础设施/Linux系统管理/ubuntu/README.md",
+    "rust学习/rust.md",
+    "elysia/03-Elysia代码编写规范.md",
+    "elysia/04-Service层设计模式.md",
+    "elysia/01-Elysia架构基础规范.md",
+    "elysia/02-Drizzle-Zod类型系统设计.md",
+    "elysia/00-README.md",
+    "elysia/00-README.md.tmp.14300.1760436817175",
+    "elysia/06-项目重构指南.md",
+    "elysia/06-项目重构指南.md.tmp.14300.1760436759429",
+    "elysia/05-Controller层接口设计.md",
+    "elysia/05-Controller层接口设计.md.tmp.14300.1760436705662",
+    "elysia/04-Service层设计模式.md.tmp.14300.1760436648462",
+    "elysia/03-Elysia代码编写规范.md.tmp.14300.1760436606653",
+    "elysia/02-Drizzle-Zod类型系统设计.md.tmp.14300.1760436560244",
+    "elysia/01-Elysia架构基础规范.md.tmp.14300.1760436480721",
+    "elysia/assets/image.png",
+    "elysia/dirzzle.md",
+    "elysia/assets/image-1.png",
+    "elysia/assets/数据库模型重构总结.md",
+    "elysia/assets/接口命名规范.md",
+    "elysia/assets/代码规范.md",
+    "elysia/assets/elysia开发指南.md",
+    "elysia/assets/elysia代码规范.md",
+    "elysia/assets/elysia-zod全栈类型系统规范.md",
+    "elysia/assets/dirzzle.md",
     "05-DevOps与基础设施/Linux系统管理/ubuntu/ubuntu root用户登录/2024-06-14-16-54-58-Clip_2024-06-14_16-54-55.png",
-    "05-DevOps与基础设施/Linux系统管理/ubuntu/01-服务器运维/1.第一台服务器.md",
-    "02-TypeScript全栈开发/全栈框架/全栈学习路线.md",
-    "02-TypeScript全栈开发/工程化与部署/包管理/node 加速下载.md",
-    "02-TypeScript全栈开发/前端框架/Vue生态/vue3ts尚硅谷/Vue3快速上手.md",
-    "02-TypeScript全栈开发/前端框架/鸿蒙开发/01鸿蒙/高级认证的答案.md",
-    "02-TypeScript全栈开发/前端框架/鸿蒙开发/01鸿蒙/技巧问题.md",
-    "02-TypeScript全栈开发/前端框架/鸿蒙开发/01鸿蒙/老师笔记.md",
-    "02-TypeScript全栈开发/前端框架/鸿蒙开发/01鸿蒙/arkui语言.md",
-    "02-TypeScript全栈开发/前端框架/鸿蒙开发/01鸿蒙/uniapp对面星火模型对接.md",
-    "02-TypeScript全栈开发/前端框架/vue3ts尚硅谷/Vue3快速上手.md",
-    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/02-ES6+现代特性/01-ES6新特性概览.md",
-    "04-移动与跨平台开发/鸿蒙开发/老师笔记.md",
-    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/02-ES6+现代特性/04-ES6+代码示例集.md.tmp.133032.1760256670104",
-    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/06-Web存储与浏览器API/01-Web存储与浏览器API.md.tmp.133032.1760256549273",
-    "02-TypeScript全栈开发/TS基础与类型系统/重新整理的笔记/06-Web存储与浏览器API",
-    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/03-异步编程进阶/05-设计模式.md.tmp.133032.1760256386089",
-    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/02-ES6+现代特性/03-Symbol类型与SetMap.md.tmp.133032.1760256123628",
-    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/02-ES6+现代特性/02-解构赋值与扩展运算符.md.tmp.133032.1760256047514",
-    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/03-异步编程进阶/03-闭包与作用域链.md.tmp.133032.1760255947281",
-    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/01-JavaScript基础核心/03-对象与原型链.md.tmp.133032.1760255869172",
-    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/重新整理的笔记/01-JavaScript基础核心/02-函数与作用域.md.tmp.133032.1760255621511",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/image/css/1709631798685.png",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/image/css/1709631774822.png",
     "02-TypeScript全栈开发/工程化与部署/打包工具/assets/2024-06-26-18-27-28-image.png",
     "assets/Pasted image 20251012142146.png",
-    "04-移动与跨平台开发/Android原生开发/assets/image-ide.png",
-    "05-DevOps与基础设施/Linux系统管理/nginx的配置/2024-06-14-20-05-46-Clip_2024-06-14_20-05-44.png",
-    "01-编程基础/计算机基础/计算机必会的技能/utools/assets/image-20230515222946924.png",
-    "01-编程基础/计算机基础/计算机必会的技能/utools/assets/image-20230515223658400.png",
-    "01-编程基础/计算机基础/计算机必会的技能/assets/image-20231111200427031.png"
+    "04-移动与跨平台开发/Android原生开发/assets/image-ide.png"
   ]
 }
