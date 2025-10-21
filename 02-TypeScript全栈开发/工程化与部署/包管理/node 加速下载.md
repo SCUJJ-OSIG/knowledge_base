@@ -9,17 +9,9 @@
 | bun  | bun 自带pm | chsrc | volta |
 |      |          |       |       |
 
-
+换源工具chsrc安装：
 官网自带安装方法
 [全平台通用换源工具与框架 chsrc](https://github.com/RubyMetric/chsrc)
 
 
 
-
-## npm的命令
-
-[Nodejs 第三章（Npm Package json）-CSDN博客](https://xiaoman.blog.csdn.net/article/details/132038424)
-
-### pnpm
-
-[pnpm 基本详细使用（安装、卸载、使用） - 掘金 (juejin.cn)](https://juejin.cn/post/7207094325897297957)

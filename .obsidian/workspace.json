@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "041a95cfb0aa5b3a",
+        "id": "1445da09eaa2acb1",
         "type": "tabs",
         "children": [
           {
-            "id": "a1e3956914796fd1",
+            "id": "691531bbb0dd7658",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "elysia/未命名.md",
+                "file": "01-编程基础/计算机基础/计算机必会的技能/重装系统必须安装的软件.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
-            }
-          },
-          {
-            "id": "5d540f22034a3fde",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0000000000全栈学习/编程必备.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "编程必备"
+              "title": "重装系统必须安装的软件"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -56,7 +41,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -68,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "volta",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "07软件测试-web/软件测试.md",
+                "file": "01-编程基础/计算机基础/计算机必会的技能/重装系统必须安装的软件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "软件测试 的反向链接列表"
+              "title": "重装系统必须安装的软件 的反向链接列表"
             }
           },
           {
@@ -128,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "未命名 1.base",
+                "file": "01-编程基础/计算机基础/计算机必会的技能/重装系统必须安装的软件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "未命名 1 的出链列表"
+              "title": "重装系统必须安装的软件 的出链列表"
             }
           },
           {
@@ -157,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未命名 1.base",
-                "followCursor": true,
-                "showSearch": true,
+                "file": "01-编程基础/计算机基础/计算机必会的技能/重装系统必须安装的软件.md",
+                "followCursor": false,
+                "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "未命名 1 的大纲"
+              "title": "重装系统必须安装的软件 的大纲"
             }
           },
           {
@@ -199,51 +184,52 @@
       "obsidian-livesync:Show Customization sync": false
     }
   },
-  "active": "5d540f22034a3fde",
+  "active": "8ee37002394a8133",
   "lastOpenFiles": [
-    "0000000000全栈学习/第一阶段，理解monorepo.md",
+    "01-编程基础/计算机基础/计算机必会的技能/电脑相关权限问题.md",
+    "01-编程基础/计算机基础/计算机必会的技能/重装系统必须安装的软件.md",
+    "01-编程基础/windown.md",
     "0000000000全栈学习/编程必备.md",
-    "elysia/未命名.md",
-    "elysia/重构规范总结.md",
-    "0000000000全栈学习",
-    "elysia/数据库模型重构总结.md",
-    "elysia/接口命名规范.md",
+    "0000000000全栈学习/第一阶段，理解monorepo.md",
+    "01-编程基础/计算机基础/HTTP协议详解与网络通信基础.md",
+    "01-编程基础/计算机基础/temp_file",
+    "01-编程基础/计算机基础/HTTP协议详解与网络通信基础.md.tmp.61300.1761043796512",
+    "01-编程基础/计算机基础/HTTP协议详解与网络通信基础.md.tmp.61300.1761043735797",
+    "01-编程基础/计算机基础/HTTP协议详解与网络通信基础.md.tmp.61300.1761043721005",
+    "01-编程基础/计算机基础/HTTP协议详解与网络通信基础.md.tmp.61300.1761043576731",
+    "01-编程基础/计算机基础/http理解.md.tmp.61300.1761043509960",
+    "01-编程基础/计算机基础/assets/Pasted image 20251021184153.png",
+    "01-编程基础/计算机基础/assets/Pasted image 20251021184147.png",
+    "01-编程基础/计算机基础/assets/Pasted image 20251021184135.png",
+    "01-编程基础/计算机基础/assets/Pasted image 20251021184126.png",
+    "01-编程基础/计算机基础/assets/Pasted image 20251021184108.png",
+    "01-编程基础/计算机基础/assets",
+    "01-编程基础/win系统命令/windown.md.tmp.136516.1761042971811",
+    "07-开发工具与效率/Git版本控制/git命令/git命令.md",
+    "07-开发工具与效率/IDE与编辑器/vscode调试.md",
+    "elysia/05-Controller层接口设计.md",
+    "elysia/06-项目重构指南.md",
     "elysia/代码规范.md",
+    "elysia/接口命名规范.md",
+    "elysia/数据库模型重构总结.md",
+    "elysia/重构规范总结.md",
+    "elysia/dirzzle.md",
+    "elysia/elysia开发指南.md",
+    "elysia/elysia代码规范.md",
+    "elysia/elysia-zod全栈类型系统规范.md",
+    "elysia/未命名.md",
+    "图形技巧/ps.md",
+    "面试经历/MOmenta.md",
     "欢迎.md",
     "README.md",
     "CLAUDE.md",
+    "02-TypeScript全栈开发/工程化与部署/包管理/安装volta.md",
+    "0000000000全栈学习",
     "未命名 1.base",
-    "未命名.base",
-    "rust学习/rust.md",
-    "elysia/03-Elysia代码编写规范.md",
-    "elysia/04-Service层设计模式.md",
-    "elysia/01-Elysia架构基础规范.md",
-    "elysia/02-Drizzle-Zod类型系统设计.md",
-    "elysia/00-README.md",
-    "elysia/00-README.md.tmp.14300.1760436817175",
-    "elysia/06-项目重构指南.md",
-    "elysia/06-项目重构指南.md.tmp.14300.1760436759429",
-    "elysia/05-Controller层接口设计.md",
-    "elysia/05-Controller层接口设计.md.tmp.14300.1760436705662",
-    "elysia/04-Service层设计模式.md.tmp.14300.1760436648462",
-    "elysia/03-Elysia代码编写规范.md.tmp.14300.1760436606653",
-    "elysia/02-Drizzle-Zod类型系统设计.md.tmp.14300.1760436560244",
-    "elysia/01-Elysia架构基础规范.md.tmp.14300.1760436480721",
     "elysia/assets/image.png",
-    "elysia/dirzzle.md",
     "elysia/assets/image-1.png",
-    "elysia/assets/数据库模型重构总结.md",
-    "elysia/assets/接口命名规范.md",
-    "elysia/assets/代码规范.md",
-    "elysia/assets/elysia开发指南.md",
-    "elysia/assets/elysia代码规范.md",
-    "elysia/assets/elysia-zod全栈类型系统规范.md",
-    "elysia/assets/dirzzle.md",
     "05-DevOps与基础设施/Linux系统管理/ubuntu/ubuntu root用户登录/2024-06-14-16-54-58-Clip_2024-06-14_16-54-55.png",
     "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/image/css/1709631798685.png",
-    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/image/css/1709631774822.png",
-    "02-TypeScript全栈开发/工程化与部署/打包工具/assets/2024-06-26-18-27-28-image.png",
-    "assets/Pasted image 20251012142146.png",
-    "04-移动与跨平台开发/Android原生开发/assets/image-ide.png"
+    "02-TypeScript全栈开发/TS基础与类型系统/web蓝桥杯/image/css/1709631774822.png"
   ]
 }
