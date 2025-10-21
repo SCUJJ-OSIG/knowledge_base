@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1445da09eaa2acb1",
+        "id": "9a1178ac7bf1e9e0",
         "type": "tabs",
         "children": [
           {
-            "id": "691531bbb0dd7658",
+            "id": "b731228b7792beb2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -184,9 +184,10 @@
       "obsidian-livesync:Show Customization sync": false
     }
   },
-  "active": "8ee37002394a8133",
+  "active": "b731228b7792beb2",
   "lastOpenFiles": [
     "01-编程基础/计算机基础/计算机必会的技能/电脑相关权限问题.md",
+    "01-编程基础/计算机基础/计算机必会的技能/电脑相关权限问题.md.tmp.135876.1761044191937",
     "01-编程基础/计算机基础/计算机必会的技能/重装系统必须安装的软件.md",
     "01-编程基础/windown.md",
     "0000000000全栈学习/编程必备.md",
@@ -225,7 +226,6 @@
     "CLAUDE.md",
     "02-TypeScript全栈开发/工程化与部署/包管理/安装volta.md",
     "0000000000全栈学习",
-    "未命名 1.base",
     "elysia/assets/image.png",
     "elysia/assets/image-1.png",
     "05-DevOps与基础设施/Linux系统管理/ubuntu/ubuntu root用户登录/2024-06-14-16-54-58-Clip_2024-06-14_16-54-55.png",
