@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "shop项目/未命名 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "未命名 2"
             }
           }
         ]
@@ -185,14 +185,16 @@
   },
   "active": "abe3c79d0f1357e5",
   "lastOpenFiles": [
-    "CLAUDE.md",
-    "2025-12-22.md",
+    "shop项目/未命名 1.md",
     "vim/Zed 编辑器 Vim 快捷键完整手册.md",
     "vim/Vim 常用操作速查手册：从基础到高效.md",
+    "CLAUDE.md",
+    "README.md",
+    "08 ai编程/2025-12-26.md",
+    "08 ai编程/2025-12-22.md",
     "shop项目/Injection.md",
     "shop项目/未命名 3.md",
     "shop项目/未命名 2.md",
-    "shop项目/未命名 1.md",
     "shop项目/未命名.md",
     "shop项目/瀑布流式感应.md",
     "shop项目/基于指令的代码喷涂系统.md",
@@ -209,8 +211,6 @@
     "04-移动与跨平台开发/鸿蒙开发/老师笔记.md",
     "04-移动与跨平台开发/鸿蒙开发/技巧问题.md",
     "04-移动与跨平台开发/鸿蒙开发/高级认证的答案.md",
-    "08 ai编程/ai 编程.md",
-    "软件职责/1. 哲学.md",
     "assets/PixPin_2025-10-24_00-25-35.png",
     "assets/PixPin_2025-10-24_00-15-42.png",
     "assets/PixPin_2025-10-24_00-00-23.png",

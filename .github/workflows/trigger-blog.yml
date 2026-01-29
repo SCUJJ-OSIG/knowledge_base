@@ -1,0 +1,20 @@
+name: Trigger Blog Build
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - '**.md'
+      - '**.mdx'
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger blog build
+        run: |
+          curl -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: Bearer ${{ secrets.BLOG_GITHUB_TOKEN }}" \
+            https://api.github.com/repos/你的GitHub用户名/my-blog/dispatches \
+            -d '{"event_type":"build"}'
