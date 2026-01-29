@@ -1,596 +1,291 @@
-# Drizzle + Zod 类型系统设计规范
-
-## 概述
-
-本文档详细说明了基于 Drizzle ORM + Zod 的四层类型系统架构，确保前后端类型安全与一致性。这是 Elysia 全栈开发的核心基础设施。
-
-## 四层架构概览
-
-```
-┌─────────────────────────────────────────┐
-│           第4层：TypeScript类型         │  ← 前端/后端业务类型
-├─────────────────────────────────────────┤
-│           第3层：业务模型层             │  ← 供Elysia使用的Model
-├─────────────────────────────────────────┤
-│           第2层：Zod Schema层           │  ← 运行时数据校验
-├─────────────────────────────────────────┤
-│           第1层：Drizzle表定义层        │  ← 数据库表结构
-└─────────────────────────────────────────┘
-```
-
-## 第1层：Drizzle 表定义层
-
-### 文件结构
-```
-src/db/schema/
-├── index.ts             # 统一导出
-├── users.schema.ts      # 用户表定义
-├── products.schema.ts   # 商品表定义
-└── utils.schema.ts      # 公共工具Schema
-```
-
-### 表定义标准模板
-
-#### users.schema.ts
-```typescript
-import { relations } from "drizzle-orm";
-import {
-  pgTable,
-  serial,
-  varchar,
-  timestamp,
-  boolean,
-  text,
-  integer
-} from "drizzle-orm/pg-core";
-
-/**
- * 用户表 - 存储用户基本信息
- * 包含用户认证、个人资料等核心字段
- */
-export const usersTable = pgTable("users", {
-  // 主键
-  id: serial("id").primaryKey(),
-
-  // 基本信息
-  username: varchar("username", { length: 50 }).notNull().unique(),
-  email: varchar("email", { length: 100 }).notNull().unique(),
-  password: varchar("password", { length: 255 }).notNull(),
-
-  // 个人资料
-  firstName: varchar("first_name", { length: 50 }).default(""),
-  lastName: varchar("last_name", { length: 50 }).default(""),
-  avatar: varchar("avatar", { length: 500 }).default(""),
-  bio: text("bio").default(""),
-
-  // 状态字段
-  isActive: boolean("is_active").default(true),
-  isVerified: boolean("is_verified").default(false),
-
-  // 时间戳
-  createdAt: timestamp("created_at").defaultNow(),
-  updatedAt: timestamp("updated_at").defaultNow(),
-});
-
-/**
- * 用户关系定义
- */
-export const usersRelations = relations(usersTable, ({ many }) => ({
-  posts: many(postsTable),
-  comments: many(commentsTable),
-  orders: many(ordersTable),
-}));
-```
-
-#### 表定义规范
-
-1. **字段命名**: 使用 snake_case (如 `first_name`)
-2. **表命名**: 使用复数形式 (如 `users`)
-3. **主键**: 统一使用自增 `id`
-4. **时间戳**: 必须包含 `createdAt` 和 `updatedAt`
-5. **外键**: 明确定义引用关系
-6. **注释**: 每个表和重要字段都要有注释
-
-## 第2层：Zod Schema 层
-
-### 基础Schema生成
-
-#### users.zod.ts
-```typescript
-import { createInsertSchema, createSelectSchema, createUpdateSchema } from 'drizzle-zod';
-import { z } from "zod";
-import { usersTable } from "./users.schema";
-import { BaseQueryZod } from "./utils.schema";
-
-// === 基础 Zod Schema（基于 Drizzle 表生成） ===
-export const InsertUserSchema = createInsertSchema(usersTable, {
-  email: z.string().email("请输入有效的邮箱地址"),
-  username: z.string()
-    .min(2, "用户名至少2个字符")
-    .max(50, "用户名最多50个字符")
-    .regex(/^[a-zA-Z0-9_]+$/, "用户名只能包含字母、数字和下划线"),
-  password: z.string()
-    .min(8, "密码至少8个字符")
-    .regex(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/, "密码必须包含大小写字母和数字"),
-});
-
-export const SelectUserSchema = createSelectSchema(usersTable);
-export const UpdateUserSchema = createUpdateSchema(usersTable);
-
-// === 业务 DTO Schemas ===
-
-// 创建用户Schema（排除系统生成的字段）
-export const CreateUserSchema = InsertUserSchema.omit({
-  id: true,
-  createdAt: true,
-  updatedAt: true,
-  isVerified: true, // 创建时不设置验证状态
-});
-
-// 更新用户Schema（部分更新，排除只读字段）
-export const PatchUserSchema = UpdateUserSchema.omit({
-  id: true,
-  createdAt: true,
-  updatedAt: true,
-}).partial();
-
-// 用户登录Schema
-export const LoginUserSchema = z.object({
-  email: z.string().email("请输入有效的邮箱地址"),
-  password: z.string().min(1, "密码不能为空"),
-});
-
-// 修改密码Schema
-export const ChangePasswordSchema = z.object({
-  currentPassword: z.string().min(1, "当前密码不能为空"),
-  newPassword: z.string()
-    .min(8, "新密码至少8个字符")
-    .regex(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/, "新密码必须包含大小写字母和数字"),
-  confirmPassword: z.string(),
-}).refine((data) => data.newPassword === data.confirmPassword, {
-  message: "两次输入的密码不一致",
-  path: ["confirmPassword"],
-});
-
-// === 查询 Schemas ===
-export const UserListQuerySchema = BaseQueryZod.extend({
-  search: z.string().optional(),
-  isActive: z.boolean().optional(),
-  isVerified: z.boolean().optional(),
-});
-
-// === TypeScript 类型定义 ===
-export type InsertUserInput = z.infer<typeof InsertUserSchema>;
-export type SelectUserInput = z.infer<typeof SelectUserSchema>;
-export type UpdateUserInput = z.infer<typeof UpdateUserSchema>;
-export type CreateUserInput = z.infer<typeof CreateUserSchema>;
-export type PatchUserInput = z.infer<typeof PatchUserSchema>;
-export type LoginUserInput = z.infer<typeof LoginUserSchema>;
-export type ChangePasswordInput = z.infer<typeof ChangePasswordSchema>;
-export type UserListQueryInput = z.infer<typeof UserListQuerySchema>;
-```
-
-### 工具Schema定义
-
-#### utils.schema.ts
-```typescript
-import { z } from "zod";
-
-// 基础分页查询参数
-export const BaseQueryZod = z.object({
-  page: z.number().min(1).default(1),
-  limit: z.number().min(1).max(100).default(10),
-  sort: z.string().optional(),
-  order: z.enum(["asc", "desc"]).default("desc"),
-});
-
-// 排序参数
-export const SortQueryZod = z.object({
-  sort: z.string(),
-  order: z.enum(["asc", "desc"]).default("desc"),
-});
-
-// ID参数
-export const IdParamZod = z.object({
-  id: z.number().positive("ID必须是正数"),
-});
-
-// 搜索参数
-export const SearchQueryZod = z.object({
-  search: z.string().optional(),
-});
-
-// 批量操作参数
-export const BatchOperationZod = z.object({
-  ids: z.array(z.number().positive()).min(1, "至少选择一个项目"),
-});
-
-// 分页响应格式
-export const PaginationResponseZod = <T extends z.ZodTypeAny>(itemSchema: T) =>
-  z.object({
-    items: z.array(itemSchema),
-    meta: z.object({
-      total: z.number(),
-      page: z.number(),
-      limit: z.number(),
-      totalPages: z.number(),
-    }),
-  });
-```
-
-## 第3层：业务模型层
-
-### Elysia模型定义
-
-#### users.model.ts
-```typescript
-import { t } from "elysia";
-import { z } from "zod";
-import {
-  CreateUserSchema,
-  PatchUserSchema,
-  LoginUserSchema,
-  ChangePasswordSchema,
-  UserListQuerySchema,
-  SelectUserSchema
-} from "./users.zod";
-import { BaseQueryZod, IdParamZod } from "./utils.schema";
-
-/**
- * 用户模型 - 供Elysia使用的类型定义
- * 统一管理所有用户相关的API类型
- */
-export const UsersModel = {
-  // === 请求模型 ===
-  CreateUser: t.Object({
-    username: t.String({ minLength: 2, maxLength: 50 }),
-    email: t.String({ format: "email" }),
-    password: t.String({ minLength: 8 }),
-    firstName: t.Optional(t.String({ maxLength: 50 })),
-    lastName: t.Optional(t.String({ maxLength: 50 })),
-  }),
-
-  PatchUser: t.Partial(t.Object({
-    username: t.String({ minLength: 2, maxLength: 50 }),
-    email: t.String({ format: "email" }),
-    firstName: t.String({ maxLength: 50 }),
-    lastName: t.String({ maxLength: 50 }),
-    bio: t.String(),
-    isActive: t.Boolean(),
-  })),
-
-  LoginUser: t.Object({
-    email: t.String({ format: "email" }),
-    password: t.String({ minLength: 1 }),
-  }),
-
-  ChangePassword: t.Object({
-    currentPassword: t.String({ minLength: 1 }),
-    newPassword: t.String({ minLength: 8 }),
-    confirmPassword: t.String({ minLength: 8 }),
-  }),
-
-  // === 查询模型 ===
-  UserListQuery: t.Object({
-    page: t.Optional(t.Number({ minimum: 1, default: 1 })),
-    limit: t.Optional(t.Number({ minimum: 1, maximum: 100, default: 10 })),
-    search: t.Optional(t.String()),
-    isActive: t.Optional(t.Boolean()),
-    isVerified: t.Optional(t.Boolean()),
-    sort: t.Optional(t.String({ default: "createdAt" })),
-    order: t.Optional(t.Union([t.Literal("asc"), t.Literal("desc")], { default: "desc" })),
-  }),
-
-  // === 响应模型 ===
-  UserResponse: t.Object({
-    id: t.Number(),
-    username: t.String(),
-    email: t.String(),
-    firstName: t.String(),
-    lastName: t.String(),
-    avatar: t.String(),
-    bio: t.String(),
-    isActive: t.Boolean(),
-    isVerified: t.Boolean(),
-    createdAt: t.Date(),
-    updatedAt: t.Date(),
-  }),
-
-  // 安全响应（排除敏感信息）
-  SafeUserResponse: t.Omit(
-    t.Composite([
-      t.Object({
-        id: t.Number(),
-        username: t.String(),
-        email: t.String(),
-        firstName: t.String(),
-        lastName: t.String(),
-        avatar: t.String(),
-        bio: t.String(),
-        isActive: t.Boolean(),
-        isVerified: t.Boolean(),
-        createdAt: t.Date(),
-        updatedAt: t.Date(),
-      })
-    ]),
-    ["password"]
-  ),
-
-  // 参数模型
-  IdParam: t.Object({ id: t.Number() }),
-};
-
-// === TypeScript 类型导出 ===
-export type CreateUserDto = typeof UsersModel.CreateUser.static;
-export type PatchUserDto = typeof UsersModel.PatchUser.static;
-export type LoginUserDto = typeof UsersModel.LoginUser.static;
-export type ChangePasswordDto = typeof UsersModel.ChangePasswordDto;
-export type UserListQueryDto = typeof UsersModel.UserListQuery.static;
-export type UserResponseDto = typeof UsersModel.UserResponse.static;
-export type SafeUserResponseDto = typeof UsersModel.SafeUserResponse.static;
-export type IdParamDto = typeof UsersModel.IdParam.static;
-```
-
-## 第4层：TypeScript 类型层
-
-### 前端类型定义
-
-#### users.types.ts
-```typescript
-import { z } from "zod";
-import {
-  CreateUserSchema,
-  PatchUserSchema,
-  UserListQuerySchema,
-  SelectUserSchema
-} from "./users.zod";
-
-// === 业务类型定义 ===
-
-// 创建用户输入类型
-export type CreateUserData = z.infer<typeof CreateUserSchema>;
-
-// 更新用户输入类型
-export type UpdateUserData = z.infer<typeof PatchUserSchema>;
-
-// 用户查询参数类型
-export type UserQueryParams = z.infer<typeof UserListQuerySchema>;
-
-// 数据库实体类型
-export type UserEntity = z.infer<typeof SelectUserSchema>;
-
-// === 前端展示类型（VO - View Object） ===
-
-// 用户列表展示类型
-export interface UserListItemVo {
-  id: number;
-  username: string;
-  email: string;
-  fullName: string; // 组合字段
-  avatar: string;
-  isActive: boolean;
-  isVerified: boolean;
-  createdAt: string; // 格式化时间
-}
-
-// 用户详情展示类型
-export interface UserDetailVo extends UserListItemVo {
-  bio: string;
-  lastLoginAt?: string;
-  roles: UserRoleVo[];
-}
-
-// 用户角色信息
-export interface UserRoleVo {
-  id: number;
-  name: string;
-  permissions: string[];
-}
-
-// === 表单类型 ===
-
-// 用户注册表单
-export interface UserRegisterForm {
-  username: string;
-  email: string;
-  password: string;
-  confirmPassword: string;
-  firstName?: string;
-  lastName?: string;
-  agreeToTerms: boolean;
-}
-
-// 用户编辑表单
-export interface UserEditForm {
-  username: string;
-  email: string;
-  firstName?: string;
-  lastName?: string;
-  bio?: string;
-  avatar?: File;
-}
-
-// === 状态管理类型 ===
-
-// 用户状态
-export interface UserState {
-  currentUser: UserDetailVo | null;
-  isAuthenticated: boolean;
-  isLoading: boolean;
-  error: string | null;
-}
-
-// 用户列表状态
-export interface UserListState {
-  users: UserListItemVo[];
-  pagination: {
-    total: number;
-    page: number;
-    limit: number;
-    totalPages: number;
-  };
-  filters: UserQueryParams;
-  isLoading: boolean;
-  error: string | null;
-}
-
-// === API 响应类型 ===
-
-// 用户API响应
-export interface UserApiResponse<T = any> {
-  success: boolean;
-  data: T;
-  message?: string;
-}
-
-// 用户列表API响应
-export interface UserListApiResponse {
-  success: boolean;
-  data: {
-    items: UserListItemVo[];
-    meta: {
-      total: number;
-      page: number;
-      limit: number;
-      totalPages: number;
-    };
-  };
-}
-```
-
-## 统一类型转换层
-
-### database.types.ts
-```typescript
-import { createInsertSchema, createSelectSchema } from 'drizzle-zod';
-import { z } from 'zod';
-import * as schema from './schema';
-
-// === 第一步：分别定义所有基础 schemas ===
-const userInsertSchema = createInsertSchema(schema.usersTable);
-const productInsertSchema = createInsertSchema(schema.productsTable);
-const orderInsertSchema = createInsertSchema(schema.ordersTable);
-
-const userSelectSchema = createSelectSchema(schema.usersTable);
-const productSelectSchema = createSelectSchema(schema.productsTable);
-const orderSelectSchema = createSelectSchema(schema.ordersTable);
-
-// === 第二步：分别定义所有 select schemas ===
-const insertSchemas = {
-  usersTable: userInsertSchema,
-  productsTable: productInsertSchema,
-  ordersTable: orderInsertSchema,
-};
-
-const selectSchemas = {
-  usersTable: userSelectSchema,
-  productsTable: productSelectSchema,
-  ordersTable: orderSelectSchema,
-};
-
-// === 第三步：创建最终的 DbType 对象 ===
-export const DbType = {
-  typebox: {
-    insert: insertSchemas,
-    select: selectSchemas,
-  },
-  // 可选：添加其他转换逻辑
-  zod: {
-    insert: insertSchemas,
-    select: selectSchemas,
-  }
-} as const;
-
-// === 导出类型 ===
-export type DbType = typeof DbType;
-```
-
-## 命名规范总结
-
-| 层级 | 用途 | 命名格式 | 示例 |
-|------|------|----------|------|
-| **表定义** | Drizzle表 | `xxxTable` | `usersTable` |
-| **Zod Schema** | 基础校验 | `XxxSchema` | `InsertUserSchema` |
-| **业务Schema** | 业务校验 | `XxxSchema` | `CreateUserSchema` |
-| **Elysia模型** | API类型 | `XxxModel` | `UsersModel` |
-| **DTO类型** | 数据传输 | `XxxDto` | `CreateUserDto` |
-| **VO类型** | 展示对象 | `XxxVo` | `UserListItemVo` |
-| **实体类型** | 数据实体 | `XxxEntity` | `UserEntity` |
-
-## 最佳实践
-
-### 1. 类型复用原则
-```typescript
-// ✅ 正确：基于Drizzle Schema复用
-export const CreateUserSchema = InsertUserSchema.omit({
-  id: true,
-  createdAt: true,
-  updatedAt: true,
-});
-
-// ❌ 错误：重复定义类型
-export const CreateUserSchema = z.object({
-  username: z.string(), // 重复定义
-  email: z.string().email(), // 重复定义
-});
-```
-
-### 2. 渐进式类型定义
-```typescript
-// 1. 基础Schema（自动生成）
-const InsertUserSchema = createInsertSchema(usersTable);
-
-// 2. 业务Schema（基于基础Schema）
-const CreateUserSchema = InsertUserSchema.omit({...});
-
-// 3. Elysia模型（基于业务Schema）
-export const UsersModel = {
-  CreateUser: t.Object({
-    username: t.String({ minLength: 2 }),
-    email: t.String({ format: "email" }),
-    // ...
-  }),
-};
-
-// 4. TypeScript类型（基于模型）
-export type CreateUserDto = typeof UsersModel.CreateUser.static;
-```
-
-### 3. 安全性考虑
-```typescript
-// 敏感字段处理
-export const SafeUserResponse = t.Omit(UserResponse, ["password"]);
-
-// 输入验证增强
-export const CreateUserSchema = InsertUserSchema.omit({...}).extend({
-  password: z.string().regex(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/, "密码强度不够"),
-});
-```
-
-### 4. 前端适配
-```typescript
-// 前端友好的类型定义
-export interface UserListItemVo {
-  id: number;
-  username: string;
-  fullName: string; // 组合字段
-  avatar: string;
-  createdAt: string; // 格式化为字符串
-  isActive: boolean;
-}
-
-// 数据转换函数
-export function transformUserEntityToVo(entity: UserEntity): UserListItemVo {
-  return {
-    ...entity,
-    fullName: `${entity.firstName} ${entity.lastName}`.trim(),
-    createdAt: entity.createdAt.toISOString(),
-  };
-}
-```
-
-## 相关文档
-
-- [Elysia架构基础规范](./01-Elysia架构基础规范.md)
-- [Service层设计模式](./04-Service层设计模式.md)
-- [Controller层接口设计](./05-Controller层接口设计.md)
+---
+date created: 2025-10-二 18:09:20
+date modified: 2025-11-三 16:16:20
+---
+  1.1 基础 Schema 结构
+
+       所有文件都遵循相同的基础 Schema 模式：
+
+       // === 基础 Schema ===
+       const Insert = createInsertSchema(table);
+       const UpdateBase/Update = createUpdateSchema(table); // 有差异
+       const Select = createSelectSchema(table);
+
+       关键差异点：
+       - category, product, ads, site-config, media: 使用 UpdateBase
+       - auth: 直接使用 Update
+
+       1.2 业务 Schema 结构模式
+
+       标准模式（最完整）：
+
+       const Create = Insert.omit({
+         id: true,
+         createdAt: true,
+         updatedAt: true,
+       });
+
+       const Update = UpdateBase.omit({
+         id: true,
+         createdAt: true,
+         updatedAt: true,
+       });
+
+       const Patch = UpdateBase.omit({
+         id: true,
+         createdAt: true,
+         updatedAt: true,
+       }).partial();
+
+       查询 Schema 模式：
+
+       const BusinessQuery = z.object({
+         // 业务特定的查询字段
+       });
+
+       const ListQuery = BusinessQuery.extend(PaginationParams.shape).extend(SortParams.shape);
+
+       1.3 特殊 Schema 命名规则
+
+       各文件中的特殊 Schema：
+
+       | 文件          | 特殊 Schema                                                            | 用途
+         |
+       |-------------|----------------------------------------------------------------------|-------------------|
+       | category    | FormUpsert, TreeQuery, Entityone                                     |
+       表单upsert、树形查询、单实体 |
+       | product     | ProductTemplateModel, ProductImagesModel                             | 子模型扩展
+        |
+       | auth        | Login, ChangePassword                                                | 认证相关操作
+         |
+       | media       | UploadFileDto, UploadFilesDto, BatchUpload, BatchDelete, BatchUpdate | 文件上传和批量操作
+            |
+       | ads         | BatchStatusUpdate                                                    | 批量状态更新
+         |
+       | site-config | CategoryQuery, KeysQuery, BatchUpdate                                | 配置特定查询和批量更新
+              |
+
+       2. Update 和 UpdateBase 的区别分析
+
+       2.1 使用 UpdateBase 的文件（推荐模式）：
+
+       - category, product, ads, site-config, media
+
+       const UpdateBase = createUpdateSchema(table);
+       const Update = UpdateBase.omit({
+         id: true,
+         createdAt: true,
+         updatedAt: true,
+       });
+
+       2.2 直接使用 Update 的文件：
+
+       - auth
+
+       const Update = createUpdateSchema(usersTable);
+       // 没有 UpdateBase，直接在 Patch 中使用
+
+       分析结论： UpdateBase 模式更规范，提供了更好的中间层抽象。
+
+       3. Create 和 Insert 的区别
+
+       所有文件都遵循相同的模式：
+       const Create = Insert.omit({
+         id: true,
+         createdAt: true,
+         updatedAt: true,
+       });
+
+       部分文件有额外扩展：
+       - product: 扩展了关联字段（templateId, categoryIds, imageIds）
+       - media: 扩展了可选字段（url, key, fileSize等）
+
+       4. Patch 的定义方式
+
+       4.1 标准模式（推荐）：
+
+       const Patch = UpdateBase.omit({
+         id: true,
+         createdAt: true,
+         updatedAt: true,
+       }).partial();
+
+       4.2 特殊处理：
+
+       - auth: 额外排除了 password 字段
+       - product: 使用了复杂的链式操作
+
+       5. 值聚合和类型聚合的导出结构
+
+       5.1 标准导出模式：
+
+       // === 1. 运行时 Schema 集合（值）===
+       export const ModelName = {
+         Insert,
+         Update,
+         Select,
+         Create,
+         Patch,
+         ListQuery,
+         Entity,
+         // ... 其他特殊 Schema
+       } as const;
+
+       // === 2. 编译时类型集合（类型）===
+       export type ModelName = {
+         Insert: z.infer<typeof Insert>;
+         Update: z.infer<typeof Update>;
+         Select: z.infer<typeof Select>;
+         Create: z.infer<typeof Create>;
+         Patch: z.infer<typeof Patch>;
+         ListQuery: z.infer<typeof ListQuery>;
+         Entity: z.infer<typeof Entity>;
+         // ... 其他类型
+       };
+
+       6. 最规范和完整的文件推荐
+
+       综合评分最高的文件：
+
+       🥇 第一名：media.model.ts
+
+       优点：
+       - 结构最完整，包含所有标准 Schema
+       - 枚举定义清晰（FileType, StorageProvider）
+       - 批量操作 Schema 齐全（BatchUpload, BatchDelete, BatchUpdate）
+       - 上传相关 Schema 专门定义（UploadFileDto, UploadFilesDto）
+       - Entity 扩展合理（确保返回完整 URL）
+       - 注释详细，代码可读性高
+
+       🥈 第二名：site-config.model.ts
+
+       优点：
+       - 严格遵循 UpdateBase 模式
+       - 业务验证规则完善
+       - 特殊查询 Schema 定义合理（CategoryQuery, KeysQuery）
+       - 结构清晰简洁
+
+       🥉 第三名：category.model.ts
+
+       优点：
+       - 基础结构完整
+       - 特殊 Schema 有明确的业务用途
+       - 使用了 UpdateBase 模式
+
+       7. 标准化建议
+
+       7.1 推荐的标准模板：
+
+       /**
+        * [模块名称]模型定义
+        * [模块描述]
+        */
+
+       import {
+         createInsertSchema,
+         createSelectSchema,
+         createUpdateSchema,
+       } from "drizzle-zod";
+       import { z } from "zod";
+       import { PaginationParams, SortParams } from "../helper/query-types";
+       import { [tableName] } from "./[module].schema";
+
+       // === 枚举定义（如果需要）===
+       export const [EnumName] = z.enum([...]);
+       export type [EnumName] = z.infer<typeof [EnumName]>;
+
+       // === 基础 Schema ===
+       const Insert = createInsertSchema([tableName], {
+         // 字段验证规则（可选）
+       });
+
+       const UpdateBase = createUpdateSchema([tableName], {
+         // 字段验证规则（可选）
+       });
+
+       const Select = createSelectSchema([tableName]);
+
+       // === 业务 Schema ===
+       const Create = Insert.omit({
+         id: true,
+         createdAt: true,
+         updatedAt: true,
+       }).extend({
+         // 扩展字段（可选）
+       });
+
+       const Update = UpdateBase.omit({
+         id: true,
+         createdAt: true,
+         updatedAt: true,
+       }).extend({
+         // 扩展字段（可选）
+       });
+
+       const Patch = UpdateBase.omit({
+         id: true,
+         createdAt: true,
+         updatedAt: true,
+       }).partial();
+
+       const BusinessQuery = z.object({
+         // 业务查询字段
+       });
+
+       const ListQuery = BusinessQuery.extend(PaginationParams.shape).extend(
+         SortParams.shape
+       );
+
+       const Entity = Select.extend({
+         // 实体扩展字段（可选）
+       });
+
+       // === 特殊业务 Schema（根据需要）===
+       const [SpecialSchema] = z.object({
+         // 特殊业务逻辑
+       });
+
+       // === 值聚合导出 ===
+       export const [ModelName] = {
+         // 基础 Schema
+         Insert,
+         Update,
+         Select,
+         // 业务 Schema
+         Create,
+         Patch,
+         ListQuery,
+         Entity,
+         BusinessQuery,
+         // 枚举（如果有）
+         [EnumName],
+         // 特殊 Schema（如果有）
+         [SpecialSchema],
+       } as const;
+
+       // === 类型聚合导出 ===
+       export type [ModelName] = {
+         Insert: z.infer<typeof Insert>;
+         Update: z.infer<typeof Update>;
+         Select: z.infer<typeof Select>;
+         Create: z.infer<typeof Create>;
+         Patch: z.infer<typeof Patch>;
+         ListQuery: z.infer<typeof ListQuery>;
+         Entity: z.infer<typeof Entity>;
+         BusinessQuery: z.infer<typeof BusinessQuery>;
+         // 枚举类型（如果有）
+         [EnumName]: z.infer<typeof [EnumName]>;
+         // 特殊类型（如果有）
+         [SpecialSchema]: z.infer<typeof [SpecialSchema]>;
+       };
+
+       7.2 关键规范建议：
+
+       8. 始终使用 UpdateBase 模式
+       9. 保持 Create/Update/Patch 的一致性
+       10. 为复杂业务场景定义专门的 Schema
+       11. Entity 应该包含前端展示需要的所有字段
+       12. 批量操作使用标准的命名模式（BatchXxx）
+       13. 添加必要的注释和类型文档
+
+       这个分析为项目的类型系统标准化提供了明确的指导方向，建议以 media.model.ts 作为主要参考模板

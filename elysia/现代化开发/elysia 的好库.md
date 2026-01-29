@@ -1,0 +1,29 @@
+---
+date created: 2025-12-四 00:09:14
+date modified: 2025-12-六 21:23:29
+---
+
+
+https://github.com/mugencraft/turbobun/tree/main  这个需要研究，monorepo  把next和elysia 结合在一起。   有很多现代工程化的工具
+
+和  https://github.com/SaltyAom/kozeki-template   同类型  
+
+
+
+
+https://github.com/tonkaew131/nextjs-elysia-template/tree/main  这个好像在自己重写fetch 去替换next请求后端
+
+
+https://github.com/lisoingsem/cms-elysiajs-nextjs  版本有些低
+
+
+当前最好的
+https://github.com/0-don/next-elysia-prisma.git
+
+
+
+
+
+好的文档
+
+https://dtinth.github.io/elysia-by-example/examples/basic-query-parsing.html

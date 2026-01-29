@@ -1,6 +1,6 @@
 ---
-date created: 2025-10-五 16:20:25
-date modified: 2025-11-四 18:03:28
+date created: 2025-11-五 17:47:22
+date modified: 2025-11-五 18:08:49
 ---
 # 全是静态方法的class不要用class
 最近使用biome时，报了一个错
@@ -133,4 +133,3 @@ export const xxxservice = {
 这里我很想知道为什么java这么喜欢class?
 
 
-啊啊啊
