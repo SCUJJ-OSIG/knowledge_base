@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "shop项目/未命名 2.md",
+                "file": "图形技巧/ps快捷键.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名 2"
+              "title": "ps快捷键"
             }
           }
         ]
@@ -185,21 +185,25 @@
   },
   "active": "abe3c79d0f1357e5",
   "lastOpenFiles": [
+    "01-编程基础/windown快捷键.md",
+    "01-编程基础/计算机基础/计算机必会的技能/重装系统必须安装的软件.md",
+    "01-编程基础/计算机基础/计算机必会的技能/电脑相关权限问题.md",
+    "01-编程基础/编程工具/claude cli使用方法.md",
+    "shop项目/Injection.md",
+    "shop项目/未命名 2.md",
     "shop项目/未命名 1.md",
-    "vim/Zed 编辑器 Vim 快捷键完整手册.md",
-    "vim/Vim 常用操作速查手册：从基础到高效.md",
+    "01-编程基础/vim/Zed 编辑器 Vim 快捷键完整手册.md",
+    "01-编程基础/vim/Vim 常用操作速查手册：从基础到高效.md",
     "CLAUDE.md",
     "README.md",
     "08 ai编程/2025-12-26.md",
     "08 ai编程/2025-12-22.md",
-    "shop项目/Injection.md",
     "shop项目/未命名 3.md",
-    "shop项目/未命名 2.md",
     "shop项目/未命名.md",
     "shop项目/瀑布流式感应.md",
     "shop项目/基于指令的代码喷涂系统.md",
     "rust学习/rust.md",
-    "图形技巧/ps.md",
+    "图形技巧/ps快捷键.md",
     "0000000000全栈学习/第一天.md",
     "0000000000全栈学习/第一阶段，理解monorepo.md",
     "0000000000全栈学习/编程必备.md",
@@ -207,10 +211,6 @@
     "04-移动与跨平台开发/Android原生开发/andriod 1.md",
     "04-移动与跨平台开发/Android原生开发/andriod.md",
     "04-移动与跨平台开发/Android原生开发/android的开始/android.md",
-    "04-移动与跨平台开发/鸿蒙开发/uniapp对面星火模型对接.md",
-    "04-移动与跨平台开发/鸿蒙开发/老师笔记.md",
-    "04-移动与跨平台开发/鸿蒙开发/技巧问题.md",
-    "04-移动与跨平台开发/鸿蒙开发/高级认证的答案.md",
     "assets/PixPin_2025-10-24_00-25-35.png",
     "assets/PixPin_2025-10-24_00-15-42.png",
     "assets/PixPin_2025-10-24_00-00-23.png",
