@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "Bash(cp:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(ls -d \"H:/main/knowledge_base/2-技术文章\"/*/ 2>/dev/null)",
+      "Bash(ls -d \"H:/main/knowledge_base/4-全栈\"/*/ 2>/dev/null; ls -d \"H:/main/knowledge_base/3-skills\"/*/ 2>/dev/null)",
+      "Bash(cd \"H:/main/knowledge_base\" && mv \"composite如何理解.md\" \"2-技术文章/typescript/\" && mv \"类型诊断分析.md\" \"2-技术文章/typescript/\")",
+      "Bash(cd \"H:/main/knowledge_base\" && mv \"Elysia + Next + Eden：渲染方式 & query 用法.md\" \"2-技术文章/elysia/\" && mv \"TypeBox + Elysia Eden 类型膨胀.md\" \"2-技术文章/elysia/\" && mv \"全栈拆成两个tsconfig 项目.md\" \"2-技术文章/elysia/\" && mv \"用 Elysia 在 Next.js 中接入 Better‑Auth🦊✨.md\" \"2-技术文章/elysia/\")",
+      "Bash(cd \"H:/main/knowledge_base\" && mv \"未命名.md\" \"2-技术文章/elysia/Elysia+Better-Auth+Drizzle最佳实践.md\")",
+      "Bash(ls \"H:/main/knowledge_base/\"*.md 2>/dev/null; echo \"---\"; ls \"H:/main/knowledge_base/2-技术文章/elysia/\" | grep -E \"Elysia|TypeBox|全栈|tsconfig|Better|渲染\")"
     ],
     "deny": [],
     "ask": []

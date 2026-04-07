@@ -4,109 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "f9d54d9d390287d7",
+        "id": "0e61809f21a7e0b5",
         "type": "tabs",
         "children": [
           {
-            "id": "abe3c79d0f1357e5",
+            "id": "fc24b9ca620c5320",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "typescript/ts历史.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ts历史"
-            }
-          },
-          {
-            "id": "edcf8478e906fe69",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "composite如何理解.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "composite如何理解"
-            }
-          },
-          {
-            "id": "11c5f9807d3449a2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TypeBox + Elysia Eden 类型膨胀.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "TypeBox + Elysia Eden 类型膨胀"
-            }
-          },
-          {
-            "id": "4f0ab0260e01d4e0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "类型诊断分析.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "类型诊断分析"
-            }
-          },
-          {
-            "id": "a9a7d8dfc1a20817",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "全栈拆成两个tsconfig 项目.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "全栈拆成两个tsconfig 项目"
-            }
-          },
-          {
-            "id": "982a66eaf9b5eade",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Elysia + Next + Eden：渲染方式 & query 用法.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Elysia + Next + Eden：渲染方式 & query 用法"
-            }
-          },
-          {
-            "id": "8e3a655405295514",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "用 Elysia 在 Next.js 中接入 Better‑Auth🦊✨.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "用 Elysia 在 Next.js 中接入 Better‑Auth🦊✨"
+              "title": "README"
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
@@ -266,6 +181,21 @@
   },
   "active": "57b17b5e1ce4b799",
   "lastOpenFiles": [
+    "2-技术文章/elysia/Elysia+Better-Auth+Drizzle最佳实践.md",
+    "2-技术文章/elysia/用 Elysia 在 Next.js 中接入 Better‑Auth🦊✨.md",
+    "2-技术文章/elysia/全栈拆成两个tsconfig 项目.md",
+    "2-技术文章/elysia/TypeBox + Elysia Eden 类型膨胀.md",
+    "2-技术文章/elysia/Elysia + Next + Eden：渲染方式 & query 用法.md",
+    "2-技术文章/typescript/类型诊断分析.md",
+    "2-技术文章/typescript/composite如何理解.md",
+    "TypeBox + Elysia Eden 类型膨胀.md",
+    "README.md",
+    "用 Elysia 在 Next.js 中接入 Better‑Auth🦊✨.md",
+    "Elysia + Next + Eden：渲染方式 & query 用法.md",
+    "全栈拆成两个tsconfig 项目.md",
+    "类型诊断分析.md",
+    "composite如何理解.md",
+    "00-blog/类型共识.md",
     "1-自用软件/07-开发工具与效率/Git版本控制/git常见问题/assets/GitPushRemote.jpg",
     "1-自用软件/07-开发工具与效率/Git版本控制/git命令/assets/image-20231112152144063.png",
     "1-自用软件/07-开发工具与效率/Git版本控制/git命令/assets/git命令.jpeg",
@@ -290,27 +220,12 @@
     "2-技术文章/软件职责/1. 哲学.md",
     "2-技术文章/图形技巧/ps快捷键.md",
     "2-技术文章/typescript/ts历史.md",
-    "2-技术文章/rust学习/rust.md",
     "2-技术文章/elysia/现代化开发/assets/Pasted image 20251201155818.png",
     "2-技术文章/elysia/现代化开发/assets/Pasted image 20251201155655.png",
     "2-技术文章/elysia/现代化开发/assets/Pasted image 20251201155623.png",
-    "2-技术文章/elysia/现代化开发/职责：.md",
-    "2-技术文章/elysia/现代化开发/未命名.md",
-    "2-技术文章/elysia/现代化开发/未命名 2.md",
-    "2-技术文章/elysia/现代化开发/未命名 1.md",
-    "2-技术文章/elysia/现代化开发/新的monorepo.md",
-    "2-技术文章/elysia/现代化开发/关于契约生成.md",
-    "2-技术文章/elysia/现代化开发/vim.md",
-    "2-技术文章/elysia/现代化开发/schema的规范.md",
-    "2-技术文章/elysia/现代化开发/README.md",
-    "2-技术文章/elysia/现代化开发/package.json.md",
-    "2-技术文章/elysia/现代化开发/elysia 的好库.md",
-    "2-技术文章/elysia/现代化开发/Drizzle ORM 使用指南.md",
     "2-技术文章/elysia/assets/image.png",
     "2-技术文章/elysia/assets/image-1.png",
-    "2-技术文章/elysia/ai+自动化/自动化生产-elysia.md",
     "2-技术文章/07-开发工具与效率/Git版本控制/git常见问题/assets/GitPushRemote.jpg",
-    "2-技术文章/07-开发工具与效率/Git版本控制/git命令/assets/image-20231112152144063.png",
-    "2-技术文章/07-开发工具与效率/Git版本控制/git命令/assets/git命令.jpeg"
+    "2-技术文章/07-开发工具与效率/Git版本控制/git命令/assets/image-20231112152144063.png"
   ]
 }
