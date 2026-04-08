@@ -4,6 +4,7 @@
       "Bash(cp:*)",
       "Bash(mkdir:*)",
       "Bash(mv:*)",
+      "Bash(ls:*)",
       "Bash(ls -d \"H:/main/knowledge_base/2-技术文章\"/*/ 2>/dev/null)",
       "Bash(ls -d \"H:/main/knowledge_base/4-全栈\"/*/ 2>/dev/null; ls -d \"H:/main/knowledge_base/3-skills\"/*/ 2>/dev/null)",
       "Bash(cd \"H:/main/knowledge_base\" && mv \"composite如何理解.md\" \"2-技术文章/typescript/\" && mv \"类型诊断分析.md\" \"2-技术文章/typescript/\")",
