@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "5-想法/1.本地电商.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "1.本地电商"
             }
           }
         ]
@@ -181,6 +181,9 @@
   },
   "active": "fc24b9ca620c5320",
   "lastOpenFiles": [
+    "README.md",
+    "5-想法/1.本地电商.md",
+    "5-想法",
     "CLAUDE.md",
     "4-全栈/01-elysia/01-Elysia架构基础规范.md",
     "4-全栈/01-elysia/21-推荐库集锦.md",
@@ -205,8 +208,6 @@
     "4-全栈/01-elysia/数据库模型重构总结.md",
     "4-全栈/01-elysia/Elysia+Better-Auth+Drizzle最佳实践.md",
     "4-全栈/01-elysia/Elysia + Next + Eden：渲染方式 & query 用法.md",
-    "4-全栈/01-elysia/用 Elysia 在 Next.js 中接入 Better‑Auth🦊✨.md",
-    "4-全栈/01-elysia/接口命名规范.md",
     "2-技术文章/08-AI编程/ai+自动化",
     "未命名.base",
     "2-技术文章/08-AI编程",
@@ -221,7 +222,6 @@
     "4-全栈/01-elysia/assets/image-1.png",
     "4-全栈/01-elysia/现代化开发",
     "4-全栈/01-elysia/assets",
-    "4-全栈/01-elysia/ai+自动化",
     "1-自用软件/01-编程基础/计算机基础/计算机必会的技能/utools/assets/image-20230515223716236.png",
     "1-自用软件/01-编程基础/计算机基础/计算机必会的技能/utools/assets/image-20230515223658400.png",
     "1-自用软件/01-编程基础/计算机基础/计算机必会的技能/utools/assets/image-20230515222946924.png",
