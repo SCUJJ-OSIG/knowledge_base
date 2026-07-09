@@ -1,6 +1,6 @@
 ---
 date created: 2025-10-二 23:47:57
-date modified: 2025-10-二 23:56:52
+date modified: 2026-04-六 20:00:27
 ---
 
 1. claude 因为是国外产品，中国无法访问，但是可以通过智谱和kimi k2 换模型使用其cli工具。
@@ -29,6 +29,6 @@ claude mcp add API 文档 --scope user --npx apifox-mcp-server@latest --oas=
 
 ```
 
-
+[[openclaw使用方法]]
 
 claude --dangerously-skip-permissions
