@@ -1,5 +1,9 @@
 [
   "image-upload-toolkit",
   "obsidian-git",
-  "obsidian-linter"
+  "obsidian-linter",
+  "tag-wrangler",
+  "copilot",
+  "obsidian-tasks-plugin",
+  "note-refactor-obsidian"
 ]
