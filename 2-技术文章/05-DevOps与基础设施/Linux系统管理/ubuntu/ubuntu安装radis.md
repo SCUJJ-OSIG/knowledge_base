@@ -4,7 +4,6 @@ tags:
   - DevOps与基础设施
   - Linux系统管理
   - ubuntu
-series: ubuntu
 ---
 1. 开启终端，此时首先需要更新系统的软件仓库（apt仓库）
    

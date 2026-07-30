@@ -4,7 +4,6 @@ date modified: '2026-04-三 13:22:23'
 tags:
   - 技术文章
   - vim
-series: vim
 ---
 ### Vim 核心操作速查手册
 

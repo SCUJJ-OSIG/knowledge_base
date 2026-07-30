@@ -4,7 +4,6 @@ date modified: '2026-04-三 13:23:01'
 tags:
   - 技术文章
   - vim
-series: vim
 ---
 
 ## Zed 编辑器 Vim 快捷键完整手册

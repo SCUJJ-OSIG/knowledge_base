@@ -5,7 +5,6 @@ tags:
   - 前端框架
   - Vue生态
   - vue3ts尚硅谷
-series: vue3ts尚硅谷
 ---
 # 1. Vue3 简介
 

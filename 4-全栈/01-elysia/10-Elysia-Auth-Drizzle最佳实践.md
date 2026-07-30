@@ -4,7 +4,6 @@ date modified: '2026-03-日 17:14:08'
 tags:
   - 全栈
   - elysia
-series: elysia
 ---
 ## 🎉 Elysia + Better‑Auth + Drizzle + PostgreSQL – “最佳实践”
 

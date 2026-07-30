@@ -12,7 +12,6 @@ related:
   - 知识库管理规则
   - views.published.base
 status: 待执行
-series: 技能
 ---
 
 # base 文件驱动的查询式博客重构计划

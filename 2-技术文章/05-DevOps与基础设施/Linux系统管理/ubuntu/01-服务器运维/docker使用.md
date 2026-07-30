@@ -5,7 +5,6 @@ tags:
   - Linux系统管理
   - ubuntu
   - 服务器运维
-series: 服务器运维
 ---
 ```
 docker pull nginx:latest  //拉去镜像

@@ -5,7 +5,6 @@ tags:
   - Linux系统管理
   - ubuntu
   - SSH配置
-series: SSH配置
 ---
 
 

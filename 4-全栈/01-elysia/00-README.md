@@ -2,7 +2,6 @@
 tags:
   - 全栈
   - elysia
-series: elysia
 ---
 # Elysia + Drizzle + Zod 全栈开发规范
 

@@ -4,7 +4,6 @@ date modified: '2026-04-六 20:00:27'
 tags:
   - 技术文章
   - aiCoding
-series: aiCoding
 ---
 
 1. claude 因为是国外产品，中国无法访问，但是可以通过智谱和kimi k2 换模型使用其cli工具。

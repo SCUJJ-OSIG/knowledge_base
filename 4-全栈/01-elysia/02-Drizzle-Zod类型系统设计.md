@@ -4,7 +4,6 @@ date modified: '2025-11-三 16:16:20'
 tags:
   - 全栈
   - elysia
-series: elysia
 ---
   1.1 基础 Schema 结构
 

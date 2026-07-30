@@ -11,7 +11,6 @@ related:
   - GitHub
   - GitLab
   - 版本控制
-series: 概念
 ---
 
 # Git版本控制

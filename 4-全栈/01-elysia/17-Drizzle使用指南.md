@@ -4,7 +4,6 @@ date modified: 2025-11-26T16:25:00.000Z
 tags:
   - 全栈
   - elysia
-series: elysia
 ---
 
 # 📊 Drizzle ORM 使用指南

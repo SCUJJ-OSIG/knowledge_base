@@ -4,7 +4,6 @@ tags:
   - TypeScript全栈开发
   - TS基础与类型系统
   - Web存储与浏览器API
-series: Web存储与浏览器API
 ---
 # Web存储与浏览器API
 

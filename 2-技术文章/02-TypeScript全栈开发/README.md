@@ -2,7 +2,6 @@
 tags:
   - 技术文章
   - TypeScript全栈开发
-series: TypeScript全栈开发
 ---
 # TypeScript全栈开发
 

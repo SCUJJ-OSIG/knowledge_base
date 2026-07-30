@@ -4,7 +4,6 @@ tags:
   - TypeScript全栈开发
   - 工程化与部署
   - 包管理
-series: 包管理
 ---
 
 1.官网

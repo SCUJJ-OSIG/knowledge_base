@@ -5,7 +5,6 @@ tags:
   - 计算机基础
   - 计算机必会的技能
   - utools
-series: utools
 ---
 ## 电脑效率软件utools
 

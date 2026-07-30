@@ -4,7 +4,6 @@ tags:
   - TypeScript全栈开发
   - TS基础与类型系统
   - TypeScript类型系统
-series: TypeScript类型系统
 ---
 ### 生成tsconfig.json 文件
 
