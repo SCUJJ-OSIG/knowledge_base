@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "3feeff444d3f7f6e",
+        "id": "c30d2792ec030194",
         "type": "tabs",
         "children": [
           {
-            "id": "1590d02175084c20",
+            "id": "ed6fc7545d79677d",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -176,7 +176,7 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "1590d02175084c20",
+  "active": "ed6fc7545d79677d",
   "lastOpenFiles": [
     "1-自用软件/01-编程基础/计算机基础/HTTP协议详解与网络通信基础.md",
     "views.published.base.tmp.72064.7f5b6d79e010",
