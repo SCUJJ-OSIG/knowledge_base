@@ -1,0 +1,55 @@
+filters:
+  and:
+    - 'file.ext == "md"'
+    - 'published == true'
+
+properties:
+  形态:
+    displayName: 形态
+  场景:
+    displayName: 场景
+  published:
+    displayName: 发布
+  file.mtime:
+    displayName: 修改时间
+
+views:
+  - type: table
+    name: 全部已发布
+    slug: all
+    order:
+      - file.name
+      - 形态
+      - 场景
+      - file.mtime
+
+  - type: table
+    name: 参考速查
+    slug: reference
+    filters:
+      and:
+        - '形态 == "参考型"'
+    order:
+      - file.name
+      - 场景
+
+  - type: table
+    name: 深度教程
+    slug: tutorial
+    filters:
+      and:
+        - '形态 == "教程型"'
+    order:
+      - file.name
+      - 场景
+      - file.mtime
+
+  - type: table
+    name: 场景-网络
+    slug: network
+    filters:
+      and:
+        - '场景 == "网络"'
+    order:
+      - file.name
+      - 形态

@@ -4,20 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e65659dc0d7ca5a0",
+        "id": "61d3af4258e0ad89",
         "type": "tabs",
         "children": [
           {
-            "id": "00e7e63257a39b4b",
+            "id": "40012f9416bb7781",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "知识库.base",
-                "viewName": "全部已归类"
+                "file": "ss.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "知识库"
+              "icon": "lucide-file",
+              "title": "ss"
             }
           }
         ]
@@ -52,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:场景/网络",
+                "query": "tag:场景/编程环境",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -179,41 +180,41 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "57b17b5e1ce4b799",
+  "active": "40012f9416bb7781",
   "lastOpenFiles": [
-    "知识库.base.tmp.72064.c3aa4933287f",
-    "skills-lock.json",
-    "知识库看板.md",
-    "知识库.base",
-    "知识库.base.tmp.72064.85e50b17fedd",
-    "未命名 1.base",
-    "未命名 3.md",
-    "1-自用软件/5.git.md",
-    "0-体/概念/HTTP协议.md",
-    "未命名.base",
+    "知识库管理规则.md.tmp.72064.8f041874f3e3",
+    "知识库管理规则.md.tmp.72064.f3a3733c90ad",
+    "views.base",
+    "views.base.tmp.72064.b0847bae434b",
+    "1-自用软件/01-编程基础/计算机基础/HTTP协议详解与网络通信基础.md.tmp.72064.8becc85904df",
+    "0-体/概念/HTTP协议.md.tmp.72064.bb4259b1fa22",
+    "1-自用软件/3.截图工具.md.tmp.72064.69d765923b9e",
+    "1-自用软件/5.git.md.tmp.72064.2a8d5b66bd8b",
+    "0-体/工具/Mise.md.tmp.72064.6d47c07453c0",
+    "0-体/网页.base",
+    "0-体/网页.base.tmp.72064.d6b9988d8365",
+    "0-体/概念/模板 - 概念.md",
+    "ss.md",
     "知识库管理规则.md",
+    "1-自用软件/5.git.md",
+    "知识库看板.md",
+    "未命名 3.md",
+    "0-体/概念/HTTP协议.md",
     "4-全栈/02-tanstack/1.文件路由系统.md",
     "3-场景/部署服务器/部署服务器场景.md",
     "2-技术文章/0-vim/Vim 常用操作速查手册.md",
     "未命名.md",
-    "知识库看板.md.tmp.72064.6053d5a80bde",
-    "1-自用软件/01-编程基础/计算机基础/HTTP协议详解与网络通信基础.md.tmp.72064.cca4f853efa9",
-    "0-体/概念/HTTP协议.md.tmp.72064.64afba4a5886",
-    "1-自用软件/3.截图工具.md.tmp.72064.a518b2d99a42",
     "学习js.md",
-    "1-自用软件/5.git.md.tmp.72064.7f68be960c91",
     "未命名 2.md",
     "未命名 1.md",
     "CLAUDE.md",
     "README.md",
-    "ss.md",
     "copilot/copilot-custom-prompts/Clip Web Page.md",
     "0-体/工具/Mise.md",
     "0-体/工具/Vim 编辑器.md",
     "0-体/技能/模板 - 技能.md",
     "0-体/工具/模板 - 工具.md",
     "0-体/概念/Git版本控制.md",
-    "0-体/概念/模板 - 概念.md",
     "1-自用软件/未命名.md",
     "1-自用软件/winget 图形化 UI 工具（可视化操作，不用敲命令）.md",
     "2-技术文章/TypeScript 5.x → 6.0 → 7.0 全版本更新汇总帖（中文完整版）.md",

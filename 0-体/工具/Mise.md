@@ -5,6 +5,7 @@ aliases: [rtx, 环境管理器]
 related: [asdf, direnv, make]
 形态: 参考型
 场景: 编程环境
+published: true
 ---
 
 # Mise

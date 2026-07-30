@@ -5,6 +5,7 @@ aliases: [HTTP, 超文本传输协议]
 related: [HTTPS, TCP/IP, RESTful, API]
 形态: 参考型
 场景: 网络
+published: true
 ---
 
 # HTTP协议
