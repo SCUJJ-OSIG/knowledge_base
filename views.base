@@ -8,6 +8,8 @@ properties:
     displayName: 形态
   场景:
     displayName: 场景
+  tag:
+    displayName: category
   published:
     displayName: 发布
   file.mtime:
@@ -21,6 +23,7 @@ views:
       - file.name
       - 形态
       - 场景
+      - tag
       - file.mtime
 
   - type: table
@@ -31,6 +34,7 @@ views:
         - '形态 == "参考型"'
     order:
       - file.name
+      - tag
       - 场景
 
   - type: table
@@ -41,6 +45,7 @@ views:
         - '形态 == "教程型"'
     order:
       - file.name
+      - tag
       - 场景
       - file.mtime
 
@@ -52,4 +57,5 @@ views:
         - '场景 == "网络"'
     order:
       - file.name
+      - tag
       - 形态
