@@ -1,6 +1,7 @@
 ---
 tags:
   - blog
+series: blog
 ---
 
 使用trubo管理monorepo

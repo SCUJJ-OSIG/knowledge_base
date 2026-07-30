@@ -5,6 +5,7 @@ tags:
   - Linux系统管理
   - ubuntu
   - 开发环境
+series: 开发环境
 ---
 # Node.js 开发环境搭建指南
 

@@ -4,6 +4,7 @@ date modified: '2026-03-五 03:08:21'
 tags:
   - 全栈
   - elysia
+series: elysia
 ---
 完全可以！**Monorepo 的 `apps/fullstack` 内部再拆分成前后端两个 TypeScript 项目是标准做法**，这两层架构互不冲突。
 

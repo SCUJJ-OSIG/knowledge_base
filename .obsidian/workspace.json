@@ -11,10 +11,12 @@
             "id": "ed6fc7545d79677d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "image",
+              "state": {
+                "file": "1-自用软件/01-编程基础/计算机基础/计算机必会的技能/utools/assets/image-20230515223658400.png"
+              },
+              "icon": "lucide-image",
+              "title": "image-20230515223658400"
             }
           }
         ]
@@ -176,8 +178,18 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "ed6fc7545d79677d",
+  "active": "57b17b5e1ce4b799",
   "lastOpenFiles": [
+    "scripts/series-from-path.ts.tmp.72064.db32f27bd24f",
+    "scripts/series-from-path.ts",
+    "scripts/series-from-path.ts.tmp.72064.8960804ed4e4",
+    "1-自用软件/01-编程基础/计算机基础/计算机必会的技能/utools/assets/image-20230515223716236.png",
+    "1-自用软件/01-编程基础/计算机基础/计算机必会的技能/utools/assets/image-20230515223658400.png",
+    "1-自用软件/01-编程基础/计算机基础/计算机必会的技能/utools/assets/image-20230515222946924.png",
+    "1-自用软件/01-编程基础/计算机基础/计算机必会的技能/assets/image-20231111200427031.png",
+    "2-技术文章/0-vim/Vim 常用操作速查手册.md",
+    "2-技术文章/0-vim/Zed 编辑器 Vim 快捷键完整手册.md",
+    "2-技术文章/3-编辑器/0-vscode/1-vscode调试.md",
     "1-自用软件/01-编程基础/计算机基础/HTTP协议详解与网络通信基础.md",
     "views.published.base.tmp.72064.7f5b6d79e010",
     "views.published.base",
@@ -189,9 +201,7 @@
     "scripts/flatten.ts.tmp.72064.6f31c54aaa6c",
     "scripts/flatten.ts",
     "scripts/flatten.ts.tmp.72064.c8d830ef036c",
-    "scripts",
     "0-体/技能/base驱动博客重构计划.md",
-    "0-体/技能/base驱动博客重构计划.md.tmp.72064.616de832cafe",
     "0-体/概念/模板 - 概念.md",
     "ss.md",
     "知识库管理规则.md",
@@ -201,7 +211,6 @@
     "0-体/概念/HTTP协议.md",
     "4-全栈/02-tanstack/1.文件路由系统.md",
     "3-场景/部署服务器/部署服务器场景.md",
-    "2-技术文章/0-vim/Vim 常用操作速查手册.md",
     "未命名.md",
     "学习js.md",
     "未命名 2.md",
@@ -211,18 +220,11 @@
     "copilot/copilot-custom-prompts/Clip Web Page.md",
     "0-体/工具/Mise.md",
     "0-体/工具/Vim 编辑器.md",
-    "0-体/技能/模板 - 技能.md",
-    "0-体/工具/模板 - 工具.md",
-    "0-体/概念/Git版本控制.md",
     "2-技术文章/12-磁盘/assets/PixPin_2026-04-24_15-30-28.png",
     "4-全栈/assets/PixPin_2026-05-24_08-32-51.png",
     "7-信息研究/金钱流动/assets/PixPin_2026-05-12_10-14-37.png",
     "2-技术文章/12-磁盘/assets/PixPin_2026-04-24_15-42-16.png",
     "2-技术文章/12-磁盘/assets/PixPin_2026-04-24_15-32-45.png",
-    "2-技术文章/12-磁盘/assets/PixPin_2026-04-24_15-32-23.png",
-    "1-自用软件/01-编程基础/计算机基础/计算机必会的技能/utools/assets/image-20230515222946924.png",
-    "1-自用软件/01-编程基础/计算机基础/计算机必会的技能/assets/image-20231111200427031.png",
-    "4-全栈/01-elysia/现代化开发/assets/Pasted image 20251201155818.png",
-    "4-全栈/01-elysia/现代化开发/assets/Pasted image 20251201155655.png"
+    "2-技术文章/12-磁盘/assets/PixPin_2026-04-24_15-32-23.png"
   ]
 }

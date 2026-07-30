@@ -4,6 +4,7 @@ date modified: 2025-11-26T16:20:00.000Z
 tags:
   - 全栈
   - elysia
+series: elysia
 ---
 
 # 🏗️ 现代化 Monorepo 项目架构

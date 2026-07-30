@@ -3,6 +3,7 @@ tags:
   - 技术文章
   - DevOps与基础设施
   - Linux系统管理
+series: Linux系统管理
 ---
 # 服务器安装系统 第一步是
 

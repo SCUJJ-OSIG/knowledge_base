@@ -4,6 +4,7 @@ tags:
   - DevOps与基础设施
   - Linux系统管理
   - nginx
+series: nginx
 ---
 # nginx 的用法
 

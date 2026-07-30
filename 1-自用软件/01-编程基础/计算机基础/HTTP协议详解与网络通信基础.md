@@ -8,6 +8,7 @@ tags:
 形态: 教程型
 场景: 网络
 published: true
+series: 计算机基础
 ---
 
 # HTTP协议详解与网络通信基础

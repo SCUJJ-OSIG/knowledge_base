@@ -11,6 +11,7 @@ related:
   - Neovim
   - VSCode
   - 文本编辑器
+series: 工具
 ---
 
 # Vim 编辑器

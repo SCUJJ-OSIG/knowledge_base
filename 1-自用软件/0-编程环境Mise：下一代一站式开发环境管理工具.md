@@ -7,6 +7,7 @@ tags:
 related:
   - Mise
   - 部署服务器场景
+series: 自用软件
 ---
 
 # 我的编程环境配置

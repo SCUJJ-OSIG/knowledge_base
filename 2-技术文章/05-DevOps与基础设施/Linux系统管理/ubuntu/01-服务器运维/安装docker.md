@@ -5,6 +5,7 @@ tags:
   - Linux系统管理
   - ubuntu
   - 服务器运维
+series: 服务器运维
 ---
 ## 在 Ubuntu 22.04 LTS 中安装 Docker
 

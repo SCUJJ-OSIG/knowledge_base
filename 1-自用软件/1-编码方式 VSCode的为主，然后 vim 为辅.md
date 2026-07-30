@@ -6,6 +6,7 @@ tags:
   - 自用软件
 related:
   - Vim 编辑器，VSCode
+series: 自用软件
 ---
 
 # 我的编码工作流：VSCode 为主，Vim 为辅

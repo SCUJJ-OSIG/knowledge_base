@@ -2,6 +2,7 @@
 tags:
   - 技术文章
   - Rust编程语言
+series: Rust编程语言
 ---
 所有权解决的问题 管理 heap 数量
 

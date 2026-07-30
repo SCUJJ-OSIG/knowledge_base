@@ -2,6 +2,7 @@
 tags:
   - 全栈
   - elysia
+series: elysia
 ---
 # Elysia 全栈架构基础规范
 

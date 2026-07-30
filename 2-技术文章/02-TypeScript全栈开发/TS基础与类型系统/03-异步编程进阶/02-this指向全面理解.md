@@ -4,6 +4,7 @@ tags:
   - TypeScript全栈开发
   - TS基础与类型系统
   - 异步编程进阶
+series: 异步编程进阶
 ---
 # this指向全面理解
 

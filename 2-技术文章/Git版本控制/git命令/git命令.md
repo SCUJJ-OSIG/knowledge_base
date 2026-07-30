@@ -3,6 +3,7 @@ tags:
   - 技术文章
   - Git版本控制
   - git命令
+series: git命令
 ---
 # 前端必备-协同开发git
 

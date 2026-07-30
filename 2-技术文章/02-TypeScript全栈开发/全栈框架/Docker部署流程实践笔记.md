@@ -3,6 +3,7 @@ tags:
   - 技术文章
   - TypeScript全栈开发
   - 全栈框架
+series: 全栈框架
 ---
 # Docker 自动化部署流程实践笔记
 

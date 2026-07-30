@@ -5,6 +5,7 @@ tags:
   - Linux系统管理
   - 虚拟机
   - linux相关的命令
+series: linux相关的命令
 ---
 #### linux常用命令
 

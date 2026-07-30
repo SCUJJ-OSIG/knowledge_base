@@ -6,6 +6,7 @@ tags:
   - TypeScript全栈开发
   - TS基础与类型系统
   - JavaScript基础核心
+series: JavaScript基础核心
 ---
 在 TypeScript（以及 JavaScript）中，`for...in` 和 `for...of` 是两种不同的遍历语法，它们的用途、行为和适用场景有显著区别。下面详细说明它们的用法、差异以及各自的适用对象。
 

@@ -3,6 +3,7 @@ date created: '2025-10-二 18:36:11'
 date modified: '2026-04-三 13:19:44'
 tags:
   - 自用软件
+series: 自用软件
 ---
 ### 一、Windows 常用命令（CMD/PowerShell）
 

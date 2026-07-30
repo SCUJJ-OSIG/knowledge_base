@@ -5,6 +5,7 @@ tags:
   - 技术文章
   - 软件架构与设计哲学
   - react
+series: react
 ---
 Next.js + React Query + Zustand
 
