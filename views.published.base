@@ -1,0 +1,25 @@
+filters:
+  and:
+    - 'file.ext == "md"'
+    - 'published == true'
+
+properties:
+  形态:
+    displayName: 形态
+  场景:
+    displayName: 场景
+  tags:
+    displayName: tags
+  file.mtime:
+    displayName: 修改时间
+
+views:
+  - type: table
+    name: 全部已发布
+    slug: all
+    order:
+      - file.name
+      - 形态
+      - 场景
+      - tags
+      - file.mtime
