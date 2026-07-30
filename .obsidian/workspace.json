@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ee5e50aa105a225c",
+        "id": "63e6119f312edfcf",
         "type": "tabs",
         "children": [
           {
-            "id": "efef41bd6407d9d2",
+            "id": "49e879db02e7e9fd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2-技术文章/TypeScript 5.x → 6.0 → 7.0 全版本更新汇总帖（中文完整版）.md",
+                "file": "学习js.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TypeScript 5.x → 6.0 → 7.0 全版本更新汇总帖（中文完整版）"
+              "title": "学习js"
             }
           }
         ]
@@ -180,10 +180,16 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "8ee37002394a8133",
+  "active": "49e879db02e7e9fd",
   "lastOpenFiles": [
-    "2-技术文章/组件封装/未命名.md",
+    "未命名 2.md",
+    "未命名 1.md",
+    "1-自用软件/未命名.md",
+    "1-自用软件/winget 图形化 UI 工具（可视化操作，不用敲命令）.md",
+    "1-自用软件/5.git.md",
+    "ss.md",
     "2-技术文章/TypeScript 5.x → 6.0 → 7.0 全版本更新汇总帖（中文完整版）.md",
+    "2-技术文章/组件封装/未命名.md",
     "7-信息研究/易经",
     "2-技术文章/组件封装/滚动容器底部裁切问题的永久解决方案.md",
     "2-技术文章/组件封装/一文吃透 shrink-wrap 自适应容器：踩坑根源、高频Bug、双层容器根治方案.md",
@@ -204,14 +210,8 @@
     "copilot/copilot-custom-prompts/Make shorter.md",
     "copilot/copilot-custom-prompts/Emojify.md",
     "copilot/copilot-custom-prompts/Explain like I am 5.md",
-    "copilot/copilot-custom-prompts/Simplify.md",
-    "copilot/copilot-custom-prompts/Summarize.md",
-    "copilot/copilot-custom-prompts/Translate to Chinese.md",
-    "copilot/copilot-custom-prompts/Fix grammar and spelling.md",
     "copilot/copilot-custom-prompts",
     "copilot",
-    "3-skills/未命名.md",
-    "学习js.md",
     "2-技术文章/12-磁盘/assets/PixPin_2026-04-24_15-30-28.png",
     "4-全栈/assets/PixPin_2026-05-24_08-32-51.png",
     "4-全栈/assets",
