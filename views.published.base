@@ -8,8 +8,6 @@ properties:
     displayName: 形态
   场景:
     displayName: 场景
-  series:
-    displayName: 系列
   tags:
     displayName: tags
   file.mtime:
@@ -23,6 +21,5 @@ views:
       - file.name
       - 形态
       - 场景
-      - series
       - tags
       - file.mtime
