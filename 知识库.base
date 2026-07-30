@@ -1,0 +1,64 @@
+filters:
+  and:
+    - 'file.ext == "md"'
+
+properties:
+  形态:
+    displayName: 形态
+  场景:
+    displayName: 场景
+  file.folder:
+    displayName: 位置
+
+views:
+  - type: table
+    name: 全部已归类
+    filters:
+      and:
+        - '形态 != ""'
+    order:
+      - file.name
+      - 形态
+      - 场景
+      - file.folder
+
+  - type: table
+    name: 参考型（可嵌入）
+    filters:
+      and:
+        - '形态 == "参考型"'
+    order:
+      - file.name
+      - 场景
+      - file.folder
+
+  - type: table
+    name: 教程型（原地保留）
+    filters:
+      and:
+        - '形态 == "教程型"'
+    order:
+      - file.name
+      - 场景
+      - file.folder
+
+  - type: cards
+    name: 按场景-网络
+    filters:
+      and:
+        - '场景 == "网络"'
+    order:
+      - file.name
+      - 形态
+
+  - type: table
+    name: 未归类（待整理）
+    filters:
+      and:
+        - '形态 == ""'
+        - 'file.name != "知识库"'
+        - 'file.name != "知识库管理规则"'
+    limit: 30
+    order:
+      - file.name
+      - file.folder

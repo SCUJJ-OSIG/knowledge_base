@@ -14,7 +14,8 @@
       "Bash(cd \"H:/main/knowledge_base\" && mv \"2-技术文章/typescript/ts历史.md\" \"2-技术文章/02-TypeScript全栈开发/TS基础与类型系统/04-TypeScript类型系统/02-TS历史与演进.md\" && mv \"2-技术文章/typescript/composite如何理解.md\" \"2-技术文章/02-TypeScript全栈开发/TS基础与类型系统/04-TypeScript类型系统/03-composite项目引用.md\" && mv \"2-技术文章/typescript/类型诊断分析.md\" \"2-技术文章/02-TypeScript全栈开发/TS基础与类型系统/04-TypeScript类型系统/04-类型诊断分析.md\" && rmdir \"2-技术文章/typescript\" && echo \"OK: typescript merged\")",
       "Bash(cd \"H:/main/knowledge_base\" && mv \"2-技术文章/rust学习\" \"2-技术文章/04-Rust编程语言\" && echo \"OK: rust renamed\")",
       "Bash(cd \"H:/main/knowledge_base\" && mv \"2-技术文章/图形技巧/ps快捷键.md\" \"1-自用软件/07-开发工具与效率/ps快捷键.md\" && rmdir \"2-技术文章/图形技巧\" && echo \"OK: 图形技巧 moved\")",
-      "Bash(cd \"H:/main/knowledge_base\" && mv \"2-技术文章/08 ai编程\" \"2-技术文章/08-AI编程\" && echo \"OK: 08 renamed\")"
+      "Bash(cd \"H:/main/knowledge_base\" && mv \"2-技术文章/08 ai编程\" \"2-技术文章/08-AI编程\" && echo \"OK: 08 renamed\")",
+      "Bash(npx skills *)"
     ],
     "deny": [],
     "ask": []
