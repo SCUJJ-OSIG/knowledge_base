@@ -1,8 +1,10 @@
 ---
 date created: 2026-04-22
-tags: [体/工具]
+tags: [体/工具, 场景/编程环境]
 aliases: [rtx, 环境管理器]
 related: [asdf, direnv, make]
+形态: 参考型
+场景: 编程环境
 ---
 
 # Mise
