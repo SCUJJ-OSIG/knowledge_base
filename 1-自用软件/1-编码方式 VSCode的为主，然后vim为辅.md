@@ -1,6 +1,8 @@
 ---
-date created: 2026-04-三 13:09:20
-date modified: 2026-04-三 13:25:18
+date created: '2026-04-三 13:09:20'
+date modified: '2026-04-三 13:25:18'
+tags:
+  - 自用软件
 ---
 
 [[Vim 常用操作速查手册]]

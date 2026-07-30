@@ -1,3 +1,9 @@
+---
+tags:
+  - 技术文章
+  - DevOps与基础设施
+  - Linux系统管理
+---
 ```bash
  cat ~/.ssh/id_rsa.pub | ssh root@43.138.106.253 
  "cat >> ~/.ssh/authorized-keys"

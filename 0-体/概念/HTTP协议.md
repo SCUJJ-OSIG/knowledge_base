@@ -1,8 +1,18 @@
 ---
-date created: 2026-04-22
-tags: [体/概念, 场景/网络]
-aliases: [HTTP, 超文本传输协议]
-related: [HTTPS, TCP/IP, RESTful, API]
+date created: 2026-04-22T00:00:00.000Z
+tags:
+  - 体/概念
+  - 场景/网络
+  - 体
+  - 概念
+aliases:
+  - HTTP
+  - 超文本传输协议
+related:
+  - HTTPS
+  - TCP/IP
+  - RESTful
+  - API
 形态: 参考型
 场景: 网络
 published: true

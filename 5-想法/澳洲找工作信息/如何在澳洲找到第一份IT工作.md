@@ -1,6 +1,9 @@
 ---
-date created: 2026-05-日 07:19:30
-date modified: 2026-05-日 07:34:15
+date created: '2026-05-日 07:19:30'
+date modified: '2026-05-日 07:34:15'
+tags:
+  - 想法
+  - 澳洲找工作信息
 ---
 
 [![Home](https://www.bigdream.com.au/_next/static/media/logo.0zpn1wrhsry4g.svg?dpl=dpl_F1u4zhgoHzxum8DPVnywVRs6WCnn "Home")](https://www.bigdream.com.au/zh)

@@ -1,6 +1,9 @@
 ---
-date created: 2026-01-六 14:05:07
-date modified: 2026-04-三 13:22:23
+date created: '2026-01-六 14:05:07'
+date modified: '2026-04-三 13:22:23'
+tags:
+  - 技术文章
+  - vim
 ---
 ### Vim 核心操作速查手册
 

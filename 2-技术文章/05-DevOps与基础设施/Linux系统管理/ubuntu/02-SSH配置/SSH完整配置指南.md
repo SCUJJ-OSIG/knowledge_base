@@ -1,3 +1,11 @@
+---
+tags:
+  - 技术文章
+  - DevOps与基础设施
+  - Linux系统管理
+  - ubuntu
+  - SSH配置
+---
 
 
 ## 📋 目录

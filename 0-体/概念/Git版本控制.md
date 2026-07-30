@@ -1,8 +1,16 @@
 ---
-date created: 2026-04-22
-tags: [体/概念]
-aliases: [Git, 版本控制系统]
-related: [GitHub, GitLab, 版本控制]
+date created: 2026-04-22T00:00:00.000Z
+tags:
+  - 体/概念
+  - 体
+  - 概念
+aliases:
+  - Git
+  - 版本控制系统
+related:
+  - GitHub
+  - GitLab
+  - 版本控制
 ---
 
 # Git版本控制

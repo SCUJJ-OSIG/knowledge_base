@@ -1,6 +1,11 @@
 ---
-date created: 2026-03-五 03:04:18
-date modified: 2026-03-五 03:05:07
+date created: '2026-03-五 03:04:18'
+date modified: '2026-03-五 03:05:07'
+tags:
+  - 技术文章
+  - TypeScript全栈开发
+  - TS基础与类型系统
+  - TypeScript类型系统
 ---
 可以把 `composite: true` 理解为 TypeScript 项目中的 **“身份证”** 或 **“准入证”**。
 

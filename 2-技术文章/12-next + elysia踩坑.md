@@ -1,6 +1,8 @@
 ---
-date created: 2026-05-六 20:54:30
-date modified: 2026-05-六 21:46:50
+date created: '2026-05-六 20:54:30'
+date modified: '2026-05-六 21:46:50'
+tags:
+  - 技术文章
 ---
 
 在next项目里面使用elysia，我在使用rpc 的时候，类型推断太慢了，好卡，不想用了。

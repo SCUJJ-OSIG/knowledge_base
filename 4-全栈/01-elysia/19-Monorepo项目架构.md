@@ -1,6 +1,9 @@
 ---
-date created: 2025-11-26 15:58:31
-date modified: 2025-11-26 16:20:00
+date created: 2025-11-26T15:58:31.000Z
+date modified: 2025-11-26T16:20:00.000Z
+tags:
+  - 全栈
+  - elysia
 ---
 
 # 🏗️ 现代化 Monorepo 项目架构

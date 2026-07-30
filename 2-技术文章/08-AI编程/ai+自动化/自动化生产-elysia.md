@@ -1,6 +1,10 @@
 ---
-date created: 2025-12-六 10:58:51
-date modified: 2025-12-六 17:21:01
+date created: '2025-12-六 10:58:51'
+date modified: '2025-12-六 17:21:01'
+tags:
+  - 技术文章
+  - AI编程
+  - ai+自动化
 ---
 自动化生产，
 

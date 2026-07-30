@@ -1,3 +1,11 @@
+---
+tags:
+  - 技术文章
+  - TypeScript全栈开发
+  - 前端框架
+  - Vue生态
+  - vue3ts尚硅谷
+---
 # 1. Vue3 简介
 
 - 2020 年 9 月 18 日，`Vue.js`发布版 `3.0`版本，代号：`One Piece`（n

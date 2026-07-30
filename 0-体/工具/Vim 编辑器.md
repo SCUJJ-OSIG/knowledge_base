@@ -1,8 +1,16 @@
 ---
-date created: 2026-04-22
-tags: [体/工具]
-aliases: [Vim, Vi IMproved]
-related: [Neovim, VSCode, 文本编辑器]
+date created: 2026-04-22T00:00:00.000Z
+tags:
+  - 体/工具
+  - 体
+  - 工具
+aliases:
+  - Vim
+  - Vi IMproved
+related:
+  - Neovim
+  - VSCode
+  - 文本编辑器
 ---
 
 # Vim 编辑器

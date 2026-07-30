@@ -1,8 +1,12 @@
 ---
-date created: 2026-04-三 13:04:52
-date modified: 2026-04-22
-tags: [用/编程环境]
-related: [Mise, 部署服务器场景]
+date created: '2026-04-三 13:04:52'
+date modified: 2026-04-22T00:00:00.000Z
+tags:
+  - 用/编程环境
+  - 自用软件
+related:
+  - Mise
+  - 部署服务器场景
 ---
 
 # 我的编程环境配置

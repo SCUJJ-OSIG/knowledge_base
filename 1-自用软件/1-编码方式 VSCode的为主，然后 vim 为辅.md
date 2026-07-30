@@ -1,8 +1,11 @@
 ---
-date created: 2026-01-六 14:05:07
-date modified: 2026-04-22
-tags: [用/编码工作流]
-related: [Vim 编辑器，VSCode]
+date created: '2026-01-六 14:05:07'
+date modified: 2026-04-22T00:00:00.000Z
+tags:
+  - 用/编码工作流
+  - 自用软件
+related:
+  - Vim 编辑器，VSCode
 ---
 
 # 我的编码工作流：VSCode 为主，Vim 为辅

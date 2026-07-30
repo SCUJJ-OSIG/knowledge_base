@@ -1,3 +1,10 @@
+---
+tags:
+  - 技术文章
+  - TypeScript全栈开发
+  - TS基础与类型系统
+  - ES6+现代特性
+---
 # Symbol类型与Set/Map
 
 ## 📋 学习目标

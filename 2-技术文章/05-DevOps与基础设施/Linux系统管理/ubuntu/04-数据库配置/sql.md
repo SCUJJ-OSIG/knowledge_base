@@ -1,3 +1,11 @@
+---
+tags:
+  - 技术文章
+  - DevOps与基础设施
+  - Linux系统管理
+  - ubuntu
+  - 数据库配置
+---
 Ubuntu和MySQL默认版本对照
 以下是一个以表格形式列出了不同Ubuntu版本和它们通常默认安装的MySQL版本：
 

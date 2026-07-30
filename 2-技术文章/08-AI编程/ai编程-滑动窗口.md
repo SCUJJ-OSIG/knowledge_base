@@ -1,6 +1,9 @@
 ---
-date created: 2026-01-日 20:53:30
-date modified: 2026-01-日 21:24:25
+date created: '2026-01-日 20:53:30'
+date modified: '2026-01-日 21:24:25'
+tags:
+  - 技术文章
+  - AI编程
 ---
 你的第二个想法，即**“滑动窗口式转换（Sliding Window Transformation）”**，是一个非常深刻的流程优化。如果说第一种方案是“树状分发”，那么这一种就是**“流水线（Pipeline）串行”**。
 

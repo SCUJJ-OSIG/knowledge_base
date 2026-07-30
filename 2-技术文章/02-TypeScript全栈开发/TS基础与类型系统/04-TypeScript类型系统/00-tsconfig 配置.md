@@ -1,3 +1,10 @@
+---
+tags:
+  - 技术文章
+  - TypeScript全栈开发
+  - TS基础与类型系统
+  - TypeScript类型系统
+---
 ### 生成tsconfig.json 文件
 
 这个文件是通过 `tsc --init`命令生成的
