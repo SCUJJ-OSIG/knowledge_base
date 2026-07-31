@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c30d2792ec030194",
+        "id": "3be23bde37030fc0",
         "type": "tabs",
         "children": [
           {
-            "id": "ed6fc7545d79677d",
+            "id": "dfd6d2166317161b",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "1-自用软件/01-编程基础/计算机基础/计算机必会的技能/utools/assets/image-20230515223658400.png"
+                "file": "0-blog/第一阶段，理解monorepo.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "image-20230515223658400"
+              "icon": "lucide-file",
+              "title": "第一阶段，理解monorepo"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": true
+                "autoReveal": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -178,8 +182,34 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "57b17b5e1ce4b799",
+  "active": "dfd6d2166317161b",
   "lastOpenFiles": [
+    "3-skills/未命名.md",
+    "5-想法/6..md",
+    "5-想法/4..md",
+    "5-想法/2.ai构想.md",
+    "copilot/copilot-custom-prompts/Clip Web Page.md",
+    "copilot/copilot-custom-prompts/Fix grammar and spelling.md",
+    "未命名 1.md",
+    "未命名 3.md",
+    "未命名 2.md",
+    "学习js.md",
+    "知识库.base",
+    "知识库管理规则.md",
+    "CLAUDE.md",
+    "README.md",
+    "ss.md",
+    "未命名.md",
+    "0-体/概念/HTTP协议.md",
+    "0-体/概念/模板 - 概念.md",
+    "0-体/概念/Git版本控制.md",
+    "copilot/copilot-custom-prompts/Make shorter.md",
+    "copilot/copilot-custom-prompts/Generate table of contents.md",
+    "copilot/copilot-custom-prompts/Generate glossary.md",
+    "copilot/copilot-custom-prompts/Explain like I am 5.md",
+    "copilot/copilot-custom-prompts/Emojify.md",
+    "views.published.base",
+    "1-自用软件/01-编程基础/计算机基础/计算机必会的技能/utools/assets/image-20230515223658400.png",
     "7-信息研究/金钱流动/assets/PixPin_2026-05-12_10-14-37.png",
     "7-信息研究/金钱流动/assets",
     "7-信息研究/金钱流动/未命名.md",
@@ -190,41 +220,15 @@
     "4-全栈/02-tanstack",
     "3-场景/部署服务器/部署服务器场景.md",
     "3-场景/部署服务器",
-    "3-场景/团队协作/团队协作场景.md",
     "3-场景/团队协作",
-    "3-skills/未命名.md",
-    "3-skills/未命名 1.md",
-    "3-skills/cli  技术栈.md",
     "3-skills",
-    "2-技术文章/组件封装/组件困惑.md",
-    "2-技术文章/组件封装/滚动容器底部裁切问题的永久解决方案.md",
-    "2-技术文章/组件封装/未命名.md",
-    "2-技术文章/组件封装/一文吃透 shrink-wrap 自适应容器：踩坑根源、高频Bug、双层容器根治方案.md",
-    "2-技术文章/组件封装/一、核心封装思想（底层原则，所有技巧都围绕这 4 点）.md",
-    "2-技术文章/组件封装/Slidev 原子化 Vue 组件封装完整方案.md",
     "2-技术文章/组件封装",
-    "2-技术文章/08-AI编程/ai+自动化/自动化生产-elysia.md",
-    "2-技术文章/08-AI编程/ai+自动化/自动化生产-elysia-方法流.md",
-    "2-技术文章/08-AI编程/ai+自动化",
-    "2-技术文章/0-vim/Zed 编辑器 Vim 快捷键完整手册.md",
-    "2-技术文章/0-vim/Vim 常用操作速查手册.md",
-    "2-技术文章/0-vim",
-    "copilot/copilot-custom-prompts/Translate to Chinese.md",
-    "copilot/copilot-custom-prompts/Summarize.md",
-    "copilot/copilot-custom-prompts/Simplify.md",
-    "copilot/copilot-custom-prompts/Rewrite as tweet.md",
-    "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
-    "copilot/copilot-custom-prompts/Remove URLs.md",
-    "copilot/copilot-custom-prompts/Make shorter.md",
-    "copilot/copilot-custom-prompts/Make longer.md",
     "2-技术文章/Git版本控制/git常见问题/assets/GitPushRemote.jpg",
     "2-技术文章/Git版本控制/git命令/assets/image-20231112152144063.png",
     "2-技术文章/Git版本控制/git命令/assets/git命令.jpeg",
     "2-技术文章/12-磁盘/assets/PixPin_2026-04-24_15-42-16.png",
     "2-技术文章/12-磁盘/assets/PixPin_2026-04-24_15-32-23.png",
     "2-技术文章/12-磁盘/assets/PixPin_2026-04-24_15-32-45.png",
-    "2-技术文章/12-磁盘/assets/PixPin_2026-04-24_15-30-28.png",
-    "4-全栈/01-elysia/现代化开发/assets/Pasted image 20251201155818.png",
-    "4-全栈/01-elysia/现代化开发/assets/Pasted image 20251201155655.png"
+    "2-技术文章/12-磁盘/assets/PixPin_2026-04-24_15-30-28.png"
   ]
 }

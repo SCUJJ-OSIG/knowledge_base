@@ -1,8 +1,6 @@
 filters:
   and:
-    - 'file.ext == "md"'
-    - 'published == true'
-
+    - file.ext == "md"
 properties:
   形态:
     displayName: 形态
@@ -12,14 +10,19 @@ properties:
     displayName: tags
   file.mtime:
     displayName: 修改时间
-
 views:
   - type: table
     name: 全部已发布
-    slug: all
     order:
       - file.name
       - 形态
       - 场景
       - tags
       - file.mtime
+      - published
+    sort:
+      - property: published
+        direction: DESC
+    slug: all
+  - type: table
+    name: 视图
