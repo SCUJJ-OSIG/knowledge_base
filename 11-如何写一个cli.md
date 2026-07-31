@@ -4,7 +4,7 @@ date modified: '2026-07-31'
 tags:
   - 技术/cli/开发
   - 技术/工具/bun
-title: 优先使用bun
+title: 如何写一个 CLI
 ---
 
 优先使用bun

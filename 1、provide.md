@@ -5,7 +5,7 @@ tags:
   - 技术/前端/react
   - 技术/软件架构/设计模式
   - 技术/组件/context
-title: 优雅重构版 `UserProvider`
+title: UserProvider 优雅重构版
 ---
 
 Next.js + React Query + Zustand

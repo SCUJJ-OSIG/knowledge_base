@@ -5,7 +5,7 @@ tags:
   - 技术/前端/css
   - 技术/组件封装/容器
   - 技术/踩坑记录
-title: Shrink-wrap 自适应容器 - 踩坑与根治方案
+title: Shrink-wrap 自适应容器踩坑与根治方案
 ---
 
 ## 前言

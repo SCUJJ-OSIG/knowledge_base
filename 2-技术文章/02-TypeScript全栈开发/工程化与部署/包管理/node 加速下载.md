@@ -2,7 +2,7 @@
 tags:
   - 技术/工具/node
   - 技术/包管理/加速
-title: Node 加速下载
+title: Node 加速下载方案
 date created: '2026-07-31'
 date modified: '2026-07-31'
 ---

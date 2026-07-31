@@ -2,7 +2,7 @@
 tags:
   - 技术/rust/基础
   - 技术/rust/切片
-title: Rust 基础 - 切片
+title: Rust 基础 - 所有权与切片
 date created: '2026-07-31'
 date modified: '2026-07-31'
 ---

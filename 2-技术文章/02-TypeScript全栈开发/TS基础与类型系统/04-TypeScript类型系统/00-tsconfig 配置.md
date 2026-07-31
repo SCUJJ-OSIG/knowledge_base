@@ -2,7 +2,7 @@
 tags:
   - 技术/typescript
   - 技术/配置/tsconfig
-title: tsconfig 配置
+title: tsconfig 配置详解
 date created: '2026-07-31'
 date modified: '2026-07-31'
 ---

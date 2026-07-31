@@ -5,7 +5,7 @@ tags:
   - 自用软件
   - 技术/操作系统/windows
   - 技术/工具/快捷键
-title: 一、Windows 常用命令（CMD/PowerShell）
+title: Windows 快捷键与常用命令
 ---
 
 ### 一、Windows 常用命令（CMD/PowerShell）

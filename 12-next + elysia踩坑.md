@@ -5,7 +5,7 @@ tags:
   - 技术/全栈/elysia
   - 技术/全栈/nextjs
   - 技术/踩坑记录
-title: 在next项目里面使用elysia，我在使用rpc 的时候，类型推断太慢了，好卡，不想用了。
+title: Next + Elysia 踩坑记录
 ---
 
 在next项目里面使用elysia，我在使用rpc 的时候，类型推断太慢了，好卡，不想用了。
