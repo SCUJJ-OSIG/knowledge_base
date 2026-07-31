@@ -2,9 +2,10 @@
 tags:
   - 技术文章
   - yolov5
-date created: 2026-07-五 01:32:59
-date modified: 2026-07-五 08:58:34
+date created: 2026-07-五 10:42:34
+date modified: 2026-07-五 10:54:48
 ---
+
 weigths: 指的是训练好的网络模型，用来初始化网络权重
 cfg：为configuration的缩写，指的是网络结构，一般对应models文件夹下的xxx.yaml文件
 data：训练数据路径，一般为data文件夹下的xxx.yaml文件
@@ -50,7 +51,7 @@ save-period：训练多少次保存一次网络模型
 
 
 
-# 用gpu运行yolov5
+## 用gpu运行yolov5
 
 
 https://blog.csdn.net/weixin_68922189/article/details/134448330

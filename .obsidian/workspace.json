@@ -11,14 +11,13 @@
             "id": "92a755ead506768e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "电脑相关权限问题/电脑相关权限问题.md",
-                "mode": "source",
-                "source": false
+                "file": "知识库.base",
+                "viewName": "全部已归类"
               },
-              "icon": "lucide-file",
-              "title": "电脑相关权限问题"
+              "icon": "lucide-table",
+              "title": "知识库"
             }
           }
         ]
@@ -184,6 +183,10 @@
   },
   "active": "57b17b5e1ce4b799",
   "lastOpenFiles": [
+    "package.json",
+    "TypeScript 5.x → 6.0 → 7.0 全版本更新汇总帖（中文完整版）.md",
+    "yolov5-text.md",
+    "电脑相关权限问题/电脑相关权限问题.md",
     "ai编程-滑动窗口.md.tmp.25316.0310c55aef3b",
     "ai编程-滑动窗口.md.tmp.25316.b6424d85e4f4",
     "ai编程-滑动窗口.md.tmp.25316.bd13f408c06a",
@@ -194,10 +197,8 @@
     "ai编程-滑动窗口.md.tmp.25316.c0ff7fa62b25",
     "sedIt7nFK",
     "scripts/format-scan.ts.tmp.25316.2e8156cbc8c9",
-    "scripts/format-scan.ts",
     "1、provide.md",
     "1. 哲学.md",
-    "yolov5-text.md",
     "第一阶段，理解monorepo.md",
     "部署服务器场景.md",
     "学习js.md",
@@ -216,10 +217,8 @@
     "ps快捷键.md",
     "README.md",
     "rust.md",
-    "TypeScript 5.x → 6.0 → 7.0 全版本更新汇总帖（中文完整版）.md",
     "12-next + elysia踩坑.md",
     "编程必备.md",
-    "本地嵌入服务架构.md",
     "1-自用软件/01-编程基础/计算机基础/计算机必会的技能/utools/assets/image-20230515223658400.png",
     "7-信息研究/金钱流动/assets/PixPin_2026-05-12_10-14-37.png",
     "4-全栈/assets/PixPin_2026-05-24_08-32-51.png",
