@@ -1,6 +1,10 @@
 ---
-date created: 2025-10-日 00:45:11
-date modified: 2026-07-31
+date created: '2025-10-日 00:45:11'
+date modified: '2026-07-31'
+title: CLAUDE 配置
+tags:
+  - 元/配置
+  - 配置
 ---
 
 # CLAUDE.md

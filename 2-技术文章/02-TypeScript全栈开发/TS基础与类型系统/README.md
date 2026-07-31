@@ -1,8 +1,10 @@
 ---
 tags:
-  - 技术文章
-  - TypeScript全栈开发
-  - TS基础与类型系统
+  - 技术/前端/合集
+  - 技术/教程
+title: Web前端开发学习笔记
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 # Web前端开发学习笔记
 

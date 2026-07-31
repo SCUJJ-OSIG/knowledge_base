@@ -1,6 +1,10 @@
 ---
-date created: 2025-10-日 00:42:03
-date modified: 2026-07-31
+date created: '2025-10-日 00:42:03'
+date modified: '2026-07-31'
+title: 知识库 · 技术文档
+tags:
+  - 元/索引
+  - 知识库
 ---
 
 # 知识库 · 技术文档

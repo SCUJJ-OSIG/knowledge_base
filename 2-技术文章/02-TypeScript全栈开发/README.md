@@ -1,7 +1,10 @@
 ---
 tags:
-  - 技术文章
-  - TypeScript全栈开发
+  - 技术/全栈/typescript
+  - 技术/前端/合集
+title: TypeScript全栈开发
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 # TypeScript全栈开发
 
