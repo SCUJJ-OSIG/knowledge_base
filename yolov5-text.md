@@ -1,8 +1,9 @@
 ---
 tags:
   - 技术文章
-  - yolo
   - yolov5
+date created: 2026-07-五 01:32:59
+date modified: 2026-07-五 08:58:34
 ---
 weigths: 指的是训练好的网络模型，用来初始化网络权重
 cfg：为configuration的缩写，指的是网络结构，一般对应models文件夹下的xxx.yaml文件
