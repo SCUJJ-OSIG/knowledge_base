@@ -1,6 +1,6 @@
 ---
-date created: '2026-06-三 10:21:52'
-date modified: '2026-06-三 10:21:59'
+date created: "2026-06-三 10:21:52"
+date modified: "2026-06-三 10:21:59"
 tags:
   - skills
 ---
@@ -8,138 +8,139 @@ tags:
 Kilo Skills 完整指南
 一、技能总览
 
-##	技能名	分类	大小	调用技巧
-1	3d-modeling	图形/3D	5.9KB	需要 3D 建模、渲染、Three.js 时直接调用
-2	accessibility	前端体验	4.7KB	实现无障碍访问、WCAG 合规时调用
-3	algorithm-expert	算法/数据结构	5.7KB	刷算法题、复杂度分析、算法优化时调用
-4	api-reviewer	API 评审	4.7KB	API 设计评审、安全审计时调用
-5	api-writer	API 文档	23KB	写 RESTful/GraphQL/API 文档、OpenAPI 时优先用
-6	backend-expert	后端开发	30KB	Spring/Node.js/Python FastAPI/Go 后端开发时调用
-7	blockchain-web3	Web3	6.1KB	智能合约、DApp、以太坊开发时调用
-8	cloud-architecture	云架构	5.3KB	AWS/GCP/Azure 架构设计、成本优化时调用
-9	code-refactoring	代码质量	5.8KB	重构、消除技术债、引入设计模式时调用
-10	code-review	代码审查	2.4KB	通用代码审查、安全检查、代码风格评审时调用
-11	competitive-ads-extractor	市场营销	8.1KB	分析竞品广告、Facebook/LinkedIn 广告库时调用
-12	compliance	合规安全	5.5KB	GDPR 合规、数据隐私、审核流程时调用
-13	content-research-writer	内容写作	14KB	写文章、内容研究、添加引用时调用
-14	data-science	数据科学	5.6KB	数据分析、机器学习建模、数据清洗时调用
-15	data-visualization	数据可视化	3.9KB	图表设计、D3.js/ECharts 开发时调用
-16	database-expert	数据库	4.8KB	SQL/NoSQL 设计、查询优化、分库时调用
-17	debugging-expert	调试	4.7KB	Bug 定位、内存泄漏、性能分析时调用
-18	design-system	设计系统	5.6KB	组件库、Design Token、Storybook 时调用
-19	devops-cicd	DevOps	6.0KB	CI/CD、自动化水线、基础设施即代码时调用
-20	docker-k8s	容器	13KB	Docker 构建、K8s 编排、Helm 时优先用这个
-21	domain-name-brainstormer	域名创意	5.9KB	想域名、检查域名可用性时调用
-22	electron-app	桌面应用	3.8KB	Electron 跨平台应用开发时调用
-23	email-marketing	邮件营销	4.6KB	设计邮件模板、A/B 测试、自动化流程时调用
-24	excel-automation	Excel 自动化	4.3KB	Python/Excel、VBA、透视表自动化时调用
-25	frontend-expert	前端开发	23KB	React/Vue/Angular 开发、性能优化、TypeScript 时调用
-26	fullstack-expert	全栈	8.8KB	需要全栈视角、技术选型、端到端开发时调用
-27	game-dev	游戏开发	4.0KB	Unity/Unreal 游戏开发时调用
-28	git-expert	Git	3.6KB	Git 冲突解决、分支策略、Git Hooks 时调用
-29	graphql	GraphQL	5.7KB	GraphQL Schema 设计、Resolver 优化时调用
-30	i18n-localization	国际化	4.1KB	多语言支持、时区/货币/日期格式时调用
-31	internal-comms	内部沟通	1.7KB	写内部通讯、新闻稿、FAQ、公司级更新时调用
-32	iot-embedded	IoT/嵌入式	3.4KB	Arduino/Raspberry Pi/MQTT 协议时调用
-33	lead-research-assistant	销售线索	6.8KB	寻找潜在客户、分析目标公司时调用
-34	llm-expert	大模型	75KB	LLM 应用开发、Prompt 工程、RAG、微调时调用
-35	log-analysis	日志分析	4.3KB	ELK Stack、异常检测、告警规则时调用
-36	low-code	低代码	5.4KB	可视化开发、流程编排、快速应用开发时调用
-37	meeting-insights-analyzer	会议分析	10KB	分析会议记录、提取行为洞察时调用
-38	micro-frontend	微前端	4.6KB	Module Federation/qiankun/single-spa 时调用
-39	mobile-dev	移动端	6.0KB	React Native/Flutter/iOS/Android 时调用
-40	performance-tuning	性能调优	3.8KB	性能分析、瓶颈定位、CDN/缓存优化时调用
-41	project-management	项目管理	2.9KB	Scrum 看板、敏捷开发、项目规划时调用
-42	regex-expert	正则表达式	4.3KB	写正则表达式、模式匹配、复杂正则优化时调用
-43	security-audit	安全审计	4.3KB	渗透测试、代码安全审查、安全合规时调用
-44	shell-scripting	Shell 脚本	3.9KB	Bash 脚本、系统运维、Linux 工具链整合时调用
-45	sre	SRE	5.4KB	高可用、SLO/SLI、容量规划、灾备规划时调用
-46	state-management	状态管理	5.6KB	Redux/Zustand/Pinia/Context API 时调用
-47	tech-docs	技术文档	5.0KB	API 文档、架构文档、README 用户手册时调用
-48	technical-interview	技术面试	3.4KB	算法讲解、系统设计面试、面试技巧时调用
-49	testing-expert	测试	6.0KB	单元/集成/E2E 测试、TDD、覆盖率提升时调用
-50	ui-ux-design	UI/UX	3.0KB	界面设计、用户研究、交互设计、原型时调用
-51	voice-assistant	语音助手	5.6KB	语音识别、NLU、对话管理、TTS 时调用
-52	web-technologies	Web 技术	28KB	HTTP/TCP-IP/DNS/CDN/WebSocket/网络安全综合时调用
-53	websocket	WebSocket	5.4KB	实时通信、Socket.io/ws、断线重连时调用
+## 技能名 分类 大小 调用技巧
+
+1 3d-modeling 图形/3D 5.9KB 需要 3D 建模、渲染、Three.js 时直接调用
+2 accessibility 前端体验 4.7KB 实现无障碍访问、WCAG 合规时调用
+3 algorithm-expert 算法/数据结构 5.7KB 刷算法题、复杂度分析、算法优化时调用
+4 api-reviewer API 评审 4.7KB API 设计评审、安全审计时调用
+5 api-writer API 文档 23KB 写 RESTful/GraphQL/API 文档、OpenAPI 时优先用
+6 backend-expert 后端开发 30KB Spring/Node.js/Python FastAPI/Go 后端开发时调用
+7 blockchain-web3 Web3 6.1KB 智能合约、DApp、以太坊开发时调用
+8 cloud-architecture 云架构 5.3KB AWS/GCP/Azure 架构设计、成本优化时调用
+9 code-refactoring 代码质量 5.8KB 重构、消除技术债、引入设计模式时调用
+10 code-review 代码审查 2.4KB 通用代码审查、安全检查、代码风格评审时调用
+11 competitive-ads-extractor 市场营销 8.1KB 分析竞品广告、Facebook/LinkedIn 广告库时调用
+12 compliance 合规安全 5.5KB GDPR 合规、数据隐私、审核流程时调用
+13 content-research-writer 内容写作 14KB 写文章、内容研究、添加引用时调用
+14 data-science 数据科学 5.6KB 数据分析、机器学习建模、数据清洗时调用
+15 data-visualization 数据可视化 3.9KB 图表设计、D3.js/ECharts 开发时调用
+16 database-expert 数据库 4.8KB SQL/NoSQL 设计、查询优化、分库时调用
+17 debugging-expert 调试 4.7KB Bug 定位、内存泄漏、性能分析时调用
+18 design-system 设计系统 5.6KB 组件库、Design Token、Storybook 时调用
+19 devops-cicd DevOps 6.0KB CI/CD、自动化水线、基础设施即代码时调用
+20 docker-k8s 容器 13KB Docker 构建、K8s 编排、Helm 时优先用这个
+21 domain-name-brainstormer 域名创意 5.9KB 想域名、检查域名可用性时调用
+22 electron-app 桌面应用 3.8KB Electron 跨平台应用开发时调用
+23 email-marketing 邮件营销 4.6KB 设计邮件模板、A/B 测试、自动化流程时调用
+24 excel-automation Excel 自动化 4.3KB Python/Excel、VBA、透视表自动化时调用
+25 frontend-expert 前端开发 23KB React/Vue/Angular 开发、性能优化、TypeScript 时调用
+26 fullstack-expert 全栈 8.8KB 需要全栈视角、技术选型、端到端开发时调用
+27 game-dev 游戏开发 4.0KB Unity/Unreal 游戏开发时调用
+28 git-expert Git 3.6KB Git 冲突解决、分支策略、Git Hooks 时调用
+29 graphql GraphQL 5.7KB GraphQL Schema 设计、Resolver 优化时调用
+30 i18n-localization 国际化 4.1KB 多语言支持、时区/货币/日期格式时调用
+31 internal-comms 内部沟通 1.7KB 写内部通讯、新闻稿、FAQ、公司级更新时调用
+32 iot-embedded IoT/嵌入式 3.4KB Arduino/Raspberry Pi/MQTT 协议时调用
+33 lead-research-assistant 销售线索 6.8KB 寻找潜在客户、分析目标公司时调用
+34 llm-expert 大模型 75KB LLM 应用开发、Prompt 工程、RAG、微调时调用
+35 log-analysis 日志分析 4.3KB ELK Stack、异常检测、告警规则时调用
+36 low-code 低代码 5.4KB 可视化开发、流程编排、快速应用开发时调用
+37 meeting-insights-analyzer 会议分析 10KB 分析会议记录、提取行为洞察时调用
+38 micro-frontend 微前端 4.6KB Module Federation/qiankun/single-spa 时调用
+39 mobile-dev 移动端 6.0KB React Native/Flutter/iOS/Android 时调用
+40 performance-tuning 性能调优 3.8KB 性能分析、瓶颈定位、CDN/缓存优化时调用
+41 project-management 项目管理 2.9KB Scrum 看板、敏捷开发、项目规划时调用
+42 regex-expert 正则表达式 4.3KB 写正则表达式、模式匹配、复杂正则优化时调用
+43 security-audit 安全审计 4.3KB 渗透测试、代码安全审查、安全合规时调用
+44 shell-scripting Shell 脚本 3.9KB Bash 脚本、系统运维、Linux 工具链整合时调用
+45 sre SRE 5.4KB 高可用、SLO/SLI、容量规划、灾备规划时调用
+46 state-management 状态管理 5.6KB Redux/Zustand/Pinia/Context API 时调用
+47 tech-docs 技术文档 5.0KB API 文档、架构文档、README 用户手册时调用
+48 technical-interview 技术面试 3.4KB 算法讲解、系统设计面试、面试技巧时调用
+49 testing-expert 测试 6.0KB 单元/集成/E2E 测试、TDD、覆盖率提升时调用
+50 ui-ux-design UI/UX 3.0KB 界面设计、用户研究、交互设计、原型时调用
+51 voice-assistant 语音助手 5.6KB 语音识别、NLU、对话管理、TTS 时调用
+52 web-technologies Web 技术 28KB HTTP/TCP-IP/DNS/CDN/WebSocket/网络安全综合时调用
+53 websocket WebSocket 5.4KB 实时通信、Socket.io/ws、断线重连时调用
 二、分类详解与调用技巧
 :rocket: 编程开发类（22 个）
 核心编程语言
-技能	什么时候用	调用方式
-backend-expert	Java Spring/Node.js/Python FastAPI/Go Gin 后端开发。涵盖微服务、分布式事务、Kafka、缓存架构	说"后端开发"、“写 API”、"微服务"时自动触发
-frontend-expert	React/Vue/Angular 开发、TypeScript、性能优化、构建工具、可访问性	说"前端"、“React”、"UI 组件"时触发
-fullstack-expert	需要全栈视角，从前端到后端到数据库到部署的全链路开发	说"全栈"、“从前端到后端”、"完整项目"时触发
+技能 什么时候用 调用方式
+backend-expert Java Spring/Node.js/Python FastAPI/Go Gin 后端开发。涵盖微服务、分布式事务、Kafka、缓存架构 说"后端开发"、“写 API”、"微服务"时自动触发
+frontend-expert React/Vue/Angular 开发、TypeScript、性能优化、构建工具、可访问性 说"前端"、“React”、"UI 组件"时触发
+fullstack-expert 需要全栈视角，从前端到后端到数据库到部署的全链路开发 说"全栈"、“从前端到后端”、"完整项目"时触发
 专项编程
-技能	什么时候用
-code-refactoring	识别代码异味，应用设计模式，消除技术债。重构 > 重写
-code-review	通用代码审查，检查代码异味、安全性、性能、可维护性
-graphql	Schema 设计、Resolver 实现、查询优化、Apollo/Relay
-state-management	Redux/Zustand/Pinia/Context API 状态管理选型与实现
-micro-frontend	Module Federation / qiankun / single-spa 微前端架构
-shell-scripting	Bash 脚本、系统运维、Linux 工具链整合
-electron-app	Electron 跨平台桌面应用、原生模块集成、自动更新
-mobile-dev	React Native / Flutter / iOS 原生 / Android 原生
-git-expert	Git 高级用法、冲突解决、分支策略、Git Hooks
-algorithm-expert	算法、数据结构、复杂度分析、面试刷题
+技能 什么时候用
+code-refactoring 识别代码异味，应用设计模式，消除技术债。重构 > 重写
+code-review 通用代码审查，检查代码异味、安全性、性能、可维护性
+graphql Schema 设计、Resolver 实现、查询优化、Apollo/Relay
+state-management Redux/Zustand/Pinia/Context API 状态管理选型与实现
+micro-frontend Module Federation / qiankun / single-spa 微前端架构
+shell-scripting Bash 脚本、系统运维、Linux 工具链整合
+electron-app Electron 跨平台桌面应用、原生模块集成、自动更新
+mobile-dev React Native / Flutter / iOS 原生 / Android 原生
+git-expert Git 高级用法、冲突解决、分支策略、Git Hooks
+algorithm-expert 算法、数据结构、复杂度分析、面试刷题
 框架专精
-技能	覆盖范围
-api-writer	RESTful/GraphQL/WebSocket 文档、OpenAPI 规范、SDK 生成 (23KB!)
-api-reviewer	API 设计评审、接口规范审查、性能和安全评估
-testing-expert	单元测试、集成测试、E2E、TDD、覆盖率优化
-regular-expert (regex-expert)	正则表达式编写、模式匹配优化、复杂正则调试
+技能 覆盖范围
+api-writer RESTful/GraphQL/WebSocket 文档、OpenAPI 规范、SDK 生成 (23KB!)
+api-reviewer API 设计评审、接口规范审查、性能和安全评估
+testing-expert 单元测试、集成测试、E2E、TDD、覆盖率优化
+regular-expert (regex-expert) 正则表达式编写、模式匹配优化、复杂正则调试
 :cloud: 基础设施类（8 个）
-技能	什么时候用	调用技巧
-docker-k8s	Docker 镜像构建、K8s 编排、Helm Charts、容器安全	最实用的容器技能，13KB
-cloud-architecture	AWS/GCP/Azure 云架构、微服务架构、成本优化	
-devops-cicd	GitHub Actions/Jenkins/GitLab CI、Terraform、监控	
-sre	SLO/SLI 定义、灾备规划、故障排查、容量规划	
-performance-tuning	应用性能分析、数据库优化、网络调优、CDN、系统瓶颈	
-log-analysis	ELK Stack 日志聚合、异常检测、日志聚合告警	
-security-audit	渗透测试、代码安全审查、OWASP Top 10、安全合规	
-web-technologies	HTTP/HTTPS、TCP/IP、DNS/CDN、WebSocket、Web 安全 (28KB!)	
+技能 什么时候用 调用技巧
+docker-k8s Docker 镜像构建、K8s 编排、Helm Charts、容器安全 最实用的容器技能，13KB
+cloud-architecture AWS/GCP/Azure 云架构、微服务架构、成本优化
+devops-cicd GitHub Actions/Jenkins/GitLab CI、Terraform、监控
+sre SLO/SLI 定义、灾备规划、故障排查、容量规划
+performance-tuning 应用性能分析、数据库优化、网络调优、CDN、系统瓶颈
+log-analysis ELK Stack 日志聚合、异常检测、日志聚合告警
+security-audit 渗透测试、代码安全审查、OWASP Top 10、安全合规
+web-technologies HTTP/HTTPS、TCP/IP、DNS/CDN、WebSocket、Web 安全 (28KB!)
 :file_cabinet: 数据库类（2 个）
-技能	覆盖
-database-expert	关系型/NoSQL 设计、查询优化、数据建模、分库分表、数据库迁移
-llm-expert	75KB 超大技能，向量数据库 + RAG + LLM 部署全涵盖
+技能 覆盖
+database-expert 关系型/NoSQL 设计、查询优化、数据建模、分库分表、数据库迁移
+llm-expert 75KB 超大技能，向量数据库 + RAG + LLM 部署全涵盖
 :light_bulb: AI / 大模型类（1 个）
-技能	说明
-llm-expert	最大技能 (75KB)，涵盖：Prompt 工程、API 调用、微调、RAG、Agent 框架、向量数据库、LLM 部署、多模态、成本优化、安全合规。当需要 LLM 应用开发、架构设计或技术选型时，这个技能是核心。
+技能 说明
+llm-expert 最大技能 (75KB)，涵盖：Prompt 工程、API 调用、微调、RAG、Agent 框架、向量数据库、LLM 部署、多模态、成本优化、安全合规。当需要 LLM 应用开发、架构设计或技术选型时，这个技能是核心。
 :artist_palette: 设计/用户体验类（5 个）
-技能	什么时候用
-ui-ux-design	界面设计、用户研究、交互设计、原型
-design-system	组件库开发、Storybook、Design Token、文档生成
-accessibility	WCAG 合规、屏幕阅读器支持、增强 HTML、无障碍设计
-data-visualization	图表设计、D3.js/ECharts/Chart.js、信息图设计
-3d-modeling	3D 建模/渲染、Three.js/WebGL、模型导入导出
+技能 什么时候用
+ui-ux-design 界面设计、用户研究、交互设计、原型
+design-system 组件库开发、Storybook、Design Token、文档生成
+accessibility WCAG 合规、屏幕阅读器支持、增强 HTML、无障碍设计
+data-visualization 图表设计、D3.js/ECharts/Chart.js、信息图设计
+3d-modeling 3D 建模/渲染、Three.js/WebGL、模型导入导出
 :bar_chart: 数据/分析类（4 个）
-技能	什么时候用
-data-science	数据分析、机器学习、统计建模、数据清洗、Pandas/Scikit-learn
-meeting-insights-analyzer	分析会议记录，发现行为模式、沟通洞察、可执行反馈
-competitive-ads-extractor	从 Facebook/LinkedIn 广告库提取并分析竞品广告
-lead-research-assistant	识别高质量潜在客户，分析业务、搜索目标公司
+技能 什么时候用
+data-science 数据分析、机器学习、统计建模、数据清洗、Pandas/Scikit-learn
+meeting-insights-analyzer 分析会议记录，发现行为模式、沟通洞察、可执行反馈
+competitive-ads-extractor 从 Facebook/LinkedIn 广告库提取并分析竞品广告
+lead-research-assistant 识别高质量潜在客户，分析业务、搜索目标公司
 :memo: 内容/沟通类（5 个）
-技能	什么时候用
-content-research-writer	高质量内容写作、研究、添加引用、改进标题、迭大纲
-tech-docs	技术文档撰写、API 文档、架构文档、README、用户手册
-internal-comms	内部沟通、公司新闻稿、FAQ、第三方更新
-email-marketing	邮件营销、A/B 测试、自动化流程、送达率优化
-voice-assistant	语音识别、NLU、对话管理、TTS、多模态交互
+技能 什么时候用
+content-research-writer 高质量内容写作、研究、添加引用、改进标题、迭大纲
+tech-docs 技术文档撰写、API 文档、架构文档、README、用户手册
+internal-comms 内部沟通、公司新闻稿、FAQ、第三方更新
+email-marketing 邮件营销、A/B 测试、自动化流程、送达率优化
+voice-assistant 语音识别、NLU、对话管理、TTS、多模态交互
 :video_game: 游戏/特殊类（4 个）
-技能	什么时候用
-game-dev	Unity / Unreal Engine 游戏开发
-blockchain-web3	智能合约、DApp 开发、以太坊、Solidity
-iot-embedded	Arduino / Raspberry Pi / MQTT 协议 / IoT 架构
-low-code	可视化开发、流程编排、快速应用开发
+技能 什么时候用
+game-dev Unity / Unreal Engine 游戏开发
+blockchain-web3 智能合约、DApp 开发、以太坊、Solidity
+iot-embedded Arduino / Raspberry Pi / MQTT 协议 / IoT 架构
+low-code 可视化开发、流程编排、快速应用开发
 :hammer_and_wrench: 工具/效率类（4 个）
-技能	什么时候用
-regex-expert	写正则表达式、模式匹配、复杂正则优化
-excel-automation	Python 操作 Excel、VBA 宏、透视表、自动化报表
-domain-name-brainstormer	生成创意域名、检查 .com/.io/.dev/.ai 等可用性
-project-management	Scrum/看板、任务分解、进度追踪、项目规划
+技能 什么时候用
+regex-expert 写正则表达式、模式匹配、复杂正则优化
+excel-automation Python 操作 Excel、VBA 宏、透视表、自动化报表
+domain-name-brainstormer 生成创意域名、检查 .com/.io/.dev/.ai 等可用性
+project-management Scrum/看板、任务分解、进度追踪、项目规划
 :wrench: 其他专业类（2 个）
-技能	什么时候用
-compliance	GDPR、数据隐私合规、审查流程、法律要求
-technical-interview	算法题讲解、系统设计面试、面试技巧
+技能 什么时候用
+compliance GDPR、数据隐私合规、审查流程、法律要求
+technical-interview 算法题讲解、系统设计面试、面试技巧
 三、调用技巧总结
 :bullseye: 通用规则
 精确匹配触发：技能通过 name 和 description 自动匹配用户需求。你说什么关键词，就会触发对应技能。
@@ -147,17 +148,17 @@ technical-interview	算法题讲解、系统设计面试、面试技巧
 多技能联动：复杂任务可以同时触发多个技能。比如"写一个完整的后台管理系统"可以同时触发 frontend-expert + backend-expert + database-expert。
 大技能优先：像 llm-expert (75KB)、api-writer (23KB)、web-technologies (28KB)、backend-expert (30KB) 这些大技能包含大量最佳实践和代码示例，能显著提高代码质量。
 :key: 高频场景推荐
-场景	首选技能	辅助技能
-写 API 接口	api-writer + backend-expert	code-review
-Bug 调试定位	debugging-expert	log-analysis
-代码重构优化	code-refactoring	code-review
-性能问题排查	performance-tuning	database-expert
-容器化部署	docker-k8s	devops-cicd
-前端组件开发	frontend-expert	design-system
-数据库优化	database-expert	performance-tuning
-LLM 应用开发	llm-expert	backend-expert
-写技术文档	tech-docs	api-writer
-安全审计	security-audit	code-review
-Git 操作	git-expert	—
-正则表达式	regex-expert	—
-面试准备	technical-interview	algorithm-expert
+场景 首选技能 辅助技能
+写 API 接口 api-writer + backend-expert code-review
+Bug 调试定位 debugging-expert log-analysis
+代码重构优化 code-refactoring code-review
+性能问题排查 performance-tuning database-expert
+容器化部署 docker-k8s devops-cicd
+前端组件开发 frontend-expert design-system
+数据库优化 database-expert performance-tuning
+LLM 应用开发 llm-expert backend-expert
+写技术文档 tech-docs api-writer
+安全审计 security-audit code-review
+Git 操作 git-expert —
+正则表达式 regex-expert —
+面试准备 technical-interview algorithm-expert

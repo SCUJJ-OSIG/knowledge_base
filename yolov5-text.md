@@ -47,11 +47,6 @@ save-period：训练多少次保存一次网络模型
 
 原文链接：https://blog.csdn.net/bruce__ray/article/details/132781640
 
-
-
-
-
 ## 用gpu运行yolov5
-
 
 https://blog.csdn.net/weixin_68922189/article/details/134448330

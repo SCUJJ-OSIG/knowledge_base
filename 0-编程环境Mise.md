@@ -18,6 +18,7 @@ related:
 使用 [[Mise]] 作为统一环境管理器。
 
 **为什么选择 Mise**：
+
 - 比 asdf 快 10 倍
 - 支持 600+ 工具
 - 全平台支持（Windows/macOS/Linux）

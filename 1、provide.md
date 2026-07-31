@@ -1,41 +1,29 @@
 ---
-date created: '2026-01-日 15:25:35'
-date modified: '2026-01-日 15:27:11'
+date created: "2026-01-日 15:25:35"
+date modified: "2026-01-日 15:27:11"
 tags:
   - 技术文章
   - 软件架构与设计哲学
   - react
 ---
+
 Next.js + React Query + Zustand
 
-
 - **桥梁 (Bridge)**：把 **Server State** (React Query 的数据) 同步到 **Client State** (Zustand Store)。
-    
+
 - **配置 (Configuration)**：初始化全局配置（比如注入 API Client 的 getter），确保 React 树以外的工具能正常工作。
-    
+
 - **守卫 (Guard)**：(可选但常见) 决定“谁能进，谁该滚”（路由保护）。
-
-
-
-
-
-
-
-
-
-
-
 
 一个“优雅”的 `UserProvider` 应该像一个**交通枢纽**，而不是一个**大杂烩工厂**。它的核心职责应该非常单一且清晰。
 
 在你的架构（Next.js + React Query + Zustand）中，一个优雅的 Provider 应该具备以下 **3 大职责**：
 
 1. **桥梁 (Bridge)**：把 **Server State** (React Query 的数据) 同步到 **Client State** (Zustand Store)。
-    
+
 2. **配置 (Configuration)**：初始化全局配置（比如注入 API Client 的 getter），确保 React 树以外的工具能正常工作。
-    
+
 3. **守卫 (Guard)**：(可选但常见) 决定“谁能进，谁该滚”（路由保护）。
-    
 
 ---
 
@@ -62,7 +50,7 @@ const PUBLIC_PATHS = ["/login", "/signup", "/forgot-password"];
 export function UserProvider({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
-  
+
   // 判定当前是否在公共页面
   const isPublicPage = PUBLIC_PATHS.includes(pathname);
 
@@ -79,7 +67,7 @@ export function UserProvider({ children }: { children: ReactNode }) {
 
   // --- 职责 2: 数据获取与同步 ---
   // 只在非白名单页面，或者我们要尝试恢复会话时请求
-  const { data, error, isLoading } = useMe({ 
+  const { data, error, isLoading } = useMe({
     retry: false, // 失败了别重试，直接跳登录
     enabled: !isPublicPage // 公开页面不查用户信息，节省资源
   });
@@ -102,7 +90,7 @@ export function UserProvider({ children }: { children: ReactNode }) {
   }, [data, error, isPublicPage, router, setAuth, clearAuth]);
 
   // --- 职责 3: 渲染控制 (防闪烁) ---
-  
+
   // 1. 如果是公开页面，无条件放行
   if (isPublicPage) {
     return <>{children}</>;
@@ -162,22 +150,20 @@ setDeptIdGetter(() => useAuthStore.getState().currentDeptId);
 在鉴权失败时，使用 `router.replace` 而不是 `push`。
 
 - **场景**：用户 Token 过期 -> 被踢到登录页。
-    
+
 - **Push**：用户点浏览器“后退” -> 回到受保护页 -> 再次触发错误 -> 又被踢回登录页（死循环，用户体验极差）。
-    
+
 - **Replace**：替换当前历史记录，用户点“后退”会回到上一个正常的页面（比如谷歌搜索页）。
-    
 
 #### 3. 职责边界清晰
 
 - **API Client**：完全不知道 React 的存在，只知道“有个函数能给我 ID”。
-    
+
 - **React Query**：负责与服务器通信，处理 Loading/Error 状态。
-    
+
 - **Zustand**：负责作为全局数据的“真理来源 (Single Source of Truth)”。
-    
+
 - **UserProvider**：仅仅是把上面三个东西组装起来的胶水层。
-    
 
 #### 4. 白名单机制 (Line 12)
 

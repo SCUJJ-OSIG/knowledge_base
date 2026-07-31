@@ -1,11 +1,12 @@
 ---
-date created: '2026-01-日 20:53:30'
-date modified: '2026-01-日 21:24:25'
+date created: "2026-01-日 20:53:30"
+date modified: "2026-01-日 21:24:25"
 tags:
   - 技术文章
   - AI编程
 形态: 教程型
 ---
+
 你的第二个想法，即**“滑动窗口式转换（Sliding Window Transformation）”**，是一个非常深刻的流程优化。如果说第一种方案是“树状分发”，那么这一种就是**“流水线（Pipeline）串行”**。
 
 这种模式非常符合 LLM（大语言模型）的特性，因为它本质上是在做 **Incremental Context Refinement（增量上下文细化）**。
@@ -32,25 +33,25 @@ tags:
 
 - **窗口位置 N（Contract -> Service）：**
 
-    - **输入：** 数据库 Schema + 接口契约。
+  - **输入：** 数据库 Schema + 接口契约。
 
-    - **AI 任务：** 生成业务逻辑层（CRUD、校验、三方集成）。
+  - **AI 任务：** 生成业务逻辑层（CRUD、校验、三方集成）。
 
-    - **输出：** Service 代码。
+  - **输出：** Service 代码。
 
 - **窗口位置 N+1（Service -> Controller）：**
 
-    - **输入：** Service 方法签名 + 路由定义。
+  - **输入：** Service 方法签名 + 路由定义。
 
-    - **AI 任务：** 处理 HTTP 逻辑（状态码、Request/Response 映射）。
+  - **AI 任务：** 处理 HTTP 逻辑（状态码、Request/Response 映射）。
 
-    - **输出：** Controller 代码。
+  - **输出：** Controller 代码。
 
 - **窗口位置 N+2（Controller -> Hooks/UI）：**
 
-    - **输入：** API 定义。
+  - **输入：** API 定义。
 
-    - **AI 任务：** 封装前端请求 Hooks 和基础组件逻辑。
+  - **AI 任务：** 封装前端请求 Hooks 和基础组件逻辑。
 
 ---
 
@@ -86,12 +87,12 @@ tags:
 
 ## 两种方案的对比：你该选哪个？
 
-|**特性**|**方案一：树状分发 (Agent Orchard)**|**方案二：滑动窗口 (Sliding Pipeline)**|
-|---|---|---|
-|**适合场景**|大型复杂系统，多个模块并行开发|单个功能模块从底到顶的纵向贯通|
-|**一致性**|依赖“总负责人”的预先设计|依赖每一层之间的“无缝衔接”|
-|**开发速度**|高（可以多 Agent 并行）|中（更像串行流水线，但质量极高）|
-|**调试难度**|较高（需定位哪个 Agent 出了问题）|较低（错误通常就在当前窗口内）|
+| **特性**     | **方案一：树状分发 (Agent Orchard)** | **方案二：滑动窗口 (Sliding Pipeline)** |
+| ------------ | ------------------------------------ | --------------------------------------- |
+| **适合场景** | 大型复杂系统，多个模块并行开发       | 单个功能模块从底到顶的纵向贯通          |
+| **一致性**   | 依赖“总负责人”的预先设计             | 依赖每一层之间的“无缝衔接”              |
+| **开发速度** | 高（可以多 Agent 并行）              | 中（更像串行流水线，但质量极高）        |
+| **调试难度** | 较高（需定位哪个 Agent 出了问题）    | 较低（错误通常就在当前窗口内）          |
 
 ### 我的建议
 
@@ -135,9 +136,9 @@ tags:
 
 5. **TESTING**: 运行虚拟环境测试。
 
-    - **SUCCESS**: 窗口向右滑动（DB -> Service -> Controller）。
+   - **SUCCESS**: 窗口向右滑动（DB -> Service -> Controller）。
 
-    - **FAIL**: 窗口向左回退（重试当前层或修正上一层）。
+   - **FAIL**: 窗口向左回退（重试当前层或修正上一层）。
 
 ---
 
@@ -146,56 +147,63 @@ tags:
 JavaScript
 
 ```js
-import { createMachine, assign } from 'xstate';
+import { createMachine, assign } from "xstate";
 
-const windowMachine = createMachine({
-  id: 'slidingWindow',
-  initial: 'db_layer',
-  context: {
-    retries: 0,
-    maxRetries: 3,
-    errorLog: null
-  },
-  states: {
-    db_layer: {
-      on: {
-        SUCCESS: 'service_layer',
-        ERROR: 'manual_intervention'
-      }
+const windowMachine = createMachine(
+  {
+    id: "slidingWindow",
+    initial: "db_layer",
+    context: {
+      retries: 0,
+      maxRetries: 3,
+      errorLog: null,
     },
-    service_layer: {
-      initial: 'coding',
-      states: {
-        coding: {
-          on: { DONE: 'testing' }
+    states: {
+      db_layer: {
+        on: {
+          SUCCESS: "service_layer",
+          ERROR: "manual_intervention",
         },
-        testing: {
-          on: {
-            PASS: { target: '#slidingWindow.controller_layer' },
-            FAIL: [
-              { target: 'coding', cond: 'canRetry', actions: 'incrementRetry' },
-              { target: '#slidingWindow.db_layer', actions: 'logError' } // 回退到上一步
-            ]
-          }
-        }
-      }
+      },
+      service_layer: {
+        initial: "coding",
+        states: {
+          coding: {
+            on: { DONE: "testing" },
+          },
+          testing: {
+            on: {
+              PASS: { target: "#slidingWindow.controller_layer" },
+              FAIL: [
+                {
+                  target: "coding",
+                  cond: "canRetry",
+                  actions: "incrementRetry",
+                },
+                { target: "#slidingWindow.db_layer", actions: "logError" }, // 回退到上一步
+              ],
+            },
+          },
+        },
+      },
+      controller_layer: {
+        // 逻辑同上...
+      },
+      manual_intervention: {
+        type: "final",
+      },
     },
-    controller_layer: {
-      // 逻辑同上...
-    },
-    manual_intervention: {
-      type: 'final'
-    }
-  }
-}, {
-  guards: {
-    canRetry: (context) => context.retries < context.maxRetries
   },
-  actions: {
-    incrementRetry: assign({ retries: (ctx) => ctx.retries + 1 }),
-    logError: assign({ errorLog: (_, event) => event.data })
-  }
-});
+  {
+    guards: {
+      canRetry: (context) => context.retries < context.maxRetries,
+    },
+    actions: {
+      incrementRetry: assign({ retries: (ctx) => ctx.retries + 1 }),
+      logError: assign({ errorLog: (_, event) => event.data }),
+    },
+  },
+);
 ```
 
 ---
@@ -269,7 +277,6 @@ AI 在写代码时最怕“引用不存在的函数”或“重复造轮子”�
 > - `src/utils/auth.ts`: `function verifyToken(token: string): boolean`
 >
 > - `src/services/mail.ts`: `class MailService { sendWelcome(email: string) }`
->
 
 #### 第三步：动态注入策略
 
@@ -287,21 +294,21 @@ JavaScript
 
 ```js
 const machine = createMachine({
-  initial: 'indexing',
+  initial: "indexing",
   states: {
     indexing: {
       invoke: {
-        src: 'scanGlobalProject', // 扫描所有导出函数并建立依赖图
+        src: "scanGlobalProject", // 扫描所有导出函数并建立依赖图
         onDone: {
-          target: 'sliding_window',
-          actions: assign({ repoMap: (ctx, event) => event.data })
-        }
-      }
+          target: "sliding_window",
+          actions: assign({ repoMap: (ctx, event) => event.data }),
+        },
+      },
     },
     sliding_window: {
       // 在这里根据 repoMap 动态筛选上下文
-    }
-  }
+    },
+  },
 });
 ```
 
@@ -313,15 +320,15 @@ const machine = createMachine({
 
 1. Aider 的 Repo Map 实现：
 
-    Aider 使用了 ctags 或 tree-sitter 来生成这种地图。它能将一个 1000 文件的项目压缩成几百行 AI 可读的“大纲”。
+   Aider 使用了 ctags 或 tree-sitter 来生成这种地图。它能将一个 1000 文件的项目压缩成几百行 AI 可读的“大纲”。
 
 2. Tome (或是类似开源项目)：
 
-    专门用于将整个 codebase 转换成 LLM 可读的摘要。
+   专门用于将整个 codebase 转换成 LLM 可读的摘要。
 
 3. LSP "Symbol" 接口：
 
-    如果你能调起本地的 Language Server（比如 TypeScript Server），直接调用 workspace/symbol 接口就能拿到所有的全局函数定义。
+   如果你能调起本地的 Language Server（比如 TypeScript Server），直接调用 workspace/symbol 接口就能拿到所有的全局函数定义。
 
 ---
 
