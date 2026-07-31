@@ -1,8 +1,10 @@
 ---
 tags:
-  - 技术文章
-  - DevOps与基础设施
-  - Linux系统管理
+  - 技术/linux/命令
+  - 技术/devops/系统管理
+title: Linux 常用命令
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 ```bash
  cat ~/.ssh/id_rsa.pub | ssh root@43.138.106.253 

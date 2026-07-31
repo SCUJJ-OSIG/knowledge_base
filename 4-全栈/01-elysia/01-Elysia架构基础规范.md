@@ -1,7 +1,11 @@
 ---
 tags:
   - 全栈
-  - elysia
+  - 技术/全栈/elysia
+  - 技术/软件架构/规范
+title: Elysia 全栈架构基础规范
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 # Elysia 全栈架构基础规范
 

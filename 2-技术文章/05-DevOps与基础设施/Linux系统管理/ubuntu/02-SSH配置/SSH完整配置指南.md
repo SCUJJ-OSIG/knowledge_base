@@ -1,10 +1,11 @@
 ---
 tags:
-  - 技术文章
-  - DevOps与基础设施
-  - Linux系统管理
-  - ubuntu
-  - SSH配置
+  - 技术/devops/ssh
+  - 技术/linux/ubuntu
+  - 技术/安全/认证
+title: SSH 完整配置指南
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 
 

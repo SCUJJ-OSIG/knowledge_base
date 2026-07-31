@@ -1,10 +1,10 @@
 ---
 date created: '2025-12-六 10:58:51'
-date modified: '2025-12-六 17:21:01'
+date modified: '2026-07-31'
 tags:
-  - 技术文章
-  - AI编程
-  - ai+自动化
+  - 技术/ai编程/自动化
+  - 技术/全栈/elysia
+title: 自动化生产 - Elysia
 ---
 自动化生产，
 

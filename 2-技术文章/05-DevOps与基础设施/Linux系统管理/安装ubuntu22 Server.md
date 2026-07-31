@@ -1,8 +1,10 @@
 ---
 tags:
-  - 技术文章
-  - DevOps与基础设施
-  - Linux系统管理
+  - 技术/linux/ubuntu
+  - 技术/devops/服务器安装
+title: Ubuntu 22 Server 安装指南
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 # 服务器安装系统 第一步是
 

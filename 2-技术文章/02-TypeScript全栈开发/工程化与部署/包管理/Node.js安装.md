@@ -1,9 +1,11 @@
 ---
 tags:
-  - 技术文章
-  - TypeScript全栈开发
-  - 工程化与部署
-  - 包管理
+  - 技术/工具/node
+  - 技术/包管理/安装
+  - 技术/工具/volta
+title: Node.js 安装指南
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 
 ### 使用 Volta 安装 Node.js

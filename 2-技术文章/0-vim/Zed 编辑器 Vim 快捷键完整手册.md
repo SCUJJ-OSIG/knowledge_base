@@ -1,9 +1,11 @@
 ---
 date created: '2026-01-六 14:05:07'
-date modified: '2026-04-三 13:23:01'
+date modified: '2026-07-31'
 tags:
-  - 技术文章
-  - vim
+  - 技术/编辑器/vim
+  - 技术/编辑器/zed
+  - 技术/工具/快捷键
+title: Zed 编辑器 Vim 快捷键完整手册
 ---
 
 ## Zed 编辑器 Vim 快捷键完整手册

@@ -1,10 +1,11 @@
 ---
 tags:
-  - 技术文章
-  - DevOps与基础设施
-  - Linux系统管理
-  - ubuntu
-  - 服务器运维
+  - 技术/devops/docker
+  - 技术/linux/ubuntu
+  - 技术/包管理/安装
+title: 在 Ubuntu 22.04 中安装 Docker
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 ## 在 Ubuntu 22.04 LTS 中安装 Docker
 

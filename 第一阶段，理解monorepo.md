@@ -1,6 +1,10 @@
 ---
 tags:
   - blog
+  - 技术/monorepo/理解
+title: 第一阶段，理解 Monorepo
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 
 使用trubo管理monorepo

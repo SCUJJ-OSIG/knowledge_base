@@ -1,9 +1,11 @@
 ---
 date created: '2026-06-三 15:14:53'
-date modified: '2026-06-三 15:24:32'
+date modified: '2026-07-31'
 tags:
-  - 技术文章
-  - 组件封装
+  - 技术/前端/vue
+  - 技术/组件封装/slidv
+  - 技术/前端/css
+title: Slidev 原子化 Vue 组件封装完整方案
 ---
 
 ## 前言

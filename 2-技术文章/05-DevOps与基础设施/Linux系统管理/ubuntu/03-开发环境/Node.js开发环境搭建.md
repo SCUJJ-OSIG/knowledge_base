@@ -1,10 +1,10 @@
 ---
 tags:
-  - 技术文章
-  - DevOps与基础设施
-  - Linux系统管理
-  - ubuntu
-  - 开发环境
+  - 技术/node/开发环境
+  - 技术/linux/ubuntu
+title: Node.js 开发环境搭建指南
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 # Node.js 开发环境搭建指南
 

@@ -1,8 +1,10 @@
 ---
 tags:
-  - 技术文章
-  - TypeScript全栈开发
-  - 全栈框架
+  - 技术/devops/docker
+  - 技术/部署/流程
+title: Docker 自动化部署流程实践笔记
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 # Docker 自动化部署流程实践笔记
 

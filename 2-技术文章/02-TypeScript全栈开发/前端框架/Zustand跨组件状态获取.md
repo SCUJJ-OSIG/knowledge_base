@@ -1,8 +1,10 @@
 ---
 tags:
-  - 技术文章
-  - TypeScript全栈开发
-  - 前端框架
+  - 技术/前端/react
+  - 技术/状态管理/zustand
+title: Zustand 跨组件状态获取
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 这是一个非常棒的问题！你现在困惑的核心在于 **“时间轴（Timeline）”**。
 

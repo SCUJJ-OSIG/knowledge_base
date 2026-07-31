@@ -1,7 +1,11 @@
 ---
 tags:
   - 全栈
-  - elysia
+  - 技术/全栈/elysia
+  - 技术/软件架构/controller层
+title: Controller 层接口设计规范
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 # Controller层接口设计规范
 

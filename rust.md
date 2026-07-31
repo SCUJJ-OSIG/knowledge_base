@@ -1,7 +1,10 @@
 ---
 tags:
-  - 技术文章
-  - Rust编程语言
+  - 技术/rust/基础
+  - 技术/rust/切片
+title: Rust 基础 - 切片
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 
 所有权解决的问题 管理 heap 数量

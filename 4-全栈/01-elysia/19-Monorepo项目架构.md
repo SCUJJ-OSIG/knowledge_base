@@ -1,9 +1,10 @@
 ---
 date created: 2025-11-26T15:58:31.000Z
-date modified: 2025-11-26T16:20:00.000Z
+date modified: '2026-07-31'
 tags:
-  - 全栈
-  - elysia
+  - 技术/monorepo
+  - 技术/软件架构/项目结构
+title: 现代化 Monorepo 项目架构
 ---
 
 # 🏗️ 现代化 Monorepo 项目架构

@@ -1,9 +1,10 @@
 ---
 tags:
-  - 技术文章
-  - yolov5
-date created: 2026-07-五 10:42:34
-date modified: 2026-07-五 10:54:48
+  - 技术/深度学习/yolov5
+  - 技术/gpu/运行
+date created: '2026-07-五 10:42:34'
+date modified: '2026-07-31'
+title: 用 GPU 运行 YOLOv5
 ---
 
 weigths: 指的是训练好的网络模型，用来初始化网络权重

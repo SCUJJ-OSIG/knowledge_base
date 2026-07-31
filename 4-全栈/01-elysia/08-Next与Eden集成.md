@@ -1,7 +1,12 @@
 ---
 tags:
   - 全栈
-  - elysia
+  - 技术/全栈/elysia
+  - 技术/全栈/nextjs
+  - 技术/全栈/eden
+title: Next 与 Eden 集成
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 
 

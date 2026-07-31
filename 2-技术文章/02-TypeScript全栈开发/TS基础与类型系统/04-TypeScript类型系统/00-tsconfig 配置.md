@@ -1,9 +1,10 @@
 ---
 tags:
-  - 技术文章
-  - TypeScript全栈开发
-  - TS基础与类型系统
-  - TypeScript类型系统
+  - 技术/typescript
+  - 技术/配置/tsconfig
+title: tsconfig 配置
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 ### 生成tsconfig.json 文件
 

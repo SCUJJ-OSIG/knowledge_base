@@ -1,9 +1,10 @@
 ---
 date created: '2026-03-二 11:55:53'
-date modified: '2026-03-二 11:57:52'
+date modified: '2026-07-31'
 tags:
-  - 技术文章
-  - aiCoding
+  - 技术/ai编程/openclaw
+  - 技术/工具/cli
+title: OpenClaw 使用方法
 ---
 官网链接
 https://docs.openclaw.ai/zh-CN

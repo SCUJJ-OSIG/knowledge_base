@@ -1,9 +1,10 @@
 ---
 date created: '2025-11-三 16:31:03'
-date modified: '2025-11-三 16:32:29'
+date modified: '2026-07-31'
 tags:
-  - 全栈
-  - elysia
+  - 技术/数据库/schema
+  - 技术/数据库/设计规范
+title: Schema 定义标准文档
 ---
 # Schema 定义标准文档
 

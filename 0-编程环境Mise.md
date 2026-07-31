@@ -1,12 +1,14 @@
 ---
-date created: 2026-07-五 01:32:59
-date modified: 2026-07-五 09:15:03
+date created: '2026-07-五 01:32:59'
+date modified: '2026-07-31'
 tags:
   - 用/编程环境
   - 自用软件
+  - 技术/环境配置/mise
 related:
   - Mise
   - 部署服务器场景
+title: 我的编程环境配置
 ---
 
 ## 我的编程环境配置

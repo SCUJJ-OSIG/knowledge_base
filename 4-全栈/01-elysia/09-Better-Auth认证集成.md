@@ -1,9 +1,10 @@
 ---
 date created: '2026-03-日 16:44:28'
-date modified: '2026-03-日 16:44:38'
+date modified: '2026-07-31'
 tags:
   - 全栈
-  - elysia
+  - 技术/认证/better-auth
+title: Better-Auth 认证集成
 ---
 ## 
 

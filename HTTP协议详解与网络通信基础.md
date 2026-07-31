@@ -1,13 +1,15 @@
 ---
 tags:
   - 自用软件
+  - 技术/网络/http
   - 编程基础
   - 计算机基础
-  - 用/教程
-  - 场景/网络
 形态: 教程型
 场景: 网络
 published: true
+title: HTTP 协议详解与网络通信基础
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 
 # HTTP协议详解与网络通信基础

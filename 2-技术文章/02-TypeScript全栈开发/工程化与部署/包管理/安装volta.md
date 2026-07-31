@@ -1,9 +1,10 @@
 ---
 tags:
-  - 技术文章
-  - TypeScript全栈开发
-  - 工程化与部署
-  - 包管理
+  - 技术/工具/volta
+  - 技术/包管理/安装
+title: 安装 Volta
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 
 1.官网

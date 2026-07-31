@@ -1,9 +1,10 @@
 ---
-date created: "2025-11-日 15:56:29"
-date modified: "2025-11-日 15:58:02"
+date created: '2025-11-日 15:56:29'
+date modified: '2026-07-31'
 tags:
-  - 技术文章
-  - AI编程
+  - 技术/ai编程
+  - 技术/教程/入门
+title: AI 编程入门
 ---
 
 1. 先安装volta 包管理工具

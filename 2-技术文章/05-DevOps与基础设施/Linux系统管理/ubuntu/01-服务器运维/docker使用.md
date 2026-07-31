@@ -1,10 +1,10 @@
 ---
 tags:
-  - 技术文章
-  - DevOps与基础设施
-  - Linux系统管理
-  - ubuntu
-  - 服务器运维
+  - 技术/devops/docker
+  - 技术/linux/ubuntu
+title: Docker 使用指南
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 ```
 docker pull nginx:latest  //拉去镜像

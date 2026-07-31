@@ -1,9 +1,10 @@
 ---
 tags:
-  - 技术文章
-  - DevOps与基础设施
-  - Linux系统管理
-  - nginx
+  - 技术/devops/nginx
+  - 技术/配置/nginx
+title: Nginx 配置详解
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 一谈到nginx 就是web服务器，反向代理服务器，负载均衡，而在网上去看配置文件，就是一脸懵，因为基本都是围绕本地地址去讲的。涉及到服务器的配置太少了。
 

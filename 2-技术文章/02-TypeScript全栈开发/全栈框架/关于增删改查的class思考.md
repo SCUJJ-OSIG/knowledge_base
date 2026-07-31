@@ -1,10 +1,10 @@
 ---
 date created: '2025-11-五 17:47:22'
-date modified: '2025-11-五 18:08:49'
+date modified: '2026-07-31'
 tags:
-  - 技术文章
-  - TypeScript全栈开发
-  - 全栈框架
+  - 技术/全栈/elysia
+  - 技术/软件架构/设计模式
+title: 全是静态方法的class不要用class
 ---
 # 全是静态方法的class不要用class
 最近使用biome时，报了一个错

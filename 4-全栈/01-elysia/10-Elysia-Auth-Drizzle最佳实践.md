@@ -1,9 +1,12 @@
 ---
 date created: '2026-03-日 16:49:03'
-date modified: '2026-03-日 17:14:08'
+date modified: '2026-07-31'
 tags:
   - 全栈
-  - elysia
+  - 技术/全栈/elysia
+  - 技术/认证/better-auth
+  - 技术/数据库/drizzle
+title: Elysia + Auth + Drizzle 最佳实践
 ---
 ## 🎉 Elysia + Better‑Auth + Drizzle + PostgreSQL – “最佳实践”
 

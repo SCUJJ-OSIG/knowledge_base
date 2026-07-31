@@ -1,9 +1,10 @@
 ---
 tags:
-  - 技术文章
-  - TypeScript全栈开发
-  - TS基础与类型系统
-  - Web存储与浏览器API
+  - 技术/前端/javascript
+  - 技术/浏览器api/storage
+title: Web存储与浏览器API
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 # Web存储与浏览器API
 

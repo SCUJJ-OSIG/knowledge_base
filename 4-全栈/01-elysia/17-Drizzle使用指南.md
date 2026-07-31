@@ -1,9 +1,10 @@
 ---
 date created: 2025-11-26T16:06:52.000Z
-date modified: 2025-11-26T16:25:00.000Z
+date modified: '2026-07-31'
 tags:
-  - 全栈
-  - elysia
+  - 技术/数据库/drizzle
+  - 技术/orm/使用指南
+title: Drizzle ORM 使用指南
 ---
 
 # 📊 Drizzle ORM 使用指南

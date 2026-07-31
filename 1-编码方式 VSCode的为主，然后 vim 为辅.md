@@ -1,11 +1,14 @@
 ---
-date created: 2026-07-五 01:32:59
-date modified: 2026-07-五 09:15:15
+date created: '2026-07-五 01:32:59'
+date modified: '2026-07-31'
 tags:
   - 用/编码工作流
   - 自用软件
+  - 技术/编辑器/vscode
+  - 技术/编辑器/vim
 related:
   - Vim 编辑器，VSCode
+title: 我的编码工作流：VSCode 为主，Vim 为辅
 ---
 
 ## 我的编码工作流：VSCode 为主，Vim 为辅

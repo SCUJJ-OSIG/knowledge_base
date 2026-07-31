@@ -1,7 +1,12 @@
 ---
 tags:
   - 全栈
-  - elysia
+  - 技术/全栈/elysia
+  - 技术/全栈/drizzle
+  - 技术/全栈/zod
+title: Elysia + Drizzle + Zod 全栈开发规范
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 # Elysia + Drizzle + Zod 全栈开发规范
 

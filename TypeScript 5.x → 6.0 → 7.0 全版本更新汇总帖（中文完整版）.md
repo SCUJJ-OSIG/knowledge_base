@@ -1,8 +1,10 @@
 ---
-date created: 2026-07-五 10:42:34
-date modified: 2026-07-五 10:54:56
+date created: '2026-07-五 10:42:34'
+date modified: '2026-07-31'
 tags:
-  - 技术文章
+  - 技术/typescript/版本更新
+  - 技术/前端/更新汇总
+title: TypeScript 5.x → 6.0 → 7.0 全版本更新汇总帖
 ---
 
 ## 前言

@@ -1,9 +1,10 @@
 ---
 tags:
-  - 技术文章
-  - DevOps与基础设施
-  - Linux系统管理
-  - nginx
+  - 技术/devops/nginx
+  - 技术/服务器/反向代理
+title: Nginx 用法
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 # nginx 的用法
 

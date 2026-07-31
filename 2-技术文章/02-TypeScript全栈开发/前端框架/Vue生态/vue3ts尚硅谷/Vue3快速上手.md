@@ -1,10 +1,10 @@
 ---
 tags:
-  - 技术文章
-  - TypeScript全栈开发
-  - 前端框架
-  - Vue生态
-  - vue3ts尚硅谷
+  - 技术/前端/vue3
+  - 技术/教程/入门
+title: Vue3 快速上手
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 # 1. Vue3 简介
 

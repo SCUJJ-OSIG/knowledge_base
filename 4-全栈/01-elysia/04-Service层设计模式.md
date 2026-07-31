@@ -1,7 +1,11 @@
 ---
 tags:
   - 全栈
-  - elysia
+  - 技术/全栈/elysia
+  - 技术/软件架构/service层
+title: Service 层设计模式规范
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 # Service层设计模式规范
 

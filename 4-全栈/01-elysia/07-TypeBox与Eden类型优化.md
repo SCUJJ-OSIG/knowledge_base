@@ -1,9 +1,12 @@
 ---
 date created: '2026-03-五 03:05:04'
-date modified: '2026-03-五 03:07:41'
+date modified: '2026-07-31'
 tags:
   - 全栈
-  - elysia
+  - 技术/全栈/elysia
+  - 技术/类型优化/typebox
+  - 技术/全栈/eden
+title: TypeBox 与 Eden 类型优化
 ---
 
 ---

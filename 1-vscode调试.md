@@ -1,8 +1,10 @@
 ---
 tags:
-  - 技术文章
-  - 编辑器
-  - vscode
+  - 技术/编辑器/vscode
+  - 技术/调试/debug
+title: 配置列表configurations
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 
 ```json

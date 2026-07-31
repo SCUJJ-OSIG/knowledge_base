@@ -1,9 +1,12 @@
 ---
 date created: '2025-10-二 18:09:20'
-date modified: '2025-11-三 16:16:20'
+date modified: '2026-07-31'
 tags:
   - 全栈
-  - elysia
+  - 技术/全栈/elysia
+  - 技术/数据库/drizzle
+  - 技术/全栈/zod
+title: Drizzle-Zod 类型系统设计
 ---
   1.1 基础 Schema 结构
 

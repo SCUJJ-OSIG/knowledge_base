@@ -1,9 +1,10 @@
 ---
 date created: '2026-01-六 14:05:07'
-date modified: '2026-04-三 13:22:23'
+date modified: '2026-07-31'
 tags:
-  - 技术文章
-  - vim
+  - 技术/编辑器/vim
+  - 技术/工具/快捷键
+title: Vim 核心操作速查手册
 ---
 ### Vim 核心操作速查手册
 

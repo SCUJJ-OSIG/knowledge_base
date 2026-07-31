@@ -1,9 +1,10 @@
 ---
 date created: '2025-10-二 23:47:57'
-date modified: '2026-04-六 20:00:27'
+date modified: '2026-07-31'
 tags:
-  - 技术文章
-  - aiCoding
+  - 技术/ai编程/claude
+  - 技术/工具/cli
+title: Claude CLI 使用方法
 ---
 
 1. claude 因为是国外产品，中国无法访问，但是可以通过智谱和kimi k2 换模型使用其cli工具。

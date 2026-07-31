@@ -1,10 +1,10 @@
 ---
 date created: '2025-12-六 11:30:43'
-date modified: '2025-12-六 11:30:53'
+date modified: '2026-07-31'
 tags:
-  - 技术文章
-  - AI编程
-  - ai+自动化
+  - 技术/ai编程/自动化
+  - 技术/全栈/elysia
+title: 自动化生产 - Elysia 方法流
 ---
 针对你描述的 **“改了源头，后续自动变化”** 以及 **“构建有向无环图（DAG）状态机”** 的需求，单纯的“流（Stream）”库可能是不够的。你需要的是 **响应式（Reactivity）** 或 **事件编排（Event Orchestration）** 库。
 

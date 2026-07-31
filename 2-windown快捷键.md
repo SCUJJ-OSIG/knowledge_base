@@ -1,8 +1,11 @@
 ---
-date created: "2025-10-二 18:36:11"
-date modified: "2026-04-三 13:19:44"
+date created: '2025-10-二 18:36:11'
+date modified: '2026-07-31'
 tags:
   - 自用软件
+  - 技术/操作系统/windows
+  - 技术/工具/快捷键
+title: 一、Windows 常用命令（CMD/PowerShell）
 ---
 
 ### 一、Windows 常用命令（CMD/PowerShell）

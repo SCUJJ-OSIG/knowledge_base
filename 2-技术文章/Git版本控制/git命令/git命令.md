@@ -1,8 +1,10 @@
 ---
 tags:
-  - 技术文章
-  - Git版本控制
-  - git命令
+  - 技术/git/命令
+  - 技术/版本控制/git
+title: Git 命令速查
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 # 前端必备-协同开发git
 

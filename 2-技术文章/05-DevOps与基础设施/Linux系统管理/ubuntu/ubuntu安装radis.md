@@ -1,9 +1,11 @@
 ---
 tags:
-  - 技术文章
-  - DevOps与基础设施
-  - Linux系统管理
-  - ubuntu
+  - 技术/database/redis
+  - 技术/linux/ubuntu
+  - 技术/包管理/安装
+title: Ubuntu 安装 Redis
+date created: '2026-07-31'
+date modified: '2026-07-31'
 ---
 1. 开启终端，此时首先需要更新系统的软件仓库（apt仓库）
    

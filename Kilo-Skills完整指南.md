@@ -1,8 +1,10 @@
 ---
-date created: "2026-06-三 10:21:52"
-date modified: "2026-06-三 10:21:59"
+date created: '2026-06-三 10:21:52'
+date modified: '2026-07-31'
 tags:
   - skills
+  - 技术/技能/指南
+title: Kilo-Skills 完整指南
 ---
 
 Kilo Skills 完整指南

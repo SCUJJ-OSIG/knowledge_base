@@ -1,10 +1,11 @@
 ---
-date created: "2026-01-日 15:25:35"
-date modified: "2026-01-日 15:27:11"
+date created: '2026-01-日 15:25:35'
+date modified: '2026-07-31'
 tags:
-  - 技术文章
-  - 软件架构与设计哲学
-  - react
+  - 技术/前端/react
+  - 技术/软件架构/设计模式
+  - 技术/组件/context
+title: 优雅重构版 `UserProvider`
 ---
 
 Next.js + React Query + Zustand
