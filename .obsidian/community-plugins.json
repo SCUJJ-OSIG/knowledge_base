@@ -3,8 +3,6 @@
   "obsidian-git",
   "obsidian-linter",
   "tag-wrangler",
-  "copilot",
   "obsidian-tasks-plugin",
-  "note-refactor-obsidian",
-  "dataview"
+  "note-refactor-obsidian"
 ]

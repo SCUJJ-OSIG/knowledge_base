@@ -1,0 +1,21 @@
+Name,Type,Folder,Case,Whole Word,Path,Diacritic,Prefix,Suffix,Ignore Punctuation,Ignore Whitespace,Regex,Search,Filter,Columns,Sort,Descending,View,Index,File List,Host,Link Type,Macro,Key,Icon
+package.json 清单,0,,0,0,,0,,,0,0,0,filename:package.json,,,,0,,,,,,,,0
+package-lock / yarn.lock,0,,0,0,,0,,,0,0,0,filename:package-lock.json|filename:yarn.lock|filename:pnpm-lock.yaml,,,,0,,,,,,,,0
+Cargo.toml(Rust项目),0,,0,0,,0,,,0,0,0,filename:Cargo.toml,,,,0,,,,,,,,0
+go.mod(Golang项目),0,,0,0,,0,,,0,0,0,filename:go.mod,,,,0,,,,,,,,0
+pyproject.toml(Python现代项目),0,,0,0,,0,,,0,0,0,filename:pyproject.toml,,,,0,,,,,,,,0
+requirements.txt,0,,0,0,,0,,,0,0,0,filename:requirements.txt,,,,0,,,,,,,,0
+build.gradle(Android/Gradle),0,,0,0,,0,,,0,0,0,filename:build.gradle|filename:build.gradle.kts,,,,0,,,,,,,,0
+pom.xml(Maven Java),0,,0,0,,0,,,0,0,0,filename:pom.xml,,,,0,,,,,,,,0
+Git仓库根目录,0,,0,0,,0,,,0,0,0,filename:.git,,,,0,,,,,,,,0
+Docker相关配置,0,,0,0,,0,,,0,0,0,filename:Dockerfile|filename:docker-compose.yml,,,,0,,,,,,,,0
+Typescript配置,0,,0,0,,0,,,0,0,0,filename:tsconfig.json,,,,0,,,,,,,,0
+.env环境变量文件,0,,0,0,,0,,,0,0,0,filename:.env,,,,0,,,,,,,,0
+dist产物目录,1,,0,0,,0,,,0,0,0,folder:dist,,,,0,,,,,,,,0
+build构建目录,1,,0,0,,0,,,0,0,0,folder:build,,,,0,,,,,,,,0
+所有public静态资源,1,,0,0,,0,,,0,0,0,folder:public,,,,0,,,,,,,,0
+src源代码目录,1,,0,0,,0,,,0,0,0,folder:src,,,,0,,,,,,,,0
+查找所有README,0,,0,0,,0,,,0,0,0,filename:readme.md|filename:README.md,,,,0,,,,,,,,0
+数据库迁移脚本,0,,0,0,,0,,,0,0,0,ext:sql,,,,0,,,,,,,,0
+Shell脚本,0,,0,0,,0,,,0,0,0,ext:sh|ext:bat|ext:ps1,,,,0,,,,,,,,0
+图片资源,0,,0,0,,0,,,0,0,0,ext:png;jpg;jpeg;webp;svg,,,,0,,,,,,,,0

@@ -21,11 +21,14 @@ views:
       - 场景
       - file.folder
     sort:
+      - property: tags
+        direction: DESC
       - property: 场景
         direction: ASC
       - property: 形态
         direction: DESC
     columnSize:
+      note.tags: 427
       note.场景: 123
   - type: table
     name: 参考型（可嵌入）
